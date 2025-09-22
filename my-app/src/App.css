@@ -1,16 +1,23 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 1140px;
+  margin: 8px 300px 0px 300px;
   padding: 2rem;
   text-align: center;
 }
 
+h3,p {
+  margin: 0;
+  padding: 0;
+}
+
 .section_hero{
   display: flex;
+  height: 100vh;
 }
 
 .icon_airaestur{
   width: 240px;
+  height: 240px;
 }
 
 .icon_logos{
@@ -38,10 +45,18 @@
   background-color: white;
 }
 
+.card_case_studies_header{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
 .card_case_studies_texts{
   text-align: left;
   margin: 16px;
-  color:#2D2D2D;
+  color: #2D2D2D;
 }
 
 .mock-ups{
