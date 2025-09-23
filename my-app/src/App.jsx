@@ -14,6 +14,11 @@ import csharpIcon from "./assets/icons/csharp.png";
 import unityIcon from "./assets/icons/unity.png";
 import pythonIcon from "./assets/icons/python.png";
 
+import skIcon from "./assets/icons/sk.png";
+import fillpassIcon from "./assets/icons/filpass.jpg";
+import angkasIcon from "./assets/icons/angkas.png";
+import marvillIcon from "./assets/icons/marvill.png";
+
 import dostMock from "./assets/mock-ups/dost.png";
 import pricepulseMock from "./assets/mock-ups/pricepulse.png";
 import amwayMock from "./assets/mock-ups/amway.jpg";
@@ -173,6 +178,70 @@ function App() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="section_journey">
+        <h2> My Journey </h2>
+
+        <div className= "section_cards_journey">
+          <p className="journey_duration"> Dec 2023 - Present </p>
+          <div className="section_card_journey_contents">
+            <img src={skIcon} className="icon_logos_journey" alt="icon_sk177" />
+            <div className="section_card_journey_texts">
+              <h3> Government Official </h3>
+              <p> Sangguniang Kabataan Brgy. 177 </p>
+            </div>
+          </div>
+          
+        </div>
+
+        <div className= "section_cards_journey">
+          <p className="journey_duration"> Jun 2025 - Aug 2025 </p>
+          <div className="section_card_journey_contents">
+            <img src={fillpassIcon} className="icon_logos_journey" alt="icon_filpass" />
+            <div className="section_card_journey_texts">
+              <h3> UI/UX Designer </h3>
+              <p> FilPass (A company of Befied Group) • Internship </p>
+            </div>
+          </div>
+          
+        </div>
+      
+        <div className= "section_cards_journey">
+          <p className="journey_duration"> Dec 2024 - Feb 2025 </p>
+          <div className="section_card_journey_contents">
+            <img src={dostIcon} className="icon_logos_journey" alt="icon_dost" />
+            <div className="section_card_journey_texts">
+              <h3> UI/UX Designer </h3>
+              <p> Department of Science and Technology • Internship</p>
+            </div>
+          </div>
+        </div>
+
+        <div className= "section_cards_journey">
+          <p className="journey_duration"> Aug 2024 - Dec 2024 </p>
+          <div className="section_card_journey_contents">
+            <img src={angkasIcon} className="icon_logos_journey" alt="icon_angkas" />
+            <div className="section_card_journey_texts">
+              <h3> UX Researcher </h3>
+              <p> Angkas • Internship</p>
+            </div>
+          </div>
+        </div>
+
+        <div className= "section_cards_journey">
+          <p className="journey_duration"> Aug 2023 - Oct 2023 </p>
+          <div className="section_card_journey_contents">
+            <img src={marvillIcon} className="icon_logos_journey" alt="icon_marvill" />
+            <div className="section_card_journey_texts">
+              <h3> Frontend Developer </h3>
+              <p> Marvill WebDev • Internship</p>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
     </>
   );
