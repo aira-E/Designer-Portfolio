@@ -202,7 +202,17 @@ button:hover{
   border-radius: 8px;
   border: 1px solid #000;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  color:#2D2D2D
+  color:#2D2D2D;
+  margin: 16px 0;
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.4s;
+  opacity: 0.7;
+  transform: scale(0.92);
+}
+
+.section_cards_journey.active {
+  opacity: 1;
+  transform: scale(1.08);
+  z-index: 2;
 }
 
 .section_card_journey_contents{
@@ -222,70 +232,38 @@ button:hover{
 .section_journey_lists{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-}
-
-/* Timeline container */
-.timeline {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-left: 48px;
-}
-
-/* Timeline item: scale based on position */
-.timeline_item {
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-}
-
-/* Timeline dot and line */
-.timeline_dot {
-  width: 16px;
-  height: 16px;
-  background: #FEB341;
-  border-radius: 50%;
-  position: absolute;
-  left: -40px;
-  top: 24px;
-  border: 2px solid #fff;
-  box-shadow: 0 0 0 2px #FEB341;
-}
-
-.timeline_item:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  left: -32px;
-  top: 40px;
-  width: 0;
-  height: calc(100% - 40px);
-  border-left: 2px solid #FEB341;
-  z-index: 0;
-}
-
-.section_cards_journey  {
-  transition: 
-    transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), 
-    box-shadow 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.timeline_item .section_cards_journey:hover {
-  transform: scale(1.12) !important;
-}
-
-.section_journey{
-  gap: 32px;
+  align-items: center; /* <-- center the cards horizontally */
   width: 100%;
-  justify-content: center;
 }
 
 .section_journey_container{
-  display: flex;
-  gap: 32px;
   width: 100%;
+  height: 400px;
+  overflow-y: hidden; /* hide native scroll */
+  position: relative;
+  display: flex;
+  flex-direction: column;    
+  justify-content: center;  
+  align-items: center;      
+  gap: 8px;
+}
+
+.carousel-viewport {
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform;
 }
 
 .section_journey_story{
@@ -293,23 +271,6 @@ button:hover{
   align-items: center;
 }
 
-/* Hide all journeys by default */
-.journey {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s;
-  position: absolute;
-  left: 110%;
-  top: 0;
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 4px 24px rgba(254,179,65,0.15);
-  min-width: 260px;
-  z-index: 100;
-}
 
-/* Show only the journey for the hovered card */
-.timeline_item:hover .journey {
-  visibility: visible;
-  opacity: 1;
-}
+
+
