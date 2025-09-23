@@ -182,74 +182,116 @@ function App() {
 
       <div className="section_journey">
         <h2> My Journey </h2>
-      <div className="section_journey_lists timeline">
-        <div className="timeline_item">
-          <div className="timeline_dot"></div>
-          <div className="section_cards_journey">
-            <p className="journey_duration"> Dec 2023 - Present </p>
-            <div className="section_card_journey_contents">
-              <img src={skIcon} className="icon_logos_journey" alt="icon_sk177" />
-              <div className="section_card_journey_texts">
-                <h3> Government Official </h3>
-                <p> Sangguniang Kabataan Brgy. 177 </p>
+        <div className="section_journey_container">
+          <div className="section_journey_lists timeline">
+            <div className="timeline_item">
+              <div className="timeline_dot"></div>
+              <div className="section_cards_journey">
+                <p className="journey_duration"> Dec 2023 - Present </p>
+                <div className="section_card_journey_contents">
+                  <img src={skIcon} className="icon_logos_journey" alt="icon_sk177" />
+                  <div className="section_card_journey_texts">
+                    <h3> Government Official </h3>
+                    <p> Sangguniang Kabataan Brgy. 177 </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="timeline_item">
+              <div className="timeline_dot"></div>
+              <div className="section_cards_journey">
+                <p className="journey_duration"> Jun 2025 - Aug 2025 </p>
+                <div className="section_card_journey_contents">
+                  <img src={fillpassIcon} className="icon_logos_journey" alt="icon_filpass" />
+                  <div className="section_card_journey_texts">
+                    <h3> UI/UX Designer </h3>
+                    <p> FilPass (A company of Befied Group) • Internship </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="timeline_item">
+              <div className="timeline_dot"></div>
+              <div className= "section_cards_journey">
+                <p className="journey_duration"> Dec 2024 - Feb 2025 </p>
+                <div className="section_card_journey_contents">
+                  <img src={dostIcon} className="icon_logos_journey" alt="icon_dost" />
+                  <div className="section_card_journey_texts">
+                    <h3> UI/UX Designer </h3>
+                    <p> Department of Science and Technology • Internship</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="timeline_item">
+              <div className="timeline_dot"></div>
+              <div className= "section_cards_journey">
+                <p className="journey_duration"> Aug 2024 - Dec 2024 </p>
+                <div className="section_card_journey_contents">
+                  <img src={angkasIcon} className="icon_logos_journey" alt="icon_angkas" />
+                  <div className="section_card_journey_texts">
+                    <h3> UX Researcher </h3>
+                    <p> Angkas • Internship</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="timeline_item">
+              <div className="timeline_dot"></div>
+              <div className= "section_cards_journey">
+                <p className="journey_duration"> Aug 2023 - Oct 2023 </p>
+                <div className="section_card_journey_contents">
+                  <img src={marvillIcon} className="icon_logos_journey" alt="icon_marvill" />
+                  <div className="section_card_journey_texts">
+                    <h3> Frontend Developer </h3>
+                    <p> Marvill WebDev • Internship</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="timeline_item">
-          <div className="timeline_dot"></div>
-          <div className="section_cards_journey">
-            <p className="journey_duration"> Jun 2025 - Aug 2025 </p>
-            <div className="section_card_journey_contents">
-              <img src={fillpassIcon} className="icon_logos_journey" alt="icon_filpass" />
-              <div className="section_card_journey_texts">
-                <h3> UI/UX Designer </h3>
-                <p> FilPass (A company of Befied Group) • Internship </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="timeline_item">
-          <div className="timeline_dot"></div>
-          <div className= "section_cards_journey">
-            <p className="journey_duration"> Dec 2024 - Feb 2025 </p>
-            <div className="section_card_journey_contents">
-              <img src={dostIcon} className="icon_logos_journey" alt="icon_dost" />
-              <div className="section_card_journey_texts">
-                <h3> UI/UX Designer </h3>
-                <p> Department of Science and Technology • Internship</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="timeline_item">
-          <div className="timeline_dot"></div>
-          <div className= "section_cards_journey">
-            <p className="journey_duration"> Aug 2024 - Dec 2024 </p>
-            <div className="section_card_journey_contents">
-              <img src={angkasIcon} className="icon_logos_journey" alt="icon_angkas" />
-              <div className="section_card_journey_texts">
-                <h3> UX Researcher </h3>
-                <p> Angkas • Internship</p>
-              </div>
-            </div>
+          <div className="section_journey_story">
+            <ul className="journey_story_sk">
+              <li> Head committee of technology </li>
+              <li> Project manager and proponent of Skbrgy177.com - The
+              official website of the Sangguniang Kabataan 177 that
+              creates a more accurate and fast transactions for the youth. </li>
+            </ul>
+
+            <ul className="journey_story_filpass">
+              <li> Improved and prototyped existing website designs </li>
+              <li> Led comprehensive system documentation with features and flowcharts </li>
+              <li> Designed UI screens and reusable UI components following company design standards </li>
+              <li> Tested designs for WCAG accessibility compliance </li>
+            </ul>
+
+            <ul className="journey_story_dost">
+              <li> Revamped the centralized DOST website </li>
+              <li> Optimized the information architecture </li>
+              <li> Prototyped a comprehensive design proposal aligned with updated structure and user needs </li>
+            </ul>
+
+            <ul className="journey_story_angkas"> 
+              <li> Conducted concept testing for features in both driver and customer applications </li>
+              <li> Created competitor analysis reports on other MC taxi services in the Philippines </li>
+              <li> Documented insights from FGDs, interviews, and stakeholder discussions </li>
+              <li> Updated the customer journey map to reflect new app features and user behaviors </li>
+              <li> Synthesized NPS data to evaluate customer satisfaction </li>
+            </ul>
+
+            <ul className="journey_story_marvill">
+              <li> Designed and developed reusable UI components for website implementation </li>
+              <li> Produced high-fidelity website mockups </li>
+              <li> Created motion design for the company’s promotional video </li>
+            </ul>
+
           </div>
         </div>
 
-        <div className="timeline_item">
-          <div className="timeline_dot"></div>
-          <div className= "section_cards_journey">
-            <p className="journey_duration"> Aug 2023 - Oct 2023 </p>
-            <div className="section_card_journey_contents">
-              <img src={marvillIcon} className="icon_logos_journey" alt="icon_marvill" />
-              <div className="section_card_journey_texts">
-                <h3> Frontend Developer </h3>
-                <p> Marvill WebDev • Internship</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
+
+      <div className="section_contact">
+        <h2> Let's Connect! </h2>
 
       </div>
     </>

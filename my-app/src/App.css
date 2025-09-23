@@ -40,7 +40,6 @@ h3,p {
   gap: 32px;
   flex-shrink: 0;
   border-radius: 8px;
-  border: 1px solid #000;
   background-color: white;
 }
 
@@ -227,29 +226,30 @@ button:hover{
   gap: 16px;
 }
 
-
-
+/* Timeline container */
 .timeline {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  margin-left: 32px;
+  gap: 16px;
+  margin-left: 48px;
 }
 
+/* Timeline item: scale based on position */
 .timeline_item {
   display: flex;
   align-items: flex-start;
   position: relative;
 }
 
+/* Timeline dot and line */
 .timeline_dot {
   width: 16px;
   height: 16px;
   background: #FEB341;
   border-radius: 50%;
   position: absolute;
-  left: -32px;
+  left: -40px;
   top: 24px;
   border: 2px solid #fff;
   box-shadow: 0 0 0 2px #FEB341;
@@ -258,7 +258,7 @@ button:hover{
 .timeline_item:not(:last-child)::after {
   content: "";
   position: absolute;
-  left: -24px;
+  left: -32px;
   top: 40px;
   width: 0;
   height: calc(100% - 40px);
@@ -266,13 +266,29 @@ button:hover{
   z-index: 0;
 }
 
-.card_concept_works,
-.section_cards_journey {
-  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+.section_cards_journey  {
+  transition: 
+    transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), 
+    box-shadow 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.card_concept_works:hover,
-.section_cards_journey:hover {
-  transform: scale(1.04);
-  box-shadow: 0 8px 24px 0 rgba(0,0,0,0.18);
+.timeline_item .section_cards_journey:hover {
+  transform: scale(1.12) !important;
+}
+
+.section_journey{
+  gap: 32px;
+  width: 100%;
+  justify-content: center;
+}
+
+.section_journey_container{
+  display: flex;
+  gap: 32px;
+  width: 100%;
+}
+
+.section_journey_story{
+  justify-content: center;
+  align-items: center;
 }
