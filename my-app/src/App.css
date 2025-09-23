@@ -54,7 +54,7 @@ h3,p {
 }
 
 .card_case_studies_texts{
-  text-align: left;
+  text-align: justify;
   color: #2D2D2D;
 }
 
@@ -67,4 +67,58 @@ h3,p {
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
+}
+
+.card_case_studies_footer{
+  display: flex;
+  padding: 8px 0;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  color: #2D2D2D;
+  text-align: left;
+  border-radius: 0 0 4px 4px;
+  border-top: 1px solid #000;
+}
+
+.icon_logos_technologies{
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+}
+
+.icon_fontawesome{
+  margin-left: 8px;
+}
+
+.card_case_studies_button {
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+button{
+  background-color: #FEB341;
+  color: #2D2D2D;
+}
+
+.mock-ups {
+  display: flex;
+  width: 412px;
+  height: 345px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.mock-ups:hover {
+  transform: scale(1.08);
+}
+
+.section_cards_case_studies{
+  display: flex;
+  gap: 32px;
 }
