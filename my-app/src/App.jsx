@@ -7,10 +7,18 @@ import viteLogo from "/vite.svg";
 import airaIcon from "./assets/icons/airaestur.png";
 import dostIcon from "./assets/icons/dost.png";
 import pricepulseIcon from "./assets/icons/pricepulse.png";
+
 import figmaIcon from "./assets/icons/figma.png";
+import aillustratorIcon from "./assets/icons/aillustrator.png";
+import csharpIcon from "./assets/icons/csharp.png";
+import unityIcon from "./assets/icons/unity.png";
+import pythonIcon from "./assets/icons/python.png";
+
 import dostMock from "./assets/mock-ups/dost.png";
 import pricepulseMock from "./assets/mock-ups/pricepulse.png";
-
+import amwayMock from "./assets/mock-ups/amway.jpg";
+import toyrush from "./assets/mock-ups/toyrushgame.jpg";
+import fruitvendingMock from "./assets/mock-ups/guivendingmachine.png";
 
 // icons import
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -35,7 +43,9 @@ function App() {
 
       <div className="section_case_studies">
         <h2> Case Studies </h2>
-
+        <p className="objectives">
+          A selection of my most impactful and rewarding projects that demonstrate my ability to solve complex design challenges and deliver exceptional user experiences.
+        </p>        
         <div className="section_cards_case_studies"> 
           <div className="card_case_studies">
             <div className="card_case_studies_header">
@@ -77,6 +87,90 @@ function App() {
               <p> Technologies used: </p>
               <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
             </div>    
+          </div>
+        </div>
+      </div>
+
+      <div className="section_concept works">
+        <h2> Concept Works </h2>
+        <p className="objectives">
+          A collection of my personal design projects and experiments that showcase my creativity and skills as a designer.
+        </p>
+
+        <div className="section_cards_concept_works"> 
+          <div className="card_concept_works">
+            <div className="card_concept_works_image">
+              <img src={amwayMock} className="mock-ups" alt="mock-ups_pricepulse" />
+            </div>
+            <div className="card_concept_works_header">
+              <div className="card_concept_works_texts">
+                <h3> Amway or the Highway </h3>
+                <p> A board game that blends the classic gameplay mechanics of Monopoly with the dynamic world of Amway products. </p>
+              </div>
+              <FontAwesomeIcon icon={faTrophy} style={{ color: "#FFD700", fontSize: "25px", margin: "25px" }} />
+            </div>
+            <div className="card_concept_works_button">
+              <button>
+                Live View <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
+              </button>
+            </div>
+            <div className="card_case_studies_footer">
+              <p> Technologies used: </p>
+              <div>
+                <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
+                <img src={aillustratorIcon} className="icon_logos_technologies" alt="icon_adobeillustrator" />
+              </div>
+            </div>
+          </div>
+          
+          <div className="card_concept_works">
+            <div className="card_concept_works_image">
+              <img src={toyrush} className="mock-ups" alt="mock-ups_toyrush" />
+            </div>
+            <div className="card_concept_works_header">
+              <div className="card_concept_works_texts">
+                <h3> Toy Rush! </h3>
+                <p> A game that will awaken your inner child for it transports you to a world of excitement and wonder!</p>
+              </div>
+              <FontAwesomeIcon icon={faTrophy} style={{ color: "#FFD700", fontSize: "25px", margin: "25px" }} />
+            </div>
+            <div className="card_concept_works_button">
+              <button>
+                Live View <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
+              </button>
+            </div>
+            <div className="card_case_studies_footer">
+              <p> Technologies used: </p>
+              <div>
+                <img src={unityIcon} className="icon_logos_technologies" alt="icon_figma" />
+                <img src={csharpIcon} className="icon_logos_technologies" alt="icon_c#" />
+                <img src={aillustratorIcon} className="icon_logos_technologies" alt="icon_adobeillustrator" />
+              </div>
+            </div>
+          </div>
+
+          <div className="card_concept_works">
+            <div className="card_concept_works_image">
+              <img src={fruitvendingMock} className="mock-ups" alt="mock-ups_fruitvendingmachine" />
+            </div>
+            <div className="card_concept_works_header">
+              <div className="card_concept_works_texts">
+                <h3> Fruit Vending Machine </h3>
+                <p> A Graphical User Interface that simulates the operation of a real-world vending machine where users can select and purchase fruits.</p>
+              </div>
+              <FontAwesomeIcon icon={faTrophy} style={{ color: "#FFD700", fontSize: "25px", margin: "25px" }} />
+            </div>
+            <div className="card_concept_works_button">
+              <button>
+                View Code <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
+              </button>
+            </div>
+            <div className="card_case_studies_footer">
+              <p> Technologies used: </p>
+              <div>
+                <img src={pythonIcon} className="icon_logos_technologies" alt="icon_python" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
