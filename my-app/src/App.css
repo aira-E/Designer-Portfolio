@@ -292,3 +292,24 @@ button:hover{
   justify-content: center;
   align-items: center;
 }
+
+/* Hide all journeys by default */
+.journey {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: absolute;
+  left: 110%;
+  top: 0;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(254,179,65,0.15);
+  min-width: 260px;
+  z-index: 100;
+}
+
+/* Show only the journey for the hovered card */
+.timeline_item:hover .journey {
+  visibility: visible;
+  opacity: 1;
+}
