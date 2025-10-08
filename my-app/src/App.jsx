@@ -1,262 +1,156 @@
 // src/App.jsx
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useInView } from "framer-motion";
+import clsx from "clsx";
+
+// Import your images from src/assets/mock-ups
 import airaIcon from "./assets/icons/airaestur.png";
 import dostIcon from "./assets/icons/dost.png";
 import pricepulseIcon from "./assets/icons/pricepulse.png";
 import figmaIcon from "./assets/icons/figma.png";
-import aillustratorIcon from "./assets/icons/aillustrator.png";
-import csharpIcon from "./assets/icons/csharp.png";
-import unityIcon from "./assets/icons/unity.png";
-import pythonIcon from "./assets/icons/python.png";
-import skIcon from "./assets/icons/sk.png";
-import fillpassIcon from "./assets/icons/filpass.jpg";
-import angkasIcon from "./assets/icons/angkas.png";
-import marvillIcon from "./assets/icons/marvill.png";
 import dostMock from "./assets/mock-ups/dost.png";
 import pricepulseMock from "./assets/mock-ups/pricepulse.png";
-import amwayMock from "./assets/mock-ups/amway.jpg";
-import toyrush from "./assets/mock-ups/toyrushgame.jpg";
-import fruitvendingMock from "./assets/mock-ups/guivendingmachine.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons/faArrowRight";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 
-const journeyData = [
-  {
-    icon: skIcon,
-    duration: "Dec 2023 - Present",
-    title: "Government Official",
-    desc: "Sangguniang Kabataan Brgy. 177"
-  },
-  {
-    icon: fillpassIcon,
-    duration: "Jun 2025 - Aug 2025",
-    title: "UI/UX Designer",
-    desc: "FilPass (A company of Befied Group) • Internship"
-  },
-  {
-    icon: angkasIcon,
-    duration: "Aug 2024 - Dec 2024",
-    title: "UX Researcher",
-    desc: "Angkas • Internship"
-  },
-  {
-    icon: marvillIcon,
-    duration: "Aug 2023 - Oct 2023",
-    title: "Frontend Developer",
-    desc: "Marvill WebDev • Internship"
-  }
-];
-
 function App() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  // For endless effect: duplicate first and last items
-  const extendedJourney = [
-    journeyData[journeyData.length - 1],
-    ...journeyData,
-    journeyData[0]
-  ];
-
-  // Slide handler
-  const nextCard = () => {
-    setActiveIndex((prev) =>
-      prev === journeyData.length - 1 ? 0 : prev + 1
-    );
-  };
-  const prevCard = () => {
-    setActiveIndex((prev) =>
-      prev === 0 ? journeyData.length - 1 : prev - 1
-    );
-  };
-
-  // Calculate transform for carousel-list
-  const offset = activeIndex + 1; // because of duplicated first item
-  const translateY = -offset * 160; // 160px = card height + margin
-
   return (
     <>
       {/* Hero Section */}
       <div className="section_hero">
-        <img src={airaIcon} className="icon_airaestur" alt="icon_airaestur" />
-        <div className="section_hero_texts">
-          <h1>Behind the Screens</h1>
-          <p className="objectives"></p>
+        <div className="container_hero">
+          <img src={airaIcon} className="icon_airaestur" alt="icon_airaestur" />
+          <div className="section_hero_texts">
+            <h1>Behind the Screens</h1>
+            <p className="introduction">
+              I’m <span style={{ color: "#FEB341" }}>Aira</span>, a UI/UX designer based in the Philippines. I am passionate in creating a user-centric and intuitive design.
+            </p>
+          </div>
+        </div>
+
+        <div className="container_data">
+          <div className="card_data">
+            <h2> 5+ </h2>   
+            <p> Years of Experience </p>
+          </div>
+
+          <div className="card_data">
+            <h2> 5+ </h2>   
+            <p> Projects </p>
+          </div>
+
+          <div className="card_data">
+            <h2> 5+ </h2>   
+            <p> Certifications </p>
+          </div>
         </div>
       </div>
 
       {/* Case Studies Section */}
       <div className="section_case_studies">
-        <h2> Case Studies </h2>
-        <p className="objectives">
-          A selection of my most impactful and rewarding projects that demonstrate my ability to solve complex design challenges and deliver exceptional user experiences.
-        </p>
         <div className="section_cards_case_studies">
-          <div className="card_case_studies">
-            <div className="card_case_studies_header">
-              <img src={dostIcon} className="icon_logos" alt="icon_dost" />
-              <div className="card_case_studies_texts">
-                <h3> DOST Website Revamp </h3>
-                <p> Enhancing the Department of Science and Technology (DOST) Website as a Centralized Hub for Public Services </p>
-              </div>
-              <FontAwesomeIcon icon={faTrophy} style={{ color: "#FFD700", fontSize: "25px", margin: "25px" }} />
-            </div>
-            <div className="card_case_studies_button">
-              <button>
-                Read case study <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
-              </button>
-            </div>
-            <img src={dostMock} className="mock-ups" alt="mock-ups_dost" />
-            <div className="card_case_studies_footer">
-              <p> Technologies used: </p>
-              <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
-            </div>
-          </div>
-
-          <div className="card_case_studies">
-            <div className="card_case_studies_header">
-              <img src={pricepulseIcon} className="icon_logos" alt="icon_pricepulse" />
-              <div className="card_case_studies_texts">
-                <h3> Price Pulse PH </h3>
-                <p> A mobile app designed to help everyday Filipinos track and manage the rising costs of essential goods—now and in the future. </p>
-              </div>
-              <FontAwesomeIcon icon={faTrophy} style={{ color: "#FFD700", fontSize: "25px", margin: "25px" }} />
-            </div>
-            <div className="card_case_studies_button">
-              <button>
-                Read case study <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
-              </button>
-            </div>
-            <img src={pricepulseMock} className="mock-ups" alt="mock-ups_pricepulse" />
-            <div className="card_case_studies_footer">
-              <p> Technologies used: </p>
-              <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Concept Works Section */}
-      <div className="section_concept works">
-        <h2> Concept Works </h2>
-        <p className="objectives">
-          A collection of my personal design projects and experiments that showcase my creativity and skills as a designer.
-        </p>
-        <div className="section_cards_concept_works">
-          <div className="card_concept_works">
-            <div className="card_concept_works_image">
-              <img src={amwayMock} className="mock-ups" alt="mock-ups_pricepulse" />
-            </div>
-            <div className="card_concept_works_header">
-              <div className="card_concept_works_texts">
-                <h3> Amway or the Highway </h3>
-                <p> A board game that blends the classic gameplay mechanics of Monopoly with the dynamic world of Amway products. </p>
-              </div>
-              <FontAwesomeIcon icon={faTrophy} style={{ color: "#FFD700", fontSize: "25px", margin: "25px" }} />
-            </div>
-            <div className="card_concept_works_button">
-              <button>
-                Live View <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
-              </button>
-            </div>
-            <div className="card_case_studies_footer">
-              <p> Technologies used: </p>
-              <div>
-                <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
-                <img src={aillustratorIcon} className="icon_logos_technologies" alt="icon_adobeillustrator" />
-              </div>
-            </div>
-          </div>
-
-          <div className="card_concept_works">
-            <div className="card_concept_works_image">
-              <img src={toyrush} className="mock-ups" alt="mock-ups_toyrush" />
-            </div>
-            <div className="card_concept_works_header">
-              <div className="card_concept_works_texts">
-                <h3> Toy Rush! </h3>
-                <p> A game that will awaken your inner child for it transports you to a world of excitement and wonder!</p>
-              </div>
-              <FontAwesomeIcon icon={faTrophy} style={{ color: "#FFD700", fontSize: "25px", margin: "25px" }} />
-            </div>
-            <div className="card_concept_works_button">
-              <button>
-                Live View <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
-              </button>
-            </div>
-            <div className="card_case_studies_footer">
-              <p> Technologies used: </p>
-              <div>
-                <img src={unityIcon} className="icon_logos_technologies" alt="icon_figma" />
-                <img src={csharpIcon} className="icon_logos_technologies" alt="icon_c#" />
-                <img src={aillustratorIcon} className="icon_logos_technologies" alt="icon_adobeillustrator" />
-              </div>
-            </div>
-          </div>
-
-          <div className="card_concept_works">
-            <div className="card_concept_works_image">
-              <img src={fruitvendingMock} className="mock-ups" alt="mock-ups_fruitvendingmachine" />
-            </div>
-            <div className="card_concept_works_header">
-              <div className="card_concept_works_texts">
-                <h3> Fruit Vending Machine </h3>
-                <p> A Graphical User Interface that simulates the operation of a real-world vending machine where users can select and purchase fruits.</p>
-              </div>
-              <FontAwesomeIcon icon={faTrophy} style={{ color: "#FFD700", fontSize: "25px", margin: "25px" }} />
-            </div>
-            <div className="card_concept_works_button">
-              <button>
-                View Code <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
-              </button>
-            </div>
-            <div className="card_case_studies_footer">
-              <p> Technologies used: </p>
-              <div>
-                <img src={pythonIcon} className="icon_logos_technologies" alt="icon_python" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Journey Section - Vertical Carousel */}
-      <div className="section_journey">
-        <h2> My Journey </h2>
-        <div className="section_journey_container">
-          <button onClick={prevCard} style={{position:"absolute",left:10,top:"50%",zIndex:10}}>↑</button>
-          <div className="carousel-viewport">
-            <div
-              className="carousel-list"
-              style={{ transform: `translateY(${translateY}px)` }}
-            >
-              {extendedJourney.map((item, idx) => (
-                <div
-                  key={idx}
-                  className={`section_cards_journey${idx === offset ? " active" : ""}`}
-                  style={{ width: "400px" }}
-                >
-                  <p className="journey_duration">{item.duration}</p>
-                  <div className="section_card_journey_contents">
-                    <img src={item.icon} className="icon_logos_journey" alt={item.title} />
-                    <div className="section_card_journey_texts">
-                      <h3>{item.title}</h3>
-                      <p>{item.desc}</p>
-                    </div>
-                  </div>
+        <h2> Case Studies </h2>
+          <div className="card_case_studies_container"> 
+            <div className="card_case_studies">
+              <div className="card_case_studies_header">
+                <img src={dostIcon} className="icon_logos" alt="icon_dost" />
+                <div className="card_case_studies_texts">
+                  <h3> DOST Website Revamp </h3>
+                  <p> Enhancing the Department of Science and Technology (DOST) Website as a Centralized Hub for Public Services </p>
                 </div>
-              ))}
+                <div className="trophy-tooltip-wrapper" style={{ position: "relative", display: "inline-block" }}>
+                  <FontAwesomeIcon
+                    icon={faTrophy}
+                    style={{ color: "#FFD700", fontSize: "25px", margin: "25px", cursor: "pointer" }}
+                    onMouseEnter={e => e.currentTarget.nextSibling.style.opacity = 1}
+                    onMouseLeave={e => e.currentTarget.nextSibling.style.opacity = 0}
+                  />
+                  <span
+                    className="trophy-tooltip"
+                    style={{
+                      position: "absolute",
+                      bottom: "110%",
+                      left: "50%",
+                      transform: "translateX(-50%)",
+                      background: "#222",
+                      color: "#FEB341",
+                      padding: "8px 16px",
+                      borderRadius: "6px",
+                      whiteSpace: "nowrap",
+                      fontSize: "0.95rem",
+                      opacity: 0,
+                      pointerEvents: "none",
+                      transition: "opacity 0.2s"
+                    }}
+                  >
+                    Top 5 finalist in UX University 2025: Shifting Tide
+                  </span>
+                </div>
+              </div>
+              <div className="card_case_studies_button">
+                <button>
+                  Read case study <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
+                </button>
+              </div>
+              <img src={dostMock} className="mock-ups" alt="mock-ups_dost" />
+              <div className="card_case_studies_footer">
+                <p> Technologies used: </p>
+                <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
+              </div>
+            </div>
+
+            <div className="card_case_studies">
+              <div className="card_case_studies_header">
+                <img src={pricepulseIcon} className="icon_logos" alt="icon_pricepulse" />
+                <div className="card_case_studies_texts">
+                  <h3> Price Pulse PH </h3>
+                  <p> A mobile app designed to help everyday Filipinos track and manage the rising costs of essential goods—now and in the future. </p>
+                </div>
+                <div className="trophy-tooltip-wrapper" style={{ position: "relative", display: "inline-block" }}>
+                  <FontAwesomeIcon
+                    icon={faTrophy}
+                    style={{ color: "#FFD700", fontSize: "25px", margin: "25px", cursor: "pointer" }}
+                    onMouseEnter={e => e.currentTarget.nextSibling.style.opacity = 1}
+                    onMouseLeave={e => e.currentTarget.nextSibling.style.opacity = 0}
+                  />
+                  <span
+                    className="trophy-tooltip"
+                    style={{
+                      position: "absolute",
+                      bottom: "110%",
+                      left: "50%",
+                      transform: "translateX(-50%)",
+                      background: "#222",
+                      color: "#FEB341",
+                      padding: "8px 16px",
+                      borderRadius: "6px",
+                      whiteSpace: "nowrap",
+                      fontSize: "0.95rem",
+                      opacity: 0,
+                      pointerEvents: "none",
+                      transition: "opacity 0.2s"
+                    }}
+                  >
+                    Top 10 Finalist on Ideathon 2025 at Software Engineering Day 2025
+                  </span>
+                </div>
+              </div>
+              <div className="card_case_studies_button">
+                <button>
+                  Read case study <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
+                </button>
+              </div>
+              <img src={pricepulseMock} className="mock-ups" alt="mock-ups_pricepulse" />
+              <div className="card_case_studies_footer">
+                <p> Technologies used: </p>
+                <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
+              </div>
             </div>
           </div>
-          <button onClick={nextCard} style={{position:"absolute",right:10,top:"50%",zIndex:10}}>↓</button>
         </div>
-      </div>
-
-      {/* Contact Section */}
-      <div className="section_contact">
-        <h2> Let's Connect! </h2>
-        {/* Add your contact form or links here */}
       </div>
     </>
   );
