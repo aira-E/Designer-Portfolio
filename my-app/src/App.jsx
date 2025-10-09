@@ -178,13 +178,14 @@ function App() {
           <div className="card_concept_works">
             <img src={amwayMock} className="concept_works_banner" alt="mock-ups_amway" />
             <div className="card_concept_works_content">
+              {/* Amway or the Highway */}
               <h3> Amway or the Highway </h3>
               <p> A board game that blends the classic gameplay mechanics of Monopoly with the dynamic world of Amway products. </p>
           </div>
           <div className="card_concept_works_lower"> 
-            <button>
+            <a href="https://www.figma.com/proto/FkYnVlbRZNIPClKQFAI0gV/Hackfest-2024?page-id=0%3A1&node-id=171-97&viewport=-951%2C-1065%2C0.17&t=RejlmN4qBYYdto1S-1&scaling=min-zoom&starting-point-node-id=171%3A97&show-proto-sidebar=1" target="_blank" className="btn btn-primary card_concept_works_button">
               Live View <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
-            </button>
+            </a>
             <div className="card_concept_works_footer">
                 <p> Technologies used: </p>
                 <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
@@ -195,13 +196,14 @@ function App() {
           <div className="card_concept_works">
             <img src={toyrushMock} className="concept_works_banner" alt="mock-ups_amway" />
             <div className="card_concept_works_content">
+              {/* Toy Rush! */}
               <h3> Toy Rush! </h3>
               <p> A game that will awaken your inner child for it transports you to a world of excitement and wonder! </p>
           </div>
           <div className="card_concept_works_lower"> 
-            <button>
+            <a href="https://airaestur.itch.io/toy-rush" target="_blank" className="btn btn-primary card_concept_works_button">
               Live View <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
-            </button>
+            </a>
             <div className="card_concept_works_footer">
                 <p> Technologies used: </p>
                 <img src={csharpIcon} className="icon_logos_technologies" alt="icon_figma" />
@@ -213,13 +215,14 @@ function App() {
           <div className="card_concept_works">
             <img src={gtaraMock} className="concept_works_banner" alt="mock-ups_amway" />
             <div className="card_concept_works_content">
+              {/* G-Tara Na! */}
               <h3> G-Tara Na! </h3>
               <p> A Website which checks if the played chord of the guitarist or the user is correct or incorrect. </p>
           </div>
           <div className="card_concept_works_lower"> 
-            <button>
+            <a href="https://aira-E.github.io/G-Tara-Na/" target="_blank" className="btn btn-primary card_concept_works_button">
               Live View <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
-            </button>
+            </a>
             <div className="card_concept_works_footer">
                 <p> Technologies used: </p>
                 <img src={htmlIcon} className="icon_logos_technologies" alt="icon_figma" />
@@ -232,13 +235,14 @@ function App() {
           <div className="card_concept_works">
             <img src={fruitvendingMock} className="concept_works_banner" alt="mock-ups_amway" />
             <div className="card_concept_works_content">
+              {/* Fruit Vending Machine */}
               <h3> Fruit Vending Machine </h3>
               <p> A Graphical User Interface that simulates the operation of a real-world vending machine where users can select and purchase fruits. </p>
           </div>
           <div className="card_concept_works_lower"> 
-            <button>
+            <a href="https://github.com/aira-E/Fruit-Vending-Machine/" target="_blank" className="btn btn-primary card_concept_works_button">
               View Code <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
-            </button>
+            </a>
             <div className="card_concept_works_footer">
                 <p> Technologies used: </p>
                 <img src={pyIcon} className="icon_logos_technologies" alt="icon_figma" />
