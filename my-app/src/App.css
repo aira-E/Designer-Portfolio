@@ -21,12 +21,13 @@ h2 {
   line-height: 120%;
   margin: 0;
   padding: 0;
+  color:#FEB341;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 120%;
   margin: 0;
   padding: 0;
@@ -79,17 +80,6 @@ p {
   0%   { transform: translateY(0); }
   50%  { transform: translateY(-24px); }
   100% { transform: translateY(0); }
-}
-
-.introduction{
-  color: var(--sds-color-text-neutral-on-neutral);
-  align-self: stretch;
-  /* Subtitle */
-  font-family: var(--sds-typography-subtitle-font-family);
-  font-size: var(--sds-typography-subtitle-size-base);
-  font-style: normal;
-  font-weight: var(--sds-typography-subtitle-font-weight);
-  line-height: 120%; /* 38.4px */
 }
 
 .container_data{
@@ -280,9 +270,10 @@ button:hover, .btn:hover{
 .card_concept_works_content{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 8px;
   flex: 1 0 0;
+  text-align: justify;
 }
 
 .card_concept_works_lower{
