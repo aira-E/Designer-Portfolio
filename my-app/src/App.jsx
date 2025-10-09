@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
 import clsx from "clsx";
+import { useNavigate } from "react-router-dom";
 
 // Import logos
 import airaIcon from "./assets/icons/airaestur.png";
@@ -35,6 +36,7 @@ import { faEnvelope, faPhone, faLocationPin } from "@fortawesome/free-solid-svg-
 import "./App.css";
 
 function App() {
+
   return (
     <>
       {/* Hero Section */}
@@ -52,7 +54,7 @@ function App() {
         <div className="container_data">
           <div className="card_data">
             <h2> 5 </h2>   
-            <p> Proffessional Experience </p>
+            <p> Professional Experience </p>
           </div>
 
           <div className="card_data">
@@ -109,13 +111,15 @@ function App() {
                 </div>
               </div>
               <div className="card_case_studies_button">
-                <button>
+                <button
+              
+                >
                   Read case study <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
                 </button>
               </div>
               <img src={dostMock} className="mock-ups" alt="mock-ups_dost" />
               <div className="card_case_studies_footer">
-                <p> Technologies used: </p>
+                {/*  <p> Technologies used: </p> */}
                 <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
               </div>
             </div>
@@ -163,7 +167,7 @@ function App() {
               </div>
               <img src={pricepulseMock} className="mock-ups" alt="mock-ups_pricepulse" />
               <div className="card_case_studies_footer">
-                <p> Technologies used: </p>
+                {/*  <p> Technologies used: </p> */}
                 <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
               </div>
             </div>
@@ -187,7 +191,7 @@ function App() {
               Live View <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
             </a>
             <div className="card_concept_works_footer">
-                <p> Technologies used: </p>
+                {/*  <p> Technologies used: </p> */}
                 <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
             </div>
           </div>
@@ -205,7 +209,7 @@ function App() {
               Live View <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
             </a>
             <div className="card_concept_works_footer">
-                <p> Technologies used: </p>
+                {/*  <p> Technologies used: </p> */}
                 <img src={csharpIcon} className="icon_logos_technologies" alt="icon_figma" />
                 <img src={aiIcon} className="icon_logos_technologies" alt="icon_figma" />
             </div>
@@ -224,7 +228,7 @@ function App() {
               Live View <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
             </a>
             <div className="card_concept_works_footer">
-                <p> Technologies used: </p>
+                {/*  <p> Technologies used: </p> */}
                 <img src={htmlIcon} className="icon_logos_technologies" alt="icon_figma" />
                 <img src={cssIcon} className="icon_logos_technologies" alt="icon_figma" />
                 <img src={jsIcon} className="icon_logos_technologies" alt="icon_figma" />
@@ -244,7 +248,7 @@ function App() {
               View Code <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
             </a>
             <div className="card_concept_works_footer">
-                <p> Technologies used: </p>
+                {/*  <p> Technologies used: </p> */}
                 <img src={pyIcon} className="icon_logos_technologies" alt="icon_figma" />
             </div>
           </div>
