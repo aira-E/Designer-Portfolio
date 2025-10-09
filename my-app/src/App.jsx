@@ -16,6 +16,8 @@ import cssIcon from "./assets/icons/css.png";
 import jsIcon from "./assets/icons/js.png";
 import pyIcon from "./assets/icons/python.png";
 
+//Import images
+import qr from "./assets/icons/qr.png";
 
 // Import mock-ups
 import dostMock from "./assets/mock-ups/dost.png";
@@ -29,6 +31,7 @@ import fruitvendingMock from "./assets/mock-ups/guivendingmachine.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons/faArrowRight";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone, faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 
 function App() {
@@ -168,7 +171,7 @@ function App() {
         </div>
       </div>
 
-       {/* Concept Works Section */}
+      {/* Concept Works Section */}
       <div className="section_concept_works">
         <h2> Concept Works </h2>
         <div className="section_cards_concept_works">
@@ -243,8 +246,28 @@ function App() {
           </div>
           </div>  
       </div>              
-         
+
+      {/* Contact Section */}         
       </div>
+        <h2 className="contact_header"> Let's Connect! </h2>
+        <div className="section_contact_container">
+          <img src={qr} className="qr_code" alt="qr_code" />
+          <div className="socials">
+            <p>
+              <FontAwesomeIcon icon={faEnvelope} style={{ color: "#FEB341", marginRight: "12px" }} />
+              airaestur@gmail.com
+            </p>
+            <p>
+              <FontAwesomeIcon icon={faPhone} style={{ color: "#FEB341", marginRight: "12px" }} />
+              +639-6657-95845
+            </p>
+            <p>
+              <FontAwesomeIcon icon={faLocationPin} style={{ color: "#FEB341", marginRight: "12px" }} />
+              Manila, Philippines
+            </p>
+        </div>
+      </div>
+
     </>
   );
 }
