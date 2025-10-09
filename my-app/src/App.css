@@ -175,6 +175,7 @@ button{
 button:hover{
   background: #FEB341;
   color: #454444;
+  border: #FEB341;
 }
 
 .mock-ups{
@@ -189,10 +190,10 @@ button:hover{
   transition: 
     transform 0.35s cubic-bezier(0.23, 1, 0.32, 1),
     box-shadow 0.35s cubic-bezier(0.23, 1, 0.32, 1);
-  will-change: transform, box-shadow;
+  will-change: transform;
 }
 
-.mock-ups:hover {
+.mock-ups:hover, .concept_works_banner:hover {
   transform: scale(1.07);
   box-shadow: 0 8px 32px rgba(254,179,65,0.18);
   z-index: 2;
@@ -251,6 +252,10 @@ button:hover{
   object-fit: cover; 
   width: 100%;
   display: block;
+  transition: 
+    transform 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+    box-shadow 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform;
 }
 
 .card_concept_works_content{
