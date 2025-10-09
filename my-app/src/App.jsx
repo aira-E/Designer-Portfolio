@@ -43,9 +43,9 @@ function App() {
           <img src={airaIcon} className="icon_airaestur" alt="icon_airaestur" />
           <div className="section_hero_texts">
             <h1>Behind the Screens</h1>
-            <p className="introduction">
+            <h2 className="introduction">
               I’m <span style={{ color: "#FEB341" }}>Aira</span>, a UI/UX designer based in the Philippines. I am passionate in creating a user-centric and intuitive design.
-            </p>
+            </h2>
           </div>
         </div>
 
