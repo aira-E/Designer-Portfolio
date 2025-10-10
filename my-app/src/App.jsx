@@ -161,7 +161,7 @@ function App() {
                 </div>
               </div>
               <div className="card_case_studies_button">
-                <button>
+                <button onClick={() => navigate("/pricepulse")}>
                   Read case study <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
                 </button>
               </div>

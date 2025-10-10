@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../App.css"; // Ensures styles are applied
 import IAExisting from "../assets/mock-ups/IA-Existing.png";
 import IAUpdated from "../assets/mock-ups/IA-Updated.png";
-
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function DOST() {
@@ -155,6 +154,7 @@ export default function DOST() {
               “Kasi minimalized niya ‘yung interactions eh. Number one factor sa UX is efficiency, it
               saves a lot of time and energy. </p>
       </div>
+
 
     </div>
   );
