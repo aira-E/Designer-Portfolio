@@ -1,6 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../App.css"; // Ensures styles are applied
+
+
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function DOST() {
@@ -11,7 +13,7 @@ export default function DOST() {
         <iframe
           width="652"
           height="367"
-          src="https://www.youtube.com/embed/_40X3xepU7Q"
+          src="https://www.youtube.com/embed/_40X3xepU7Q?autoplay=1&controls=0"
           title="DOST Case Study Video"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -20,12 +22,11 @@ export default function DOST() {
       </div>
         <div className="banner"> 
           <h1> DOST Website Revamp </h1>
-          <h3> The Department of Science and Technology (DOST) website is not just your ordinary government website; it serves as a central hub connecting 16 regional offices and 6 service institutes, each with its own separate website. While this decentralized structure allows different offices to manage their own content, it also creates navigation and other user experiences challenges </h3>
-          <a
+          <p> The Department of Science and Technology (DOST) website is not just your ordinary government website; it serves as a central hub connecting 16 regional offices and 6 service institutes, each with its own separate website. While this decentralized structure allows different offices to manage their own content, it also creates navigation and other user experiences challenges </p>
+          <a classname= "figma_dost_btn"
             href= "https://www.figma.com/proto/a24EEJXPrbTNl6SKsy2ZyE/DOST-Website--UX-University-2025-?page-id=0%3A1&node-id=169-30&p=f&viewport=36%2C238%2C0.02&t=HKVl3CBw9iU5GWRy-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=169%3A30&show-proto-sidebar=1"
             target="_blank"
-            className="btn btn-primary card_concept_works_button"
-          >
+            className="btn btn-primary card_concept_works_button">
             Figma prototype link <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
           </a> 
         </div>
@@ -41,12 +42,16 @@ export default function DOST() {
               functionality limit its effectiveness. If its features were better optimized and tailored to user needs, the
               website could reach its full potential as a centralized and efficient digital hub for
               science and technology-related services </p>
+      </div>
+
+      <div className="content">
           <h2> UX Solution Ideation </h2>
           <p> The SCAMPER method facilitates creative yet practical solutions for improving existing applications like the DOST website. It
               allows for impactful enhancements without requiring a complete redesign, aligning with government website template
               guidelines. </p>
+      </div>
 
-          
+      <div className="content">
           <div className="scamper">
             <h1> S </h1>
             <div>
@@ -64,6 +69,9 @@ export default function DOST() {
               <p> Implement a new design architecture that consolidates redundant
                   sections of the website.</p>
             </div>
+
+            
+
           </div>
 
           <div className="scamper">
