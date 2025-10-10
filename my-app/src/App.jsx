@@ -11,6 +11,9 @@ import dostIcon from "./assets/icons/dost.png";
 import pricepulseIcon from "./assets/icons/pricepulse.png";
 import figmaIcon from "./assets/icons/figma.png";
 import aiIcon from "./assets/icons/aillustrator.png";
+import psIcon from "./assets/icons/ps.png";
+import canvaIcon from "./assets/icons/canva.png";
+
 import csharpIcon from "./assets/icons/csharp.png";
 import htmlIcon from "./assets/icons/html.png";
 import cssIcon from "./assets/icons/css.png";
@@ -263,8 +266,25 @@ function App() {
       <div className="section_branding">
         <h2> Branding </h2>
         <div className="section_branding_content"> {/* Added a wrapper for content if needed for layout */}
-          <img src={mdb} className="branding_mockups" alt="mock-ups_mdb" />
-          <img src={rl} className="branding_mockups" alt="mock-ups_rl" />
+          <div className="card_branding_mockups"> 
+            <img src={mdb} className="branding_mockups" alt="mock-ups_mdb" />
+            <div className="card_case_studies_footer">
+                {/*  <p> Technologies used: </p> */}
+                <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
+                <img src={aiIcon} className="icon_logos_technologies" alt="icon_ai" />
+                <img src={psIcon} className="icon_logos_technologies" alt="icon_ps" />
+                <img src={canvaIcon} className="icon_logos_technologies" alt="icon_canva" />
+            </div>
+          </div>
+
+          <div className="card_branding_mockups"> 
+            <img src={rl} className="branding_mockups" alt="mock-ups_rl" /> 
+            <div className="card_case_studies_footer">
+                {/*  <p> Technologies used: </p> */}
+                <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
+                <img src={canvaIcon} className="icon_logos_technologies" alt="icon_canva" />
+             </div>
+          </div>
         </div>
       </div> {/* Closes section_branding */}
 

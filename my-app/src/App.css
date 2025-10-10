@@ -323,8 +323,16 @@ button:hover, .btn:hover{
   justify-content: flex-end;
   align-items: center;
   border-radius: 0 0 4px 4px;
-  border-top: 1px solid #757575;
+  border-top: 1px solid #fa2c2c;
   gap: 8px;
+}
+
+.card_branding_mockups{
+  background-color: #3C3E42;
+  width: fit-content;
+  height: auto;
+  padding: 16px;
+  border-radius: 16px;
 }
 
 .section_hero,
