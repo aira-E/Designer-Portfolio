@@ -461,15 +461,36 @@ button:hover, .btn:hover{
   color:#FFFF;
 }
 
-.content_scamper:hover{
-  color:#FEB341
+.scamper-imgs {
+    width: 100%;
+    display: flex;
+    /* Removed margin-left: 60px; for cleaner centering,
+       but kept it if you need that specific offset */
+    margin-left: 60px; 
+    gap: 16px;
+    padding: 16px;
 }
+
 
 .figma_dost_btn{
   width: 200px;
 }
 
-.IA{
-  width: 847px;
-  height: auto;
+.IA, .JourneyMap {
+    /* The key change: 
+       1. flex-grow: 1 (takes up proportional space)
+       2. flex-shrink: 1 (can shrink if needed)
+       3. flex-basis: 0% (starting point is zero, so the space is truly divided equally)
+    */
+    flex: 1; 
+
+    /* Allows the height to be determined by its content
+       (the image inside) while respecting the equal width. 
+       Use 'auto' to ensure the image scales proportionally. 
+    */
+    width: auto; 
+    height: auto; 
+    /* You might want to ensure the images inside fill their container */
+    max-width: 50%; 
+    box-sizing: border-box; /* Good practice for flex items with padding/borders */
 }

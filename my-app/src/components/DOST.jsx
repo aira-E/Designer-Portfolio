@@ -5,6 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../App.css"; // Ensures styles are applied
 import IAExisting from "../assets/mock-ups/IA-Existing.png";
 import IAUpdated from "../assets/mock-ups/IA-Updated.png";
+
+import JourneyMapwo from "../assets/mock-ups/Journey Map-1.png";
+import JourneyMapw from "../assets/mock-ups/Journey Map-2.png";
+
 // 2. Import both faArrowRight and faArrowLeft for the back button
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons"; 
 
@@ -104,10 +108,10 @@ export default function DOST() {
                             sections of the website.</p>
                     </div>
                 </div>
-                {/**<div>
+                <div className="scamper-imgs">
                     <img src={IAExisting} className="IA" alt="IA Existing" />           
                     <img src={IAUpdated} className="IA" alt="IA Updated" />
-                </div>**/}
+                </div>
                 
                 <div className="scamper">
                     <h1 className="content_scamper"> A </h1>
@@ -154,7 +158,7 @@ export default function DOST() {
                             a sector (e.g., scholar, researcher, educator, private citizen). That will
                             enable smart personalized content suggestions </p>
                     </div>
-                </div>          
+                </div> 
                 
             </div>
 
@@ -181,6 +185,10 @@ export default function DOST() {
 
             <div className="content">
                 <h2> Conclusion </h2>
+                <div className="scamper-imgs">
+                    <img src={JourneyMapwo} className="JourneyMap" alt="Journey Map without improvements" />           
+                    <img src={JourneyMapw} className="JourneyMap" alt="Journey Map with improvements" />
+                </div>
                 <p> With the help of user behavior map, the test concludes that identifying the problem and applying the
                     proposed solution, the task completion rate of the users will raise from 25% to 100%
                     Overall, users (4/4) prefered the revamped design because it's more efficient compared to the current

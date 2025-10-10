@@ -77,7 +77,7 @@ function App() {
             className="card_data clickable" 
             onClick={() => setIsProjDrawerOpen(true)} >
             <h2> 20+ </h2>   
-            <p> Projects </p>
+            <p> Diverse Projects </p>
         </div>
 
         <div 
