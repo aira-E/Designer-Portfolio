@@ -398,7 +398,7 @@ button:hover, .btn:hover{
   align-items: flex-end; 
   justify-content: center; 
   text-align: right; 
-  gap: 8px;
+  gap: 16px;
   align-self: stretch;
 }
 
@@ -406,6 +406,7 @@ button:hover, .btn:hover{
 .content{
   gap: 32px;
   margin-bottom: 32px;
+  text-align: justify;
 }
 
 .scamper{
@@ -417,4 +418,9 @@ button:hover, .btn:hover{
 
 .figma_dost_btn{
   width: 200px;
+}
+
+.IA{
+  width: 847px;
+  height: auto;
 }

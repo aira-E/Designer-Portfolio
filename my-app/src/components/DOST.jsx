@@ -1,7 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../App.css"; // Ensures styles are applied
-
+import IAExisting from "../assets/mock-ups/IA-Existing.png";
+import IAUpdated from "../assets/mock-ups/IA-Updated.png";
 
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -34,7 +35,7 @@ export default function DOST() {
 
       <div className="content">
           <h2> Project Background </h2>
-          <p> The Department of Science and Technology (DOST) website serves as a central hub connecting 16
+          <p className="project_background"> The Department of Science and Technology (DOST) website serves as a central hub connecting 16
             regional offices and 6 service institutes, each with its own separate website. While this decentralized
             structure allows different offices to manage their own content, it also creates navigation and other user
             experience challenges. </p>
@@ -45,7 +46,7 @@ export default function DOST() {
       </div>
 
       <div className="content">
-          <h2> UX Solution Ideation </h2>
+          <h2> UX Solution </h2>
           <p> The SCAMPER method facilitates creative yet practical solutions for improving existing applications like the DOST website. It
               allows for impactful enhancements without requiring a complete redesign, aligning with government website template
               guidelines. </p>
@@ -69,11 +70,12 @@ export default function DOST() {
               <p> Implement a new design architecture that consolidates redundant
                   sections of the website.</p>
             </div>
-
-            
-
           </div>
-
+            <div>
+              <img src={IAExisting} className="IA" alt="IA Existing" />           
+              <img src={IAUpdated} className="IA" alt="IA Updated" />
+            </div>
+            
           <div className="scamper">
             <h1> A </h1>
             <div>
