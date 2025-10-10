@@ -48,6 +48,7 @@ import "./App.css";
 function App() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false); 
   const [isCertDrawerOpen, setIsCertDrawerOpen] = useState(false); 
+  const [isProjectDrawerOpen, setIsProjDrawerOpen] = useState(false); 
   const navigate = useNavigate();
 
   return (
@@ -72,12 +73,13 @@ function App() {
             <p> Professional Experience </p>
         </div>
 
+        <div 
+            className="card_data clickable" 
+            onClick={() => setIsProjDrawerOpen(true)} >
+            <h2> 20+ </h2>   
+            <p> Projects </p>
+        </div>
 
-          <div className="card_data">
-            <h2> 20+ </h2>   
-            <p> Projects </p>
-          </div>
-        
         <div 
             className="card_data clickable" 
             onClick={() => setIsCertDrawerOpen(true)} >
@@ -384,6 +386,68 @@ function App() {
             <h4> Civil Service Commission </h4> 
             <p>  Mar 2023 </p>
         </div>
+
+        
+    </RightDrawer>
+
+    <RightDrawer 
+        isOpen={isProjectDrawerOpen}             // <-- Uses the new state
+        onClose={() => setIsProjDrawerOpen(false)} // <-- Uses the new setter
+    >
+          <h2> Other Project Compilations </h2>
+          <div className="experience-item">
+              <h3> Programming and Logic Design</h3>
+              <p>
+                  <a href="https://github.com/aira-E/Programming-and-Logic-Design-Project-Compilation" target="_blank" rel="noopener noreferrer">
+                      Github Link
+                  </a>
+              </p>
+          </div>
+
+          <div className="experience-item">
+              <h3> Data Structures Algorithm </h3>
+              <p>
+                  <a href="https://github.com/aira-E/Data-Structures-Algorithm-Project-Compilation" target="_blank" rel="noopener noreferrer">
+                      Github Link
+                  </a>
+              </p>
+          </div>
+
+          <div className="experience-item">
+              <h3> Website Development </h3>
+              <p>
+                  <a href="https://github.com/aira-E/Website-Development-Project-Compilation" target="_blank" rel="noopener noreferrer">
+                      Github Link
+                  </a>
+              </p>
+          </div>
+
+          <div className="experience-item">
+              <h3> Website-and-Mobile-System-Project-Compilation </h3>
+              <p>
+                  <a href="https://github.com/aira-E/Website-and-Mobile-System-Project-Compilation" target="_blank" rel="noopener noreferrer">
+                      Github Link
+                  </a>
+              </p>
+          </div>
+
+          <div className="experience-item">
+              <h3> Photography-Project-Compilation</h3>
+              <p>
+                  <a href="https://www.behance.net/airaestur/projects" target="_blank" rel="noopener noreferrer">
+                      Behance Link
+                  </a>
+              </p>
+          </div>
+
+          <div className="experience-item">
+              <h3> RepubLikha PH - SK Logo Series</h3>
+              <p>
+                  <a href="https://ph.pinterest.com/republikha_ph/republikha-ph-sk-logos-series/" target="_blank" rel="noopener noreferrer">
+                      Pinterest Link
+                  </a>
+              </p>
+          </div>
 
         
     </RightDrawer>
