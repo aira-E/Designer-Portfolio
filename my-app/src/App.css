@@ -378,7 +378,7 @@ button:hover, .btn:hover{
 
 
 /***** CASE STUDIES *****/
-.DOST_casestudy{
+.DOST_casestudy, .PricePulse_casestudy {
   width: 1440px;
   gap: 32px;
   margin: 0 auto;
