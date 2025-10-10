@@ -416,6 +416,14 @@ button:hover, .btn:hover{
   padding-bottom: 16px;
 }
 
+.content_scamper{
+  color:#FFFF;
+}
+
+.content_scamper:hover{
+  color:#FEB341
+}
+
 .figma_dost_btn{
   width: 200px;
 }

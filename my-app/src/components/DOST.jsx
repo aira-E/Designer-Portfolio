@@ -17,7 +17,7 @@ export default function DOST() {
           src="https://www.youtube.com/embed/_40X3xepU7Q?autoplay=1&controls=0"
           title="DOST Case Study Video"
           frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; loop=1"
           allowFullScreen
         ></iframe>
       </div>
@@ -54,7 +54,7 @@ export default function DOST() {
 
       <div className="content">
           <div className="scamper">
-            <h1> S </h1>
+            <h1 className="content_scamper"> S </h1>
             <div>
               <h3> Implement an AI-Powered Virtual Assistant </h3>
               <p> Introduce an AI chatbot that provides instant responses to
@@ -64,20 +64,20 @@ export default function DOST() {
           </div>
 
           <div className="scamper">
-            <h1> C </h1>
+            <h1 className="content_scamper"> C </h1>
             <div>
               <h3> Execute a New Design Architecture </h3>
               <p> Implement a new design architecture that consolidates redundant
                   sections of the website.</p>
             </div>
           </div>
-            <div>
+            {/**<div>
               <img src={IAExisting} className="IA" alt="IA Existing" />           
               <img src={IAUpdated} className="IA" alt="IA Updated" />
-            </div>
+            </div>**/}
             
           <div className="scamper">
-            <h1> A </h1>
+            <h1 className="content_scamper"> A </h1>
             <div>
               <h3> Integrate a Comprehensive Search Engine </h3>
               <p> Integrate a comprehensive search engine for the entire website and
@@ -86,7 +86,7 @@ export default function DOST() {
           </div>
 
           <div className="scamper">
-            <h1> M </h1>
+            <h1 className="content_scamper"> M </h1>
             <div>
               <h3> Enhance Content Discovery Improve design that will help the user </h3>
               <p> Improve design that will help the user understand each section by
@@ -96,7 +96,7 @@ export default function DOST() {
           </div>
 
           <div className="scamper">
-            <h1> P </h1>
+            <h1 className="content_scamper"> P </h1>
             <div>
               <h3> Introduce an Online Complaint Submission System </h3>
               <p> Instead of providing only text-based instructions for submitting
@@ -105,7 +105,7 @@ export default function DOST() {
           </div>
 
           <div className="scamper">
-            <h1> E </h1>
+            <h1 className="content_scamper"> E </h1>
             <div>
               <h3> Reduce the Homepage and Navigation Bar Clutter </h3>
               <p> Remove less essential services from the landing page and quick links
@@ -114,7 +114,7 @@ export default function DOST() {
           </div>
 
           <div className="scamper">
-            <h1> R </h1>
+            <h1 className="content_scamper"> R </h1>
             <div>
               <h3> Enforce User Accounts </h3>
               <p> Develop a user account system that identifies the user’s role within
@@ -125,6 +125,30 @@ export default function DOST() {
           
       </div>
 
+      <div className="content">
+          <h2> Research Methodology </h2>
+          <p> These methods are cost-effective, data-driven, and adaptable within the constraints of government
+              website development. They ensure incremental improvements without requiring a complete overhaul,
+              aligning with usability goals while respecting budget, time, and policy limitations </p>
+            
+            <div> 
+              <h3> A/B Testing </h3>
+                <p> The research will compare the original and revamped designs to determine which
+                provides a better user experience, revealing insights on navigation, engagement, and task efficiency to
+                guide further improvements. </p>
+              <h3> Survey </h3>
+                <p> The research will gather direct user feedback on the overall design, uncovering
+                preferences, frustrations, and suggestions to drive continuous improvements while keeping the website
+                aligned with user needs. </p>
+              <h3> Usability Testing </h3>
+                <p> The research will observe users interacting with the revamped design to identify
+                usability issues and areas for enhancement, ensuring the website is intuitive and meets user expectations. </p>
+            </div>
+      </div>
+
+      <div className="content">
+          <h2> Conclusion </h2>
+      </div>
 
     </div>
   );
