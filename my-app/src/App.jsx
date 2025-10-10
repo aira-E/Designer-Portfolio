@@ -5,6 +5,7 @@ import { useInView } from "framer-motion";
 import clsx from "clsx";
 import { useNavigate } from "react-router-dom";
 import BrandingCarousel from './BrandingCarousel'; // Add this line
+import RightDrawer from './RightDrawer';
 
 // Import logos
 import airaIcon from "./assets/icons/airaestur.png";
@@ -42,7 +43,10 @@ import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope, faPhone, faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 
+
+
 function App() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false); 
   const navigate = useNavigate();
 
   return (
@@ -59,11 +63,15 @@ function App() {
           </div>
         </div>
 
-        <div className="container_data">
-          <div className="card_data">
-            <h2> 5 </h2>   
-            <p> Professional Experience </p>
-          </div>
+       <div className="container_data">
+    <div 
+        className="card_data clickable" 
+        onClick={() => setIsDrawerOpen(true)} // <-- Uses setIsDrawerOpen
+    >
+        <h2> 5 </h2>   
+        <p> Professional Experience </p>
+    </div>
+
 
           <div className="card_data">
             <h2> 20+ </h2>   
@@ -297,7 +305,51 @@ function App() {
         </div>
         </div>
       </div> {/* Closes section_contact */}
+  {/* ... (rest of your App content) ... */}
 
+    {/* ======================================== 
+        6. RIGHT DRAWER (Professional Experience) 
+        ======================================== 
+    */}
+    <RightDrawer 
+        isOpen={isDrawerOpen} 
+        onClose={() => setIsDrawerOpen(false)}
+    >
+        <h2>Professional Experience Timeline</h2>
+
+        {/* Example Experience Items (customize this content) */}
+        <div className="experience-item">
+            <h3> UI/UX Designer • Intern </h3>
+            <h4> Webcast Technologies Inc. </h4> 
+            <p>  Aug 2025 - Sep 2025 </p>
+        </div>
+        
+        <div className="experience-item">
+            <h3> UI/UX Designer • Trainee </h3>
+            <h4> FilPass (A company of Befied Group) </h4> 
+            <p>  Jun 2025 - Aug 2025 </p>
+        </div>
+
+        <div className="experience-item">
+            <h3> UI/UX Designer • Intern </h3>
+            <h4> Department of Science and Technology </h4> 
+            <p>  Dec 2024 - Feb 2025 </p>
+        </div>
+
+        <div className="experience-item">
+            <h3> UX Researcher • Intern </h3>
+            <h4> Angkas </h4> 
+            <p>  Aug 2024 - Dec 2024 </p>
+        </div>
+
+        <div className="experience-item">
+            <h3> Front-end Developer • Intern </h3>
+            <h4> Marvill Web Development </h4> 
+            <p>  Aug 2023 - Oct 2023 </p>
+        </div>
+
+    </RightDrawer>
+    
     </>
   );
 }

@@ -1,0 +1,148 @@
+/* --- OVERLAY (Background Dimmer) --- */
+.drawer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Start transparent and hidden */
+    background-color: rgba(0, 0, 0, 0); 
+    visibility: hidden; 
+    z-index: 999; /* Ensure it's above content but below the drawer */
+    
+    /* Transition for opacity and smooth visibility change */
+    transition: 
+        background-color 0.3s ease-in-out, 
+        visibility 0s linear 0.3s; /* Delay hiding visibility until transition is complete */
+}
+
+.drawer-overlay.active {
+    /* Dim the background */
+    background-color: rgba(0, 0, 0, 0.7); 
+    visibility: visible;
+    /* Make visible immediately when activating */
+    transition: 
+        background-color 0.3s ease-in-out, 
+        visibility 0s linear 0s; 
+}
+
+/* --- DRAWER PANEL --- */
+.right-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 400px; /* Adjust width as needed */
+    max-width: 90%; /* Responsive max width */
+    background-color: #26272b; /* Match your app background */
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Ensure it's on top of the overlay */
+    
+    /* Initial state: pushed off-screen to the right */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+    overflow-y: auto;
+}
+
+.right-drawer.active {
+    /* Active state: slides into view */
+    transform: translateX(0);
+}
+
+/* --- DRAWER CONTENT & CLOSE BUTTON --- */
+.drawer-close-btn {
+    position: sticky; /* Sticky to stay visible when scrolling drawer content */
+    top: 15px;
+    align-self: flex-end; /* Push to the right */
+    margin: 0 15px 0 auto;
+    background: none;
+    border: none;
+    color: #FEB341;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.drawer-content {
+    padding: 20px;
+    color: white; /* Default text color */
+}
+
+/* Example styling for drawer content (optional) */
+.drawer-content h3 {
+    color: #FEB341;
+    font-size: 20px;
+    font-style: normal;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+    padding: 0;
+
+}
+.experience-item {
+    border-left: 3px solid #FEB341;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+.experience-item h4 {
+    margin-top: 0;
+}
+
+
+h1 {
+  font-style: normal;
+  font-size: 60px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 800;
+  line-height: 120%;
+  margin: 0;
+  padding: 0;
+  color: #FEB341;
+}
+
+.drawer-content h2 {
+  font-size: 32px;
+  font-style: normal;
+    font-family: 'Arial', sans-serif;
+  font-weight: 800;
+  line-height: 120%;
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-size: 20px;
+  font-style: normal;
+    font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 0;
+  padding: 0;
+  color: #FFFF;;
+}
+
+h4{
+    font-size: 18px;
+    font-style: normal;
+        font-family: 'Arial', sans-serif;
+    font-weight: 200;
+    line-height: 120%;
+    margin: 0;
+    padding: 0;
+    color: #e6e6e6;    
+}
+
+p, li {
+  font-size: 16px;
+  font-style: normal;
+    font-family: 'Arial', sans-serif;
+  font-weight: 100;
+  line-height: 120%;
+  margin: 0;
+  padding: 0;
+  color: #A9A9A9;
+  margin-bottom: 16px;
+}
