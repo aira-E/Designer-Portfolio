@@ -148,6 +148,12 @@ export default function DOST() {
 
       <div className="content">
           <h2> Conclusion </h2>
+          <p> With the help of user behavior map, the test concludes that identifying the problem and applying the
+              proposed solution, the task completion rate of the users will raise from 25% to 100%
+              Overall, users (4/4) prefered the revamped design because it's more efficient compared to the current
+              website, stating,
+              “Kasi minimalized niya ‘yung interactions eh. Number one factor sa UX is efficiency, it
+              saves a lot of time and energy. </p>
       </div>
 
     </div>
