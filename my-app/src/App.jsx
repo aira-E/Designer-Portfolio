@@ -47,6 +47,7 @@ import "./App.css";
 
 function App() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false); 
+  const [isCertDrawerOpen, setIsCertDrawerOpen] = useState(false); 
   const navigate = useNavigate();
 
   return (
@@ -64,24 +65,26 @@ function App() {
         </div>
 
        <div className="container_data">
-    <div 
-        className="card_data clickable" 
-        onClick={() => setIsDrawerOpen(true)} // <-- Uses setIsDrawerOpen
-    >
-        <h2> 5 </h2>   
-        <p> Professional Experience </p>
-    </div>
+        <div 
+            className="card_data clickable" 
+            onClick={() => setIsDrawerOpen(true)} >
+            <h2> 5 </h2>   
+            <p> Professional Experience </p>
+        </div>
 
 
           <div className="card_data">
             <h2> 20+ </h2>   
             <p> Projects </p>
           </div>
+        
+        <div 
+            className="card_data clickable" 
+            onClick={() => setIsCertDrawerOpen(true)} >
+            <h2> 5 </h2>   
+            <p> Certifications </p>
+        </div>
 
-          <div className="card_data">
-            <h2> 6 </h2>   
-            <p> Certifications </p>
-          </div>
         </div>
       </div>
 
@@ -307,49 +310,84 @@ function App() {
       </div> {/* Closes section_contact */}
   {/* ... (rest of your App content) ... */}
 
-    {/* ======================================== 
-        6. RIGHT DRAWER (Professional Experience) 
-        ======================================== 
-    */}
+
     <RightDrawer 
         isOpen={isDrawerOpen} 
         onClose={() => setIsDrawerOpen(false)}
     >
+      
         <h2>Professional Experience Timeline</h2>
 
-        {/* Example Experience Items (customize this content) */}
         <div className="experience-item">
             <h3> UI/UX Designer • Intern </h3>
             <h4> Webcast Technologies Inc. </h4> 
-            <p>  Aug 2025 - Sep 2025 </p>
+            <p>  Aug 2025 - Sep 2025 </p>
         </div>
         
         <div className="experience-item">
             <h3> UI/UX Designer • Trainee </h3>
             <h4> FilPass (A company of Befied Group) </h4> 
-            <p>  Jun 2025 - Aug 2025 </p>
+            <p>  Jun 2025 - Aug 2025 </p>
         </div>
 
         <div className="experience-item">
             <h3> UI/UX Designer • Intern </h3>
             <h4> Department of Science and Technology </h4> 
-            <p>  Dec 2024 - Feb 2025 </p>
+            <p>  Dec 2024 - Feb 2025 </p>
         </div>
 
         <div className="experience-item">
             <h3> UX Researcher • Intern </h3>
             <h4> Angkas </h4> 
-            <p>  Aug 2024 - Dec 2024 </p>
+            <p>  Aug 2024 - Dec 2024 </p>
         </div>
 
         <div className="experience-item">
             <h3> Front-end Developer • Intern </h3>
             <h4> Marvill Web Development </h4> 
-            <p>  Aug 2023 - Oct 2023 </p>
+            <p>  Aug 2023 - Oct 2023 </p>
+        </div>
+        
+    </RightDrawer>
+
+    <RightDrawer 
+        isOpen={isCertDrawerOpen}             // <-- Uses the new state
+        onClose={() => setIsCertDrawerOpen(false)} // <-- Uses the new setter
+    >
+        <h2>Professional Certifications</h2>
+        <div className="experience-item">
+            <h3> UX+ Conference 2025 </h3>
+            <h4> UX+ </h4> 
+            <p>  Sep 2025 </p>
         </div>
 
+        <div className="experience-item">
+            <h3> Design Psychology: Master the Art and Science of UX Design </h3>
+            <h4> LinkedIn </h4> 
+            <p>  Aug 2025 </p>
+        </div>
+
+        <div className="experience-item">
+            <h3> Developing Designs for User Experience </h3>
+            <h4> TESDA: Technical Education and Skills Development Authority </h4> 
+            <p>  Feb 2025 </p>
+        </div>
+
+        <div className="experience-item">
+            <h3> Developing Designs for User Interface </h3>
+            <h4> TESDA: Technical Education and Skills Development Authority </h4> 
+            <p>  Jan 2025 </p>
+        </div>
+
+        <div className="experience-item">
+            <h3> Career Service Professional Eligible </h3>
+            <h4> Civil Service Commission </h4> 
+            <p>  Mar 2023 </p>
+        </div>
+
+        
     </RightDrawer>
-    
+
     </>
   );
 }
