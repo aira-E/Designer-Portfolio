@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
 import clsx from "clsx";
 import { useNavigate } from "react-router-dom";
+import BrandingCarousel from './BrandingCarousel'; // Add this line
 
 // Import logos
 import airaIcon from "./assets/icons/airaestur.png";
@@ -263,30 +264,17 @@ function App() {
       </div> {/* Closes section_concept_works */}
 
       {/* Branding Section (CORRECTED STRUCTURE)*/}      
-      <div className="section_branding">
-        <h2> Branding </h2>
-        <div className="section_branding_content"> {/* Added a wrapper for content if needed for layout */}
-          <div className="card_branding_mockups"> 
-            <img src={mdb} className="branding_mockups" alt="mock-ups_mdb" />
-            <div className="card_case_studies_footer">
-                {/*  <p> Technologies used: </p> */}
-                <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
-                <img src={aiIcon} className="icon_logos_technologies" alt="icon_ai" />
-                <img src={psIcon} className="icon_logos_technologies" alt="icon_ps" />
-                <img src={canvaIcon} className="icon_logos_technologies" alt="icon_canva" />
-            </div>
-          </div>
-
-          <div className="card_branding_mockups"> 
-            <img src={rl} className="branding_mockups" alt="mock-ups_rl" /> 
-            <div className="card_case_studies_footer">
-                {/*  <p> Technologies used: </p> */}
-                <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
-                <img src={canvaIcon} className="icon_logos_technologies" alt="icon_canva" />
-             </div>
-          </div>
-        </div>
-      </div> {/* Closes section_branding */}
+            ```jsx
+                 
+            <BrandingCarousel 
+                mdb={mdb} 
+                rl={rl} 
+                figmaIcon={figmaIcon} 
+                aiIcon={aiIcon} 
+                psIcon={psIcon} 
+                canvaIcon={canvaIcon} 
+            />
+            ```
 
       {/* Contact Section (CORRECTED STRUCTURE) */}         
       <div className="section_contact"> {/* Added the section wrapper div */}
