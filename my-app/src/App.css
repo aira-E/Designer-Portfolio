@@ -123,6 +123,15 @@ a{
   border-radius: 8px;
   background: #3C3E42;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: 
+    transform 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+    box-shadow 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform;
+}
+
+.card_data:hover{
+  box-shadow: #FEB341 0px 0px 4px, #FEB341 0px 0px 8px, #FEB341 0px 0px 16px;
+  transform: scale(1.07);
 }
 
 /****** CASE STUDIES SECTION ******/
@@ -232,7 +241,7 @@ button:hover, .btn:hover{
 }
 
 .card_case_studies_footer,
-.card_concept_works_footer {
+.card_cw_footer {
   display: flex;
   width: 100%;           /* Make footer span full card width */
   padding: 8px 0;

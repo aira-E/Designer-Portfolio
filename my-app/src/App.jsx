@@ -197,7 +197,7 @@ function App() {
             <a href="https://www.figma.com/proto/FkYnVlbRZNIPClKQFAI0gV/Hackfest-2024?page-id=0%3A1&node-id=171-97&viewport=-951%2C-1065%2C0.17&t=RejlmN4qBYYdto1S-1&scaling=min-zoom&starting-point-node-id=171%3A97&show-proto-sidebar=1" target="_blank" className="btn btn-primary card_concept_works_button">
               Live View <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
             </a>
-            <div className="card_concept_works_footer">
+            <div className="card_cw_footer ">
                 {/*  <p> Technologies used: </p> */}
                 <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
             </div>
@@ -215,7 +215,7 @@ function App() {
             <a href="https://airaestur.itch.io/toy-rush" target="_blank" className="btn btn-primary card_concept_works_button">
               Live View <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
             </a>
-            <div className="card_concept_works_footer">
+            <div className="card_cw_footer ">
                 {/*  <p> Technologies used: </p> */}
                 <img src={csharpIcon} className="icon_logos_technologies" alt="icon_figma" />
                 <img src={aiIcon} className="icon_logos_technologies" alt="icon_figma" />
@@ -234,7 +234,7 @@ function App() {
             <a href="https://aira-E.github.io/G-Tara-Na/" target="_blank" className="btn btn-primary card_concept_works_button">
               Live View <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
             </a>
-            <div className="card_concept_works_footer">
+            <div className="card_cw_footer ">
                 {/*  <p> Technologies used: </p> */}
                 <img src={htmlIcon} className="icon_logos_technologies" alt="icon_figma" />
                 <img src={cssIcon} className="icon_logos_technologies" alt="icon_figma" />
@@ -254,7 +254,7 @@ function App() {
             <a href="https://github.com/aira-E/Fruit-Vending-Machine/" target="_blank" className="btn btn-primary card_concept_works_button">
               View Code <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
             </a>
-            <div className="card_concept_works_footer">
+            <div className="card_cw_footer ">
                 {/*  <p> Technologies used: </p> */}
                 <img src={pyIcon} className="icon_logos_technologies" alt="icon_figma" />
             </div>
