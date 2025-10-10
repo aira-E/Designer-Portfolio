@@ -5,7 +5,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function DOST() {
   return (
-    <div>
+    <div className="DOST_casestudy">
      <div className="casestudy_header">
       <div style={{ marginTop: "32px" }}>
         <iframe

@@ -1,8 +1,14 @@
 #root {
   background-color: #242424;
-  margin: 8px auto 0 auto;
   padding: 5rem;
 }
+
+/* Remove default margins and padding from the page */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 
 /* Unified typography for headings and paragraphs */
 h1 {
@@ -371,6 +377,11 @@ button:hover, .btn:hover{
 
 
 /***** CASE STUDIES *****/
+.DOST_casestudy{
+  width: 1440px;
+  gap: 32px;
+  margin: 0 auto;
+} 
 
 .casestudy_header{
   display: flex;
@@ -392,5 +403,6 @@ button:hover, .btn:hover{
 .scamper{
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 32px;
+  padding-bottom: 32px;
 }
