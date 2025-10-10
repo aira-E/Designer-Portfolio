@@ -7,16 +7,19 @@
 /* Unified typography for headings and paragraphs */
 h1 {
   font-style: normal;
-  font-size: 72px;
+  font-size: 60px;
+  font-family: 'Arial', sans-serif;
   font-weight: 800;
   line-height: 120%;
   margin: 0;
   padding: 0;
+  color: #FEB341;
 }
 
 h2 {
   font-size: 32px;
   font-style: normal;
+    font-family: 'Arial', sans-serif;
   font-weight: 800;
   line-height: 120%;
   margin: 0;
@@ -27,20 +30,36 @@ h2 {
 h3 {
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+    font-family: 'Arial', sans-serif;
+  font-weight: 700;
   line-height: 120%;
   margin: 0;
   padding: 0;
+  color: #FFFF;;
 }
 
 p {
   font-size: 16px;
   font-style: normal;
+    font-family: 'Arial', sans-serif;
   font-weight: 200;
   line-height: 120%;
   margin: 0;
   padding: 0;
   color: #A9A9A9;
+}
+
+
+a{
+    font-size: 16px;
+  font-style: normal;
+    font-family: 'Arial', sans-serif;
+  font-weight: 200;
+  line-height: 120%;
+  margin: 0;
+  padding: 0;
+  color: #A9A9A9;
+  text-decoration: none;
 }
 
 
@@ -363,6 +382,7 @@ button:hover, .btn:hover{
 
 .banner{
   text-align: right;
+  gap: 8px;
 }
 
 .content{

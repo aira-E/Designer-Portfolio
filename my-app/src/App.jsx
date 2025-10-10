@@ -105,6 +105,7 @@ function App() {
                       opacity: 0,
                       pointerEvents: "none",
                       transition: "opacity 0.2s"
+                      
                     }}
                   >
                     Top 5 finalist in UX University 2025: Shifting Tide
