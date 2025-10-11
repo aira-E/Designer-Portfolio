@@ -9,7 +9,7 @@ import RightDrawer from './RightDrawer';
 
 // Import logos
 import airaIcon from "./assets/icons/airaestur.png";
-import dostIcon from "./assets/icons/dost.png";
+import dostIcon from "./assets/icons/DOST.png";
 import pricepulseIcon from "./assets/icons/pricepulse.png";
 import figmaIcon from "./assets/icons/figma.png";
 import aiIcon from "./assets/icons/aillustrator.png";
