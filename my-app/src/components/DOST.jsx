@@ -61,12 +61,14 @@ export default function DOST() {
                 <div className="banner"> 
                     <h1> DOST Website Revamp </h1>
                     <p> The Department of Science and Technology (DOST) website is not just your ordinary government website; it serves as a central hub connecting 16 regional offices and 6 service institutes, each with its own separate website. While this decentralized structure allows different offices to manage their own content, it also creates navigation and other user experiences challenges </p>
-                    <a className="figma_dost_btn"
-                        href="https://www.figma.com/proto/a24EEJXPrbTNl6SKsy2ZyE/DOST-Website--UX-University-2025-?page-id=0%3A1&node-id=169-30&p=f&viewport=36%2C238%2C0.02&t=HKVl3CBw9iU5GWRy-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=169%3A30&show-proto-sidebar=1"
-                        target="_blank"
-                        className="btn btn-primary card_concept_works_button">
-                        Figma prototype link <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
-                    </a> 
+  <a
+                        href="https://www.figma.com/proto/a24EEJXPrbTNl6SKsy2ZyE/DOST-Website--UX-University-2025-?page-id=0%3A1&node-id=169-30&p=f&viewport=36%2C238%2C0.02&t=HKVl3CBw9iU5GWRy-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=169%3A30&show-proto-sidebar=1"
+                        target="_blank"
+                        // COMBINED all desired classes into a single string
+                        className="figma_dost_btn btn btn-primary card_concept_works_button"
+                    >
+                        Figma prototype link <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
+                    </a>
                 </div>
             </div>
 
@@ -200,4 +202,5 @@ export default function DOST() {
 
         </div>
     );
+
 }
