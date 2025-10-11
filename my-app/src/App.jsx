@@ -9,7 +9,7 @@ import RightDrawer from './RightDrawer';
 
 // Import logos
 import airaIcon from "./assets/icons/airaestur.png";
-import dostIcon from "./assets/icons/DOST.png";
+import dostIcon from "./assets/icons/dost.png";
 import pricepulseIcon from "./assets/icons/pricepulse.png";
 import figmaIcon from "./assets/icons/figma.png";
 import aiIcon from "./assets/icons/aillustrator.png";
@@ -29,7 +29,7 @@ import rl from "./assets/mock-ups/rl.png";
 
 
 // Import mock-ups
-import dostMock from "./assets/mock-ups/dost.png";
+import dostMock from "./assets/mock-ups/DOST.png";
 import pricepulseMock from "./assets/mock-ups/pricepulse.png";
 import amwayMock from "./assets/mock-ups/amway.jpg";  
 import toyrushMock from "./assets/mock-ups/toyrushgame.jpg";  
