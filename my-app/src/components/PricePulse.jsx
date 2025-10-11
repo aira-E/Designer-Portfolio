@@ -53,12 +53,15 @@ export default function PricePulse() {
                 <div className="banner"> 
                     <h1> Price Pulse PH </h1>
                     <p> The Department of Science and Technology (DOST) website is not just your ordinary government website; it serves as a central hub connecting 16 regional offices and 6 service institutes, each with its own separate website. While this decentralized structure allows different offices to manage their own content, it also creates navigation and other user experiences challenges </p>
-                    <a className="figma_dost_btn"
-                        href="https://www.figma.com/proto/C1NQvbSVUT0wNbucFIoSVJ/Price-Pulse-PH?page-id=0%3A1&node-id=86-895&p=f&viewport=470%2C393%2C0.19&t=N4mtnzX42womFXDT-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=86%3A895"
-                        target="_blank"
-                        className="btn btn-primary card_concept_works_button">
-                        Figma prototype link <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
-                    </a> 
+       <a
+    href="https://www.figma.com/proto/C1NQvbSVUT0wNbucFIoSVJ/Price-Pulse-PH?page-id=0%3A1&node-id..."
+    target="_blank"
+    // Assuming the file uses a link-specific class like the DOST one (e.g., figma_pricepulse_btn)
+    // and that's the missing duplicate. Combine it here:
+    className="figma_pricepulse_btn btn btn-primary card_concept_works_button"
+>
+    Figma prototype link <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
+</a>
                 </div>
             </div>
 
@@ -90,3 +93,4 @@ export default function PricePulse() {
         </div>
     );
 }
+
