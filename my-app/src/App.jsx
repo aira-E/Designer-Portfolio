@@ -40,6 +40,7 @@ import fruitvendingMock from "./assets/mock-ups/guivendingmachine.png";  
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons/faArrowRight";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope, faPhone, faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 
@@ -96,6 +97,9 @@ function App() {
         <h2> Case Studies </h2>
           <div className="card_case_studies_container"> 
             <div className="card_case_studies">
+                <div className="card_case_studies_banner">
+                   <p> <span style={{ color: "#FEB341" }}>Role: </span> UX Researcher, UI/UX Designer </p>
+                 </div>  
               <div className="card_case_studies_header">
                 <img src={dostIcon} className="icon_logos" alt="icon_dost" />
                 <div className="card_case_studies_texts">
@@ -138,14 +142,17 @@ function App() {
                 </button>
               </div>
               <img src={dostMock} className="mock-ups" alt="mock-ups_dost" />
-              <div className="card_case_studies_footer">
+                <div className="card_case_studies_footer">
                 {/*  <p> Technologies used: </p> */}
                 <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
               </div>
             </div>
 
             <div className="card_case_studies">
-              <div className="card_case_studies_header">
+                <div className="card_case_studies_banner">
+                   <p> <span style={{ color: "#FEB341" }}>Role: </span> Product Designer, UI/UX Designer </p>
+                 </div>              
+                <div className="card_case_studies_header">
                 <img src={pricepulseIcon} className="icon_logos" alt="icon_pricepulse" />
                 <div className="card_case_studies_texts">
                   <h3> Price Pulse PH </h3>
@@ -186,7 +193,7 @@ function App() {
                 </button>
               </div>
               <img src={pricepulseMock} className="mock-ups" alt="mock-ups_pricepulse" />
-              <div className="card_case_studies_footer">
+                <div className="card_case_studies_footer">
                 {/*  <p> Technologies used: </p> */}
                 <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
               </div>
@@ -200,6 +207,9 @@ function App() {
         <h2> Concept Works </h2>
         <div className="section_cards_concept_works">
           <div className="card_concept_works">
+                <div className="card_concept_works_banner">
+                   <p> <span style={{ color: "#FEB341" }}>Role: </span> Product Designer, UI/UX Designer </p>
+                 </div>  
             <img src={amwayMock} className="concept_works_banner" alt="mock-ups_amway" />
             <div className="card_concept_works_content">
               {/* Amway or the Highway */}
@@ -218,6 +228,9 @@ function App() {
           </div>   
 
           <div className="card_concept_works">
+            <div className="card_concept_works_banner">
+               <p> <span style={{ color: "#FEB341" }}>Role: </span> UI/UX Designer, Sound Designer </p>
+             </div>  
             <img src={toyrushMock} className="concept_works_banner" alt="mock-ups_amway" />
             <div className="card_concept_works_content">
               {/* Toy Rush! */}
@@ -237,6 +250,9 @@ function App() {
           </div>  
 
           <div className="card_concept_works">
+            <div className="card_concept_works_banner">
+               <p> <span style={{ color: "#FEB341" }}>Role: </span> UI/UX Designer, Front-end Developer </p>
+             </div>  
             <img src={gtaraMock} className="concept_works_banner" alt="mock-ups_amway" />
             <div className="card_concept_works_content">
               {/* G-Tara Na! */}
@@ -257,6 +273,9 @@ function App() {
           </div>  
 
           <div className="card_concept_works">
+            <div className="card_concept_works_banner">
+               <p> <span style={{ color: "#FEB341" }}>Role: </span> UI/UX Designer, Front-end Developer </p>
+             </div>  
             <img src={fruitvendingMock} className="concept_works_banner" alt="mock-ups_amway" />
             <div className="card_concept_works_content">
               {/* Fruit Vending Machine */}

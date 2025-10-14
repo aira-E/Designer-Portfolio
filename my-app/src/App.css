@@ -240,6 +240,23 @@ button:hover, .btn:hover{
   z-index: 2;
 }
 
+.card_case_studies_banner, .card_concept_works_banner{
+  display: flex;
+  width: 100%;           
+  padding: 8px 0;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0 0 4px 4px;
+  border-bottom: 1px solid #757575;
+  gap: 8px;
+}
+
+.card_concept_works_banner p{
+  padding: 8px 0;
+  margin-left: 8px;  
+}
+
+
 .card_case_studies_footer,
 .card_cw_footer {
   display: flex;
