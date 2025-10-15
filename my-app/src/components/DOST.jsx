@@ -5,9 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../App.css"; // Ensures styles are applied
 import IAExisting from "../assets/mock-ups/IA-Existing.png";
 import IAUpdated from "../assets/mock-ups/IA-Updated.png";
-
-
 import Personas from "../assets/mock-ups/personas.png";
+import Rootcause from "../assets/mock-ups/root.png";
 
 // 2. Import both faArrowRight and faArrowLeft for the back button
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons"; 
@@ -106,7 +105,7 @@ export default function DOST() {
                 </div>
                 
                 <div className="content_specific"> 
-                    <h3> Problem Dfinition </h3>
+                    <h3> Problem Definition </h3>
                     <p> The existing structure leads to a fragmented UI, inconsistent design, and disorganized content. Users struggle to locate services efficiently, leading to frustration, increased reliance on customer support, and high abandonment rates </p>                
                 </div>
                
@@ -176,7 +175,9 @@ export default function DOST() {
                 </div>
                 <div className="content_specific">
                     <h3> Root Cause Analysis </h3>
-
+                    <div className="root-cause_imgs">
+                        <img src={Rootcause} className="Personas" alt="Personas" />
+                    </div>
                 </div>                
             </div>
 
