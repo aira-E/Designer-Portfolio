@@ -566,6 +566,7 @@ button:hover, .btn:hover{
 
 .character{
     height: 80px;
+    border-radius: 32px;
     width: auto;
 }
 

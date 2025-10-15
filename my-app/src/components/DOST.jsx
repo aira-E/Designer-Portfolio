@@ -288,15 +288,32 @@ export default function DOST() {
                 </div>
                 <div className="content_specific">
                     <h3> Usability Testing Approach </h3>
-
+                    <p> The researcher used both moderated and unmoderated testing. </p>
+                    <ul>
+                        <li> Unmoderated testing was applied to task-based activities, allowing users to explore both websites freely while the researcher observed their behavior. </li>
+                        <li> Moderated testing was used when introducing new features (personal account, auto-fill, AI chatbot), as users were unfamiliar with the proposed design. </li>
+                    </ul>
+                    <p> Participants were balanced between remote and in-person setups: </p>
+                    <ul>
+                        <li> 2 remote users (affiliated with DOST) were assumed to be more familiar with the site. </li>
+                        <li> 2 in-person users (not affiliated with DOST) used their own devices.  </li>                    
+                    </ul>
+                    <p> Observing them helped capture first-time reactions and provided opportunities for guidance when needed. </p> 
                 </div>
                 <div className="content_specific">
-                    <h3> Purposive Sampling </h3>
+                    <h3> Sampling Method </h3>
+                    <p> The researcher intentionally selected 2 DOST-affiliated participants (e.g., scholars, innovators) as they represent the platform's primary users. Additionally, 2 non-DOST participants (e.g., educator, government employee) were included to capture perspectives from potential users who may benefit from the services.  </p>
+                    <p> This purposive sampling approach ensures relevance to the website’s intended use cases and user groups.</p>
 
                 </div>      
                 <div className="content_specific">
                     <h3> Key Tasks for Testing </h3>
-
+                    <ol>
+                        <li> Search for available scholarships and view details on how to apply. And apply if applicable </li>
+                        <li> Explore startup & innovation support, and apply if possible </li>
+                        <li> File a complaint and explore general public services. </li>
+                        <li>Search and dowload for available resources </li>      
+                    </ol>
                 </div>                              
             </div>
 
