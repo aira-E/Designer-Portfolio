@@ -5,6 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import IAExisting from "../assets/mock-ups/IA-Existing.png";
 import IAUpdated from "../assets/mock-ups/IA-Updated.png";
+
+import JourneyMap1 from "../assets/mock-ups/JourneyMap1.png";
+import JourneyMap2 from "../assets/mock-ups/JourneyMap2.png";
+
 import Personas from "../assets/mock-ups/personas.png";
 import ProtoPersonas from "../assets/mock-ups/proto-personas.png";
 import Rootcause from "../assets/mock-ups/root.png";
@@ -418,8 +422,16 @@ export default function DOST() {
             <div className="content">
                 <h2>V. Validation, Results, & Conclusion</h2>
                 <div className="content_specific">
-                    <h3> User Behavior: Current Site </h3>
-
+                    <h3> User Behavior </h3>
+                       <div className="userbehavior-imgs">
+                            <img src={JourneyMap1} className="JourneyMap" alt="JourneyMap" />
+                            <img src={JourneyMap2} className="JourneyMap" alt="JourneyMap" />
+                        </div>
+                <div className="content_specific"> 
+                    <p> With the help of user behavior map, the test concludes that identifying the problem and applying the proposed solution, the task completion rate of the users will raise from 25% to 100% </p>    
+                    <p> Overall, users (4/4) prefered the revamped design because it's more efficient compared to the current website, stating, “Kasi minimalized niya ‘yung interactions eh. Number one factor sa UX is efficiency, it saves a lot of time and energy.” </p>
+                </div>
+                   
                 </div>
                 <div className="content_specific">
                     <h3> UX Solution Validation </h3>

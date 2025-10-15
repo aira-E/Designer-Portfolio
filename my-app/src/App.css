@@ -535,7 +535,7 @@ button:hover, .btn:hover{
   margin: 32px;
 }
 
-.scamper-imgs {
+.scamper-imgs, .userbehavior-imgs {
     display: flex;
     /* Removed margin-left: 60px; for cleaner centering,
        but kept it if you need that specific offset */
@@ -576,18 +576,20 @@ button:hover, .btn:hover{
     margin: 16px 0 0 60px;
     height:auto;
     width: 100%;
+    border-radius: 16px;
 }
 
 .figma_dost_btn{
   width: 200px;
 }
 
-.IA {
+.IA, .JourneyMap {
     /* The key change: 
        1. flex-grow: 1 (takes up proportional space)
        2. flex-shrink: 1 (can shrink if needed)
        3. flex-basis: 0% (starting point is zero, so the space is truly divided equally)
     */
+    border-radius: 16px;
     flex: 1; 
     width: auto; 
     height: auto; 
