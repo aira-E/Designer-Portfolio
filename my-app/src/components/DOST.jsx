@@ -9,6 +9,9 @@ import IAUpdated from "../assets/mock-ups/IA-Updated.png";
 import JourneyMap1 from "../assets/mock-ups/JourneyMap1.png";
 import JourneyMap2 from "../assets/mock-ups/JourneyMap2.png";
 
+import QualiFindings2 from "../assets/mock-ups/quali-findings2.png";
+import QualiFindings3 from "../assets/mock-ups/quali-findings3.png";
+
 import Personas from "../assets/mock-ups/personas.png";
 import ProtoPersonas from "../assets/mock-ups/proto-personas.png";
 import Rootcause from "../assets/mock-ups/root.png";
@@ -442,6 +445,42 @@ export default function DOST() {
                 </div>
                 <div className="content_specific">
                     <h3> UX Solution Validation </h3>
+                    <ol>
+                        <li> The search engine is the users’ first preference when looking for information on the website. However, when the results do not meet their needs, it leads to frustration and task redirection </li>
+                            <ul>
+                                <li> Users (4/4) prefer using the search bar right away, stating, “madaling makita from there.” But, if it no relevant results are displayed it leads to frustrating and task reduction, stating, “Ine-expect ko kapag nag-search ako may lalabas (na scholarship grants) pero puro articles lang lumabas” </li>
+                                <li> However, some users (2/4) cleared that if they could already see what they are finding, they get to the browsing right away, stating, “Like kung naka present naman na, hindi na kailangan mag-search.” </li>
+                            </ul>
+                        <div className="content_specific"> 
+                            <p> <span style={{ color: "#FEB341" }}> UX Solution: </span>  A clearer, better-designed presentation of information allows users to quickly find what they need, minimizing dependence on the search bar and avoiding frustration from irrelevant or incomplete search results. </p>
+                        </div>
+                        <li> The Navigation bar confused the users due to it’s inconsistent design and overlapping texts </li>
+                            <ul>
+                                <li> Most of the users (3/4) are confused of the navigation bar stating, “bakit gano’n, gulo-gulo?” </li>
+                                <li> In addition, a user states, “’yung iba naka drop-down, siya lang hindi kaya akala ko wala siyang laman” </li>
+                            </ul>
+                        <div className="content_specific"> 
+                            <p> <span style={{ color: "#FEB341" }}> UX Solution: </span>  An intuitive navigation system further enhances the user journey by efficiently directing them to the appropriate content. </p>
+                        </div> 
+                        <div className="content_specific">
+                            <div className="ux-solution_imgs">
+                                <img src={QualiFindings2} className="UX-Solution" alt="UX-Solution" />
+                            </div>
+                        </div>
+
+                        <li> When the content layout lacks clarity and user-centered design, users become unsure of where to go </li>
+                            <ul>
+                                <li> Even when users reach the right page, they often feel overwhelmed by the content. One respondent shared, “Mas gusto ko ‘to naka ‘Grid’ kaysa naka ‘List’. Nakatulong sa akin ‘tong grid type kasi may simple description na siya kung tungkol saan ‘yung pipindutin mo.” </li>
+                            </ul>
+                        <div className="content_specific"> 
+                            <p> <span style={{ color: "#FEB341" }}> UX Solution: </span>  Organizing content in a user-centric and visually coherent layout reduces the need for excessive clicks or reliance on anchored links, enabling smoother navigation and alleviating confusion or frustration caused by unclear paths or broken links. </p>
+                        </div>   
+                        <div className="content_specific">
+                            <div className="ux-solution_imgs">
+                                <img src={QualiFindings3} className="UX-Solution" alt="UX-Solution" />
+                            </div>
+                        </div>                                                   
+                    </ol>
 
                 </div>
                 <div className="content_specific">
