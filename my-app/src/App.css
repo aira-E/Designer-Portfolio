@@ -517,15 +517,19 @@ button:hover, .btn:hover{
   text-align: justify;
 }
 
-.scamper{
+.scamper, .smart{
   display: flex;
   align-items: center;
   gap: 16px;
   padding-bottom: 16px;
 }
 
-.content_scamper{
+.content_scamper, .content_smart{
   color:#FFFF;
+}
+
+.content_specific{
+  margin: 32px;
 }
 
 .scamper-imgs {

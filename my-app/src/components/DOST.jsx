@@ -89,29 +89,68 @@ export default function DOST() {
                     </div>
                  </div>    
             </div>
-
+            
+            {/* I. Project Overview and Background */}
             <div className="content">
                 <h2> I. Project Overview & Background </h2>
-                <h3> Problem Statement</h3>
-                <p> The Department of Science and Technology (DOST) website serves as a central hub connecting 16
-                    regional offices and 6 service institutes, each with its own separate website. While this decentralized
-                    structure allows different offices to manage their own content, it also creates navigation and other user
-                    experience challenges. </p>
-                <p> The website has the potential to be a powerful and accessible platform, but its current design and
-                    functionality limit its effectiveness. If its features were better optimized and tailored to user needs, the
-                    website could reach its full potential as a centralized and efficient digital hub for
-                    science and technology-related services </p>
-                <h3> Problem Dfinition </h3>
-                <p> The existing structure leads to a fragmented UI, inconsistent design, and disorganized content. Users struggle to locate services efficiently, leading to frustration, increased reliance on customer support, and high abandonment rates </p>
-                <h3> Current State Metrics </h3>
+                <div className="content_specific">
+                    <h3> Problem Statement</h3>
+                    <p> The Department of Science and Technology (DOST) website serves as a central hub connecting 16
+                        regional offices and 6 service institutes, each with its own separate website. While this decentralized
+                        structure allows different offices to manage their own content, it also creates navigation and other user
+                        experience challenges. </p>
+                    <p> The website has the potential to be a powerful and accessible platform, but its current design and
+                        functionality limit its effectiveness. If its features were better optimized and tailored to user needs, the
+                        website could reach its full potential as a centralized and efficient digital hub for
+                        science and technology-related services </p>
+                </div>
+                
+                <div className="content_specific"> 
+                    <h3> Problem Dfinition </h3>
+                    <p> The existing structure leads to a fragmented UI, inconsistent design, and disorganized content. Users struggle to locate services efficiently, leading to frustration, increased reliance on customer support, and high abandonment rates </p>                
+                </div>
+               
+               <div className="content_specific">
+                    <h3> Current State Metrics </h3>
+               </div>
+                <div className="content_specific">
                 <h3> Research Objectives </h3>
-                <div className="SMART">
-                    <h1 className="content_scamper"> S </h1>
-                    <div>
-                        <h3> Specific </h3>
-                        <p> Improve website navigation for seamless access to information and services, establish a unified
-                            design, and enhance usability while maintaining functionality. Implement a user-centered experience to
-                            boost engagement.</p>
+                    <div className="smart">
+                        <h1 className="content_smart"> S </h1>
+                        <div>
+                            <h3> Specific </h3>
+                            <p> Improve website navigation for seamless access to information and services, establish a unified
+                                design, and enhance usability while maintaining functionality. Implement a user-centered experience to
+                                boost engagement.</p>
+                        </div>
+                    </div>
+                    <div className="smart">
+                        <h1 className="content_smart"> M </h1>
+                        <div>
+                            <h3> Measurable </h3>
+                            <p> Track success through user task completion rate and positive user feedback.</p>
+                        </div>
+                    </div>
+                    <div className="smart">
+                        <h1 className="content_smart"> A</h1>
+                        <div>
+                            <h3> Achievable </h3>
+                            <p> Leverage existing structures and UX/UI best practices, using an iterative development approach informed by user feedback. </p>
+                        </div>
+                    </div>
+                    <div className="smart">
+                        <h1 className="content_smart"> R </h1>
+                        <div>
+                            <h3> Relevant </h3>
+                            <p> Directly addresses navigation issues, fragmented design, and low engagement to enhance accessibility and user satisfaction.</p>
+                        </div>
+                    </div>           
+                    <div className="smart">
+                        <h1 className="content_smart"> T </h1>
+                        <div>
+                            <h3> Time-bound </h3>
+                            <p> Phased execution—research and prototyping within a week, hypothetically followed by six months of development and testing, with full implementation within a year.</p>
+                        </div>
                     </div>
                 </div>
             </div>
