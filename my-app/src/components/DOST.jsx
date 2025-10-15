@@ -238,12 +238,15 @@ export default function DOST() {
                 </div>
                 <div className="content_specific">
                     <h3> Proto-Personas: Pain Points </h3>
-                    <p> The research included five groups of person: scholars, researchers, private citizens, educators, and scientists.
-                        But in this example, the researcher will deep dive on the role of scholars or researches with their preferences in navigating the DOST Website, 
-                        since according to a study (College student Web use, perceptions of information credibility, and verification behavior, 2003) students has high dependency on the internet on both general and academic aspects 
 
-                        According to the same research, students have high verification efforts, they perceive a credible information across internet browsing and
-                        having high number of resources will help them in the academe </p>
+                    <div className="content_specific"> 
+                        <p> The research included five groups of person: scholars, researchers, private citizens, educators, and scientists.
+                            But in this example, the researcher will deep dive on the role of scholars or researches with their preferences in navigating the DOST Website, 
+                            since according to a study (College student Web use, perceptions of information credibility, and verification behavior, 2003) students has high dependency on the internet on both general and academic aspects 
+
+                            According to the same research, students have high verification efforts, they perceive a credible information across internet browsing and
+                            having high number of resources will help them in the academe </p>
+                    </div>
                     <div className="persona_imgs">
                         <img src={Personas} className="Personas" alt="Personas" />
                     </div>
@@ -406,14 +409,18 @@ export default function DOST() {
                 </div>
                 <div className="content_specific">
                     <h3> Digital Solution </h3>
+                    <div className="content_specific">
                         <h4> Centralized Hub for DOST Services </h4>
                             <p> This is a seamless and intuitive website that consolidates the 16 regional offices and 6 service institutes into a single, cohesive platform under a standardized digital experience. </p>
                             <p> The centralized hub will streamline the user experience by proper website design, including clear information architecture (IA), content segmentation, and intuitive navigation, ensuring that users can efficiently find and utilize resources.  </p>
                             <p> These enhancements will improve the issues identified in the Lighthouse to optimize performance, accessibility, best practices, and SEO, leading to a more efficient and user-friendly experience.</p>                    
+                    </div>
+                    <div className="content_specific"> 
                         <h4> Core features </h4>
                             <div className="features_imgs">
                                 <img src={Features} className="Features" alt="features" />
-                            </div>                    
+                            </div>    
+                    </div>                
                 </div>
             </div>
 
