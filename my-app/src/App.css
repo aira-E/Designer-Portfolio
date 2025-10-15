@@ -109,7 +109,7 @@ a{
   display: inline-flex;
   align-items: center;
   gap: 32px;
-  width: 80%;
+  width: 100%;
   flex-wrap: wrap;
 }
 
@@ -139,7 +139,6 @@ a{
 /* -------------------- SECTION LAYOUT -------------------- */
 .section_case_studies {
   display: flex;
-  width: 80%;
   margin: 0 auto;
   align-items: center;
   flex-wrap: wrap;
@@ -306,31 +305,36 @@ button:hover, .btn:hover{
 
 }
 
-.section_cards_concept_works{
+.section_cards_concept_works {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  align-items: stretch;
   gap: 32px;
-  align-self: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.card_concept_works{
+.section_cards_concept_works > .card_concept_works {
+  flex: 1 1 calc(25% - 24px); /* 4 cards equally divided */
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: #3C3E42;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* Restore internal layout */
   display: flex;
-  width: 260px;
-  
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  align-self: stretch;
-  border-radius: 8px;
-  background: #3C3E42;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  gap: 16px;
+  gap: 16px; /* ✅ gap inside card restored */
 }
+
 
 .concept_works_banner{
   height: 171px;
+  margin-top: 0;
   aspect-ratio: 4/3;
-  border-radius: 4px 4px 0 0;
   object-fit: cover; 
   width: 100%;
   display: block;
@@ -338,10 +342,6 @@ button:hover, .btn:hover{
     transform 0.35s cubic-bezier(0.23, 1, 0.32, 1),
     box-shadow 0.35s cubic-bezier(0.23, 1, 0.32, 1);
   will-change: transform;
-}
-
-.concept_works_container, .card_case_studies_container{
-  padding: 16 px
 }
 
 .card_concept_works_content{
@@ -366,7 +366,7 @@ button:hover, .btn:hover{
 
 .card_concept_works_footer {
   display: flex;
-  width: 100%;           /* Make footer span full card width */
+  width: 100%;          
   padding: 8px 0;
   justify-content: flex-end;
   align-items: center;
@@ -382,7 +382,6 @@ button:hover, .btn:hover{
   padding: 16px;
   border-radius: 16px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-
 }
 
 .section_hero,
@@ -391,13 +390,11 @@ button:hover, .btn:hover{
 .section_branding {
   margin-left: auto;
   margin-right: auto;
-  /* If you want max width, add: */
-  /* max-width: 1440px; */
-  /* Otherwise, they will use full width but stay centered */
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 64px;
+  width: 80%;
 }
 
 .section_contact{
