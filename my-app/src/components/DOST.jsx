@@ -71,6 +71,24 @@ export default function DOST() {
                     </a>
                 </div>
             </div>
+            
+            <div className="key_outcomes">
+                <h2> Key Outcome</h2>
+                <div className="container_key_outcome">
+                    <div className="key_outcome"> 
+                        <h3> User Task Completion </h3>
+                        <p> From 25% to 100% completion rate </p>
+                    </div>
+                    <div className="key_outcome"> 
+                        <h3> Core Problem Solved </h3>
+                        <p> From Fragmented UI, Inconsistent Design, and Higher User Frustration to a Centralized Hub with Clear Information Architecture </p>
+                    </div>
+                    <div className="key_outcome"> 
+                        <h3> User Value Proposition </h3>
+                        <p> From "frustrating and confusing" to "more efficient"</p>
+                    </div>
+                 </div>    
+            </div>
 
             <div className="content">
                 <h2> Project Background </h2>
