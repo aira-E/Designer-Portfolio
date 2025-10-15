@@ -6,8 +6,8 @@ import "../App.css"; // Ensures styles are applied
 import IAExisting from "../assets/mock-ups/IA-Existing.png";
 import IAUpdated from "../assets/mock-ups/IA-Updated.png";
 
-import JourneyMapwo from "../assets/mock-ups/Journey Map-1.png";
-import JourneyMapw from "../assets/mock-ups/Journey Map-2.png";
+
+import Personas from "../assets/mock-ups/personas.png";
 
 // 2. Import both faArrowRight and faArrowLeft for the back button
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons"; 
@@ -164,7 +164,15 @@ export default function DOST() {
                 </div>
                 <div className="content_specific">
                     <h3> Proto-Personas: Pain Points </h3>
+                    <p> The research included five groups of person: scholars, researchers, private citizens, educators, and scientists.
+                        But in this example, the researcher will deep dive on the role of scholars or researches with their preferences in navigating the DOST Website, 
+                        since according to a study (College student Web use, perceptions of information credibility, and verification behavior, 2003)  students has high dependency on the internet on both general and academic aspects 
 
+                        According to the same research, students have high verification efforts, they perceive a credible information across internet browsing and
+                        having high number of resources will help them in the academe </p>
+                    <div className="persona_imgs">
+                        <img src={Personas} className="Personas" alt="Personas" />
+                    </div>
                 </div>
                 <div className="content_specific">
                     <h3> Root Cause Analysis </h3>
