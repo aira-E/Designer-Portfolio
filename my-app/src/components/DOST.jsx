@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import IAExisting from "../assets/mock-ups/IA-Existing.png";
 import IAUpdated from "../assets/mock-ups/IA-Updated.png";
 import Personas from "../assets/mock-ups/personas.png";
+import ProtoPersonas from "../assets/mock-ups/proto-personas.png";
 import Rootcause from "../assets/mock-ups/root.png";
 import Features from "../assets/mock-ups/features.png";
 
@@ -242,6 +243,9 @@ export default function DOST() {
                     <div className="persona_imgs">
                         <img src={Personas} className="Personas" alt="Personas" />
                     </div>
+                    <div className="persona_imgs">
+                        <img src={ProtoPersonas} className="Proto-Personas" alt="Proto-Personas" />
+                    </div>                    
                 </div>
                 <div className="content_specific">
                     <h3> Root Cause Analysis </h3>
@@ -397,14 +401,15 @@ export default function DOST() {
                     </div>
                 </div>
                 <div className="content_specific">
-                    <h3> Core Solution </h3>
-
-                </div>
-                <div className="content_specific">
-                    <h3> Features </h3>
-                    <div className="features_imgs">
-                        <img src={Features} className="Features" alt="features" />
-                    </div>                    
+                    <h3> Digital Solution </h3>
+                        <h4> Centralized Hub for DOST Services </h4>
+                            <p> This is a seamless and intuitive website that consolidates the 16 regional offices and 6 service institutes into a single, cohesive platform under a standardized digital experience. </p>
+                            <p> The centralized hub will streamline the user experience by proper website design, including clear information architecture (IA), content segmentation, and intuitive navigation, ensuring that users can efficiently find and utilize resources.  </p>
+                            <p> These enhancements will improve the issues identified in the Lighthouse to optimize performance, accessibility, best practices, and SEO, leading to a more efficient and user-friendly experience.</p>                    
+                        <h4> Core features </h4>
+                            <div className="features_imgs">
+                                <img src={Features} className="Features" alt="features" />
+                            </div>                    
                 </div>
             </div>
 
