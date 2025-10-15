@@ -155,121 +155,186 @@ export default function DOST() {
                 </div>
             </div>
 
+            {/* II. UX Research & Synthesis */}
             <div className="content">
-                <h2> UX Solution </h2>
-                <p> The SCAMPER method facilitates creative yet practical solutions for improving existing applications like the DOST website. It
-                    allows for impactful enhancements without requiring a complete redesign, aligning with government website template
-                    guidelines. </p>
+                <h2> II. UX Research & Synthesis </h2>
+                <div className="content_specific">
+                    <h3> Target Audience </h3>
+
+                </div>
+                <div className="content_specific">
+                    <h3> Proto-Personas: Pain Points </h3>
+
+                </div>
+                <div className="content_specific">
+                    <h3> Root Cause Analysis </h3>
+
+                </div>                
             </div>
 
+            {/* III. Methodology & Testing Approach */}
             <div className="content">
-                <div className="scamper">
-                    <h1 className="content_scamper"> S </h1>
-                    <div>
-                        <h3> Implement an AI-Powered Virtual Assistant </h3>
-                        <p> Introduce an AI chatbot that provides instant responses to
-                            common inquiries instead of a static FAQs section and Contact Us
-                            page </p>
-                    </div>
-                </div>
-
-                <div className="scamper">
-                    <h1 className="content_scamper"> C </h1>
-                    <div>
-                        <h3> Execute a New Design Architecture </h3>
-                        <p> Implement a new design architecture that consolidates redundant
-                            sections of the website.</p>
-                    </div>
-                </div>
-                <div className="scamper-imgs">
-                    <img src={IAExisting} className="IA" alt="IA Existing" />           
-                    <img src={IAUpdated} className="IA" alt="IA Updated" />
-                </div>
-                
-                <div className="scamper">
-                    <h1 className="content_scamper"> A </h1>
-                    <div>
-                        <h3> Integrate a Comprehensive Search Engine </h3>
-                        <p> Integrate a comprehensive search engine for the entire website and
-                            for sections with extensive content.</p>
-                    </div>
-                </div>
-
-                <div className="scamper">
-                    <h1 className="content_scamper"> M </h1>
-                    <div>
-                        <h3> Enhance Content Discovery Improve design that will help the user </h3>
-                        <p> Improve design that will help the user understand each section by
-                            using context-aware call-to-action (CTA) buttons and infographics
-                            instead of plain texts </p>
-                    </div>
-                </div>
-
-                <div className="scamper">
-                    <h1 className="content_scamper"> P </h1>
-                    <div>
-                        <h3> Introduce an Online Complaint Submission System </h3>
-                        <p> Instead of providing only text-based instructions for submitting
-                            complaints, introduce an online complaint submission system.</p>
-                    </div>
-                </div>
-
-                <div className="scamper">
-                    <h1 className="content_scamper"> E </h1>
-                    <div>
-                        <h3> Reduce the Homepage and Navigation Bar Clutter </h3>
-                        <p> Remove less essential services from the landing page and quick links
-                            to declutter the homepage and the other sections of the website.</p>
-                    </div>
-                </div>
-
-                <div className="scamper">
-                    <h1 className="content_scamper"> R </h1>
-                    <div>
-                        <h3> Enforce User Accounts </h3>
-                        <p> Develop a user account system that identifies the user’s role within
-                            a sector (e.g., scholar, researcher, educator, private citizen). That will
-                            enable smart personalized content suggestions </p>
-                    </div>
-                </div> 
-                
-            </div>
-
-            <div className="content">
-                <h2> Research Methodology </h2>
-                <p> These methods are cost-effective, data-driven, and adaptable within the constraints of government
+                <h2> III. Methodology & Testing Approach </h2>
+                <div className="content_specific">
+                    <h3> Research Methods </h3>
+                    <p> These methods are cost-effective, data-driven, and adaptable within the constraints of government
                     website development. They ensure incremental improvements without requiring a complete overhaul,
                     aligning with usability goals while respecting budget, time, and policy limitations </p>
-                
-                <div> 
-                    <h3> A/B Testing </h3>
-                    <p> The research will compare the original and revamped designs to determine which
-                    provides a better user experience, revealing insights on navigation, engagement, and task efficiency to
-                    guide further improvements. </p>
-                    <h3> Survey </h3>
-                    <p> The research will gather direct user feedback on the overall design, uncovering
-                    preferences, frustrations, and suggestions to drive continuous improvements while keeping the website
-                    aligned with user needs. </p>
-                    <h3> Usability Testing </h3>
-                    <p> The research will observe users interacting with the revamped design to identify
-                    usability issues and areas for enhancement, ensuring the website is intuitive and meets user expectations. </p>
+                    <div> 
+                        <ul>
+                        <li>
+                            <h3>A/B Testing</h3>
+                            <p>
+                            The research will compare the original and revamped designs to determine which
+                            provides a better user experience, revealing insights on navigation, engagement, and task efficiency to
+                            guide further improvements.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Survey</h3>
+                            <p>
+                            The research will gather direct user feedback on the overall design, uncovering
+                            preferences, frustrations, and suggestions to drive continuous improvements while keeping the website
+                            aligned with user needs.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Usability Testing</h3>
+                            <p>
+                            The research will observe users interacting with the revamped design to identify
+                            usability issues and areas for enhancement, ensuring the website is intuitive and meets user expectations.
+                            </p>
+                        </li>
+                        </ul>
+                    </div>
                 </div>
+                <div className="content_specific">
+                    <h3> Usability Testing Approach </h3>
+
+                </div>
+                <div className="content_specific">
+                    <h3> Purposive Sampling </h3>
+
+                </div>      
+                <div className="content_specific">
+                    <h3> Key Tasks for Testing </h3>
+
+                </div>                              
             </div>
 
+            {/* IV. UX Solution Ideation & Design */}
             <div className="content">
-                <h2> Conclusion </h2>
-                <div className="scamper-imgs">
-                    <img src={JourneyMapwo} className="JourneyMap" alt="Journey Map without improvements" />           
-                    <img src={JourneyMapw} className="JourneyMap" alt="Journey Map with improvements" />
+                <h2> IV. UX Solution Ideation & Design </h2>
+                    <div className="content_specific">
+                        <h3> Ideation Framework </h3>
+                <div className="content">
+                    <div className="scamper">
+                        <h1 className="content_scamper"> S </h1>
+                        <div>
+                            <h3> Implement an AI-Powered Virtual Assistant </h3>
+                            <p> Introduce an AI chatbot that provides instant responses to
+                                common inquiries instead of a static FAQs section and Contact Us
+                                page </p>
+                        </div>
+                    </div>
+
+                    <div className="scamper">
+                        <h1 className="content_scamper"> C </h1>
+                        <div>
+                            <h3> Execute a New Design Architecture </h3>
+                            <p> Implement a new design architecture that consolidates redundant
+                                sections of the website.</p>
+                        </div>
+                    </div>
+                    <div className="scamper-imgs">
+                        <img src={IAExisting} className="IA" alt="IA Existing" />           
+                        <img src={IAUpdated} className="IA" alt="IA Updated" />
+                    </div>
+                    
+                    <div className="scamper">
+                        <h1 className="content_scamper"> A </h1>
+                        <div>
+                            <h3> Integrate a Comprehensive Search Engine </h3>
+                            <p> Integrate a comprehensive search engine for the entire website and
+                                for sections with extensive content.</p>
+                        </div>
+                    </div>
+
+                    <div className="scamper">
+                        <h1 className="content_scamper"> M </h1>
+                        <div>
+                            <h3> Enhance Content Discovery Improve design that will help the user </h3>
+                            <p> Improve design that will help the user understand each section by
+                                using context-aware call-to-action (CTA) buttons and infographics
+                                instead of plain texts </p>
+                        </div>
+                    </div>
+
+                    <div className="scamper">
+                        <h1 className="content_scamper"> P </h1>
+                        <div>
+                            <h3> Introduce an Online Complaint Submission System </h3>
+                            <p> Instead of providing only text-based instructions for submitting
+                                complaints, introduce an online complaint submission system.</p>
+                        </div>
+                    </div>
+
+                    <div className="scamper">
+                        <h1 className="content_scamper"> E </h1>
+                        <div>
+                            <h3> Reduce the Homepage and Navigation Bar Clutter </h3>
+                            <p> Remove less essential services from the landing page and quick links
+                                to declutter the homepage and the other sections of the website.</p>
+                        </div>
+                    </div>
+
+                    <div className="scamper">
+                        <h1 className="content_scamper"> R </h1>
+                        <div>
+                            <h3> Enforce User Accounts </h3>
+                            <p> Develop a user account system that identifies the user’s role within
+                                a sector (e.g., scholar, researcher, educator, private citizen). That will
+                                enable smart personalized content suggestions </p>
+                        </div>
+                    </div> 
+                    
                 </div>
-                <p> With the help of user behavior map, the test concludes that identifying the problem and applying the
-                    proposed solution, the task completion rate of the users will raise from 25% to 100%
-                    Overall, users (4/4) prefered the revamped design because it's more efficient compared to the current
-                    website, stating,
-                    “Kasi minimalized niya ‘yung interactions eh. Number one factor sa UX is efficiency, it
-                    saves a lot of time and energy. </p>
+                    </div>
+                <div className="content_specific">
+                    <h3> Core Solution </h3>
+
+                </div>
+                <div className="content_specific">
+                    <h3> Features </h3>
+
+                </div>                
             </div>
 
+
+            {/* V. Validation, Results, & Conclusion */}
+            <div className="content">
+                <h2>V. Validation, Results, & Conclusion</h2>
+                <div className="content_specific">
+                    <h3> User Behavior: Current Site </h3>
+
+                </div>
+                <div className="content_specific">
+                    <h3> UX Solution Validation </h3>
+
+                </div>
+                <div className="content_specific">
+                    <h3> Overall User Feedback </h3>
+
+                </div>        
+                <div className="content_specific">
+                    <h3> Measurable Impact </h3>
+
+                </div>              
+                <div className="content_specific">
+                    <h3> Future Development </h3>
+
+                </div>  
+            </div>
 
         </div>
     );
