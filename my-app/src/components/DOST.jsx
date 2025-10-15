@@ -14,6 +14,11 @@ import PrivateCitizens from "../assets/mock-ups/character-private citizen.png";
 import Educators from "../assets/mock-ups/character-educator.png";
 import Scientists from "../assets/mock-ups/character-scientist.png";
 
+import Performance from "../assets/mock-ups/metrics-performance.png";
+import Accessibility from "../assets/mock-ups/metrics-accessibility.png";
+import BestPractice from "../assets/mock-ups/metrics-best-practice.png";
+import SEO from "../assets/mock-ups/metrics-seo.png";
+
 // 2. Import both faArrowRight and faArrowLeft for the back button
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons"; 
 
@@ -117,6 +122,28 @@ export default function DOST() {
                
                <div className="content_specific">
                     <h3> Current State Metrics </h3>
+                    <p> As of March 02, 2025 | Source: Lighthouse Audit </p>
+                    <div className="metrics-container">
+                        <div className="metrics"> 
+                            <img src={Performance} className="metrics-img" alt="Performance" />
+                            <h4> Performance </h4>
+                        </div>
+                        <div className="metrics"> 
+                            <img src={Accessibility} className="metrics-img" alt="Performance" />
+                            <h4> Accessibility </h4>
+                        </div>                        
+                         <div className="metrics"> 
+                            <img src={BestPractice} className="metrics-img" alt="Performance" />
+                            <h4> Best practice </h4>
+                        </div>
+                        <div className="metrics"> 
+                            <img src={SEO} className="metrics-img" alt="Performance" />
+                            <h4> SEO </h4>
+                        </div>                    
+                    </div>
+                    <p> The decentralized structure of the DOST website results in a fragmented UI, inconsistent branding, disorganized content, and complex navigation.  </p>
+                    <p> Because of this, users face redundant pages, unclear categorization, and excessive clicks to access key services, leading to frustration, higher abandonment rates, and increased reliance on customer support.  </p>
+                    <p> These issues negatively impact Performance (58), Accessibility (77), and SEO (75), reducing overall user engagement and efficiency. </p>
                </div>
                 <div className="content_specific">
                 <h3> Research Objectives </h3>
