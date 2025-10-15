@@ -570,7 +570,7 @@ button:hover, .btn:hover{
     width: auto;
 }
 
-.persona_imgs img, .root-cause_imgs img {
+.persona_imgs img, .root-cause_imgs img, .features_imgs img{
     display: flex;
     gap: 16px;
     margin: 16px 0 0 60px;

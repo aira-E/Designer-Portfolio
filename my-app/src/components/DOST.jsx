@@ -2,15 +2,16 @@ import React from "react";
 // 1. Import useNavigate for routing
 import { useNavigate } from "react-router-dom"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../App.css"; // Ensures styles are applied
+
 import IAExisting from "../assets/mock-ups/IA-Existing.png";
 import IAUpdated from "../assets/mock-ups/IA-Updated.png";
 import Personas from "../assets/mock-ups/personas.png";
 import Rootcause from "../assets/mock-ups/root.png";
+import Features from "../assets/mock-ups/features.png";
 
 import Scholars from "../assets/mock-ups/character-scholar.png";
 import Researchers from "../assets/mock-ups/character-researcher.png";
-import PrivateCitizens from "../assets/mock-ups/character-private citizen.png";
+import PrivateCitizens from "../assets/mock-ups/character-private-citizen.png";
 import Educators from "../assets/mock-ups/character-educator.png";
 import Scientists from "../assets/mock-ups/character-scientist.png";
 
@@ -71,14 +72,14 @@ export default function DOST() {
                 <div className="banner"> 
                     <h1> DOST Website Revamp </h1>
                     <p> The Department of Science and Technology (DOST) website is not just your ordinary government website; it serves as a central hub connecting 16 regional offices and 6 service institutes, each with its own separate website. While this decentralized structure allows different offices to manage their own content, it also creates navigation and other user experiences challenges </p>
-  <a
-                        href="https://www.figma.com/proto/a24EEJXPrbTNl6SKsy2ZyE/DOST-Website--UX-University-2025-?page-id=0%3A1&node-id=169-30&p=f&viewport=36%2C238%2C0.02&t=HKVl3CBw9iU5GWRy-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=169%3A30&show-proto-sidebar=1"
-                        target="_blank"
+                    <a
+                        href="https://www.figma.com/proto/a24EEJXPrbTNl6SKsy2ZyE/DOST-Website--UX-University-2025-?page-id=0%3A1&node-id=169-30&p=f&viewport=36%2C238%2C0.02&t=HKVl3CBw9iU5GWRy-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=169%3A30&show-proto-sidebar=1"
+                        target="_blank"
                         // COMBINED all desired classes into a single string
-                        className="figma_dost_btn btn btn-primary card_concept_works_button"
+                        className="figma_dost_btn btn btn-primary card_concept_works_button"
                     >
-                        Figma prototype link <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
-                    </a>
+                        Figma prototype link <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
+                    </a>
                 </div>
             </div>
             
@@ -97,7 +98,7 @@ export default function DOST() {
                         <h3> User Value Proposition </h3>
                         <p> From "frustrating and confusing" to "more efficient"</p>
                     </div>
-                 </div>    
+                </div>
             </div>
             
             {/* I. Project Overview and Background */}
@@ -117,10 +118,10 @@ export default function DOST() {
                 
                 <div className="content_specific"> 
                     <h3> Problem Definition </h3>
-                    <p> The existing structure leads to a fragmented UI, inconsistent design, and disorganized content. Users struggle to locate services efficiently, leading to frustration, increased reliance on customer support, and high abandonment rates </p>                
+                    <p> The existing structure leads to a fragmented UI, inconsistent design, and disorganized content. Users struggle to locate services efficiently, leading to frustration, increased reliance on customer support, and high abandonment rates </p>
                 </div>
-               
-               <div className="content_specific">
+                
+                <div className="content_specific">
                     <h3> Current State Metrics </h3>
                     <p> As of March 02, 2025 | Source: Lighthouse Audit </p>
                     <div className="metrics-container">
@@ -131,22 +132,22 @@ export default function DOST() {
                         <div className="metrics"> 
                             <img src={Accessibility} className="metrics-img" alt="Performance" />
                             <h4> Accessibility </h4>
-                        </div>                        
-                         <div className="metrics"> 
+                        </div>
+                        <div className="metrics"> 
                             <img src={BestPractice} className="metrics-img" alt="Performance" />
                             <h4> Best practice </h4>
                         </div>
                         <div className="metrics"> 
                             <img src={SEO} className="metrics-img" alt="Performance" />
                             <h4> SEO </h4>
-                        </div>                    
+                        </div>
                     </div>
-                    <p> The decentralized structure of the DOST website results in a fragmented UI, inconsistent branding, disorganized content, and complex navigation.  </p>
-                    <p> Because of this, users face redundant pages, unclear categorization, and excessive clicks to access key services, leading to frustration, higher abandonment rates, and increased reliance on customer support.  </p>
+                    <p> The decentralized structure of the DOST website results in a fragmented UI, inconsistent branding, disorganized content, and complex navigation. </p>
+                    <p> Because of this, users face redundant pages, unclear categorization, and excessive clicks to access key services, leading to frustration, higher abandonment rates, and increased reliance on customer support. </p>
                     <p> These issues negatively impact Performance (58), Accessibility (77), and SEO (75), reducing overall user engagement and efficiency. </p>
-               </div>
+                </div>
                 <div className="content_specific">
-                <h3> Research Objectives </h3>
+                    <h3> Research Objectives </h3>
                     <div className="smart">
                         <h1 className="content_smart"> S </h1>
                         <div>
@@ -176,7 +177,7 @@ export default function DOST() {
                             <h4> Relevant </h4>
                             <p> Directly addresses navigation issues, fragmented design, and low engagement to enhance accessibility and user satisfaction.</p>
                         </div>
-                    </div>           
+                    </div>
                     <div className="smart">
                         <h1 className="content_smart"> T </h1>
                         <div>
@@ -193,48 +194,48 @@ export default function DOST() {
                 <div className="content_specific">
                     <h3> Target Audience </h3>
                     <p> The following groups will benefit the most from the DOST website: </p>
-                        <div className="target_audience">
-                            <img src={Scholars} className="character" alt="Scholars" />
-                            <div>
-                                <h4> Scholars </h4>
-                                <p> Access to research grants, scholarships, and academic resources.</p>
-                            </div>
-                        </div>           
-                        <div className="target_audience">
-                            <img src={Researchers} className="character" alt="Scholars" />
-                            <div>
-                                <h4> Researchers </h4>
-                                <p> Streamlined access to scientific data, funding opportunities, and collaboration tools </p>
-                            </div>
-                        </div>         
-                        <div className="target_audience">
-                            <img src={PrivateCitizens} className="character" alt="Scholars" />
-                            <div>
-                                <h4> Private Citizens </h4>
-                                <p> Information on government programs, funding assistance, and scientific initiatives. </p>
-                            </div>
-                        </div>         
-                        <div className="target_audience">
-                            <img src={Educators} className="character" alt="Scholars" />
-                            <div>
-                                <h4> Educators </h4>
-                                <p> Teaching materials, training programs, and science education resources. </p>
-                            </div>
-                        </div>         
-                        <div className="target_audience">
-                            <img src={Scientists} className="character" alt="Scholars" />
-                            <div>
-                                <h4> Scientists </h4>
-                                <p> Research publications, funding programs, and networking opportunities </p>
-                            </div>
-                        </div>    
+                    <div className="target_audience">
+                        <img src={Scholars} className="character" alt="Scholars" />
+                        <div>
+                            <h4> Scholars </h4>
+                            <p> Access to research grants, scholarships, and academic resources.</p>
+                        </div>
+                    </div>
+                    <div className="target_audience">
+                        <img src={Researchers} className="character" alt="Scholars" />
+                        <div>
+                            <h4> Researchers </h4>
+                            <p> Streamlined access to scientific data, funding opportunities, and collaboration tools </p>
+                        </div>
+                    </div> 
+                    <div className="target_audience">
+                        <img src={PrivateCitizens} className="character" alt="Scholars" />
+                        <div>
+                            <h4> Private Citizens </h4>
+                            <p> Information on government programs, funding assistance, and scientific initiatives. </p>
+                        </div>
+                    </div> 
+                    <div className="target_audience">
+                        <img src={Educators} className="character" alt="Scholars" />
+                        <div>
+                            <h4> Educators </h4>
+                            <p> Teaching materials, training programs, and science education resources. </p>
+                        </div>
+                    </div> 
+                    <div className="target_audience">
+                        <img src={Scientists} className="character" alt="Scholars" />
+                        <div>
+                            <h4> Scientists </h4>
+                            <p> Research publications, funding programs, and networking opportunities </p>
+                        </div>
+                    </div>
                     <p> Sample size: 10-15 participants with 2-3 representative per sector will have a strong and acceptable data feedback for the website </p>
                 </div>
                 <div className="content_specific">
                     <h3> Proto-Personas: Pain Points </h3>
                     <p> The research included five groups of person: scholars, researchers, private citizens, educators, and scientists.
                         But in this example, the researcher will deep dive on the role of scholars or researches with their preferences in navigating the DOST Website, 
-                        since according to a study (College student Web use, perceptions of information credibility, and verification behavior, 2003)  students has high dependency on the internet on both general and academic aspects 
+                        since according to a study (College student Web use, perceptions of information credibility, and verification behavior, 2003) students has high dependency on the internet on both general and academic aspects 
 
                         According to the same research, students have high verification efforts, they perceive a credible information across internet browsing and
                         having high number of resources will help them in the academe </p>
@@ -247,7 +248,7 @@ export default function DOST() {
                     <div className="root-cause_imgs">
                         <img src={Rootcause} className="Personas" alt="Personas" />
                     </div>
-                </div>                
+                </div>
             </div>
 
             {/* III. Methodology & Testing Approach */}
@@ -256,8 +257,8 @@ export default function DOST() {
                 <div className="content_specific">
                     <h3> Research Methods </h3>
                     <p> These methods are cost-effective, data-driven, and adaptable within the constraints of government
-                    website development. They ensure incremental improvements without requiring a complete overhaul,
-                    aligning with usability goals while respecting budget, time, and policy limitations </p>
+                        website development. They ensure incremental improvements without requiring a complete overhaul,
+                        aligning with usability goals while respecting budget, time, and policy limitations </p>
                     <div> 
                         <ul>
                         <li>
@@ -296,113 +297,115 @@ export default function DOST() {
                     <p> Participants were balanced between remote and in-person setups: </p>
                     <ul>
                         <li> 2 remote users (affiliated with DOST) were assumed to be more familiar with the site. </li>
-                        <li> 2 in-person users (not affiliated with DOST) used their own devices.  </li>                    
+                        <li> 2 in-person users (not affiliated with DOST) used their own devices. </li>
                     </ul>
                     <p> Observing them helped capture first-time reactions and provided opportunities for guidance when needed. </p> 
                 </div>
                 <div className="content_specific">
                     <h3> Sampling Method </h3>
-                    <p> The researcher intentionally selected 2 DOST-affiliated participants (e.g., scholars, innovators) as they represent the platform's primary users. Additionally, 2 non-DOST participants (e.g., educator, government employee) were included to capture perspectives from potential users who may benefit from the services.  </p>
+                    <p> The researcher intentionally selected 2 DOST-affiliated participants (e.g., scholars, innovators) as they represent the platform's primary users. Additionally, 2 non-DOST participants (e.g., educator, government employee) were included to capture perspectives from potential users who may benefit from the services. </p>
                     <p> This purposive sampling approach ensures relevance to the website’s intended use cases and user groups.</p>
 
-                </div>      
+                </div> 
                 <div className="content_specific">
                     <h3> Key Tasks for Testing </h3>
                     <ol>
                         <li> Search for available scholarships and view details on how to apply. And apply if applicable </li>
                         <li> Explore startup & innovation support, and apply if possible </li>
                         <li> File a complaint and explore general public services. </li>
-                        <li>Search and dowload for available resources </li>      
+                        <li>Search and dowload for available resources </li>
                     </ol>
-                </div>                              
+                </div>
             </div>
 
             {/* IV. UX Solution Ideation & Design */}
             <div className="content">
                 <h2> IV. UX Solution Ideation & Design </h2>
-                    <div className="content_specific">
-                        <h3> Ideation Framework </h3>
-                <div className="content">
-                    <div className="scamper">
-                        <h1 className="content_scamper"> S </h1>
-                        <div>
-                            <h4> Implement an AI-Powered Virtual Assistant </h4>
-                            <p> Introduce an AI chatbot that provides instant responses to
-                                common inquiries instead of a static FAQs section and Contact Us
-                                page </p>
+                <div className="content_specific">
+                    <h3> Ideation Framework </h3>
+                    <div className="content">
+                        <div className="scamper">
+                            <h1 className="content_scamper"> S </h1>
+                            <div>
+                                <h4> Implement an AI-Powered Virtual Assistant </h4>
+                                <p> Introduce an AI chatbot that provides instant responses to
+                                    common inquiries instead of a static FAQs section and Contact Us
+                                    page </p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="scamper">
-                        <h1 className="content_scamper"> C </h1>
-                        <div>
-                            <h4> Execute a New Design Architecture </h4>
-                            <p> Implement a new design architecture that consolidates redundant
-                                sections of the website.</p>
+                        <div className="scamper">
+                            <h1 className="content_scamper"> C </h1>
+                            <div>
+                                <h4> Execute a New Design Architecture </h4>
+                                <p> Implement a new design architecture that consolidates redundant
+                                    sections of the website.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="scamper-imgs">
-                        <img src={IAExisting} className="IA" alt="IA Existing" />           
-                        <img src={IAUpdated} className="IA" alt="IA Updated" />
-                    </div>
-                    
-                    <div className="scamper">
-                        <h1 className="content_scamper"> A </h1>
-                        <div>
-                            <h4> Integrate a Comprehensive Search Engine </h4>
-                            <p> Integrate a comprehensive search engine for the entire website and
-                                for sections with extensive content.</p>
+                        <div className="scamper-imgs">
+                            <img src={IAExisting} className="IA" alt="IA Existing" />
+                            <img src={IAUpdated} className="IA" alt="IA Updated" />
                         </div>
-                    </div>
+                        
+                        <div className="scamper">
+                            <h1 className="content_scamper"> A </h1>
+                            <div>
+                                <h4> Integrate a Comprehensive Search Engine </h4>
+                                <p> Integrate a comprehensive search engine for the entire website and
+                                    for sections with extensive content.</p>
+                            </div>
+                        </div>
 
-                    <div className="scamper">
-                        <h1 className="content_scamper"> M </h1>
-                        <div>
-                            <h4> Enhance Content Discovery Improve design that will help the user </h4>
-                            <p> Improve design that will help the user understand each section by
-                                using context-aware call-to-action (CTA) buttons and infographics
-                                instead of plain texts </p>
+                        <div className="scamper">
+                            <h1 className="content_scamper"> M </h1>
+                            <div>
+                                <h4> Enhance Content Discovery Improve design that will help the user </h4>
+                                <p> Improve design that will help the user understand each section by
+                                    using context-aware call-to-action (CTA) buttons and infographics
+                                    instead of plain texts </p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="scamper">
-                        <h1 className="content_scamper"> P </h1>
-                        <div>
-                            <h4> Introduce an Online Complaint Submission System </h4>
-                            <p> Instead of providing only text-based instructions for submitting
-                                complaints, introduce an online complaint submission system.</p>
+                        <div className="scamper">
+                            <h1 className="content_scamper"> P </h1>
+                            <div>
+                                <h4> Introduce an Online Complaint Submission System </h4>
+                                <p> Instead of providing only text-based instructions for submitting
+                                    complaints, introduce an online complaint submission system.</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="scamper">
-                        <h1 className="content_scamper"> E </h1>
-                        <div>
-                            <h4> Reduce the Homepage and Navigation Bar Clutter </h4>
-                            <p> Remove less essential services from the landing page and quick links
-                                to declutter the homepage and the other sections of the website.</p>
+                        <div className="scamper">
+                            <h1 className="content_scamper"> E </h1>
+                            <div>
+                                <h4> Reduce the Homepage and Navigation Bar Clutter </h4>
+                                <p> Remove less essential services from the landing page and quick links
+                                    to declutter the homepage and the other sections of the website.</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="scamper">
-                        <h1 className="content_scamper"> R </h1>
-                        <div>
-                            <h4> Enforce User Accounts </h4>
-                            <p> Develop a user account system that identifies the user’s role within
-                                a sector (e.g., scholar, researcher, educator, private citizen). That will
-                                enable smart personalized content suggestions </p>
-                        </div>
-                    </div> 
-                    
+                        <div className="scamper">
+                            <h1 className="content_scamper"> R </h1>
+                            <div>
+                                <h4> Enforce User Accounts </h4>
+                                <p> Develop a user account system that identifies the user’s role within
+                                    a sector (e.g., scholar, researcher, educator, private citizen). That will
+                                    enable smart personalized content suggestions </p>
+                            </div>
+                        </div> 
+                        
+                    </div>
                 </div>
-                    </div>
                 <div className="content_specific">
                     <h3> Core Solution </h3>
 
                 </div>
                 <div className="content_specific">
                     <h3> Features </h3>
-
-                </div>                
+                    <div className="features_imgs">
+                        <img src={Features} className="Features" alt="features" />
+                    </div>                    
+                </div>
             </div>
 
 
@@ -420,18 +423,17 @@ export default function DOST() {
                 <div className="content_specific">
                     <h3> Overall User Feedback </h3>
 
-                </div>        
+                </div>
                 <div className="content_specific">
                     <h3> Measurable Impact </h3>
 
-                </div>              
+                </div>
                 <div className="content_specific">
                     <h3> Future Development </h3>
 
-                </div>  
+                </div> 
             </div>
 
         </div>
     );
-
 }
