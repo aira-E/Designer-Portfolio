@@ -14,8 +14,11 @@ import QualiFindings3 from "../assets/mock-ups/quali-findings3.png";
 
 import Personas from "../assets/mock-ups/personas.png";
 import ProtoPersonas from "../assets/mock-ups/proto-personas.png";
+
 import Rootcause from "../assets/mock-ups/root.png";
 import Features from "../assets/mock-ups/features.png";
+import UserFeedback from "../assets/mock-ups/user-feedback.png";
+import Conclusion from "../assets/mock-ups/conclusion.png";
 
 import Scholars from "../assets/mock-ups/character-scholar.png";
 import Researchers from "../assets/mock-ups/character-researcher.png";
@@ -433,9 +436,11 @@ export default function DOST() {
                 <h2>V. Validation, Results, & Conclusion</h2>
                 <div className="content_specific">
                     <h3> User Behavior </h3>
-                       <div className="userbehavior-imgs">
-                            <img src={JourneyMap1} className="JourneyMap" alt="JourneyMap" />
-                            <img src={JourneyMap2} className="JourneyMap" alt="JourneyMap" />
+                        <div className="content_specific">
+                        <div className="userbehavior-imgs">
+                                <img src={JourneyMap1} className="JourneyMap" alt="JourneyMap" />
+                                <img src={JourneyMap2} className="JourneyMap" alt="JourneyMap" />
+                            </div>
                         </div>
                 <div className="content_specific"> 
                     <p> With the help of user behavior map, the test concludes that identifying the problem and applying the proposed solution, the task completion rate of the users will raise from 25% to 100% </p>    
@@ -485,15 +490,71 @@ export default function DOST() {
                 </div>
                 <div className="content_specific">
                     <h3> Overall User Feedback </h3>
+                    <div className="content_specific">
+                        <div className="userfeedback_imgs">
+                            <img src={UserFeedback} className="UserFeedback" alt="UserFeedback" />
+                        </div>
+                    </div>
+                    <ol>
+                        <li>  User Account for a more personalized contents </li>
+                            <div className="userfeedback_imgs">
+                                <p> All users shared that they have prior experience creating accounts on websites and agreed that account creation should depend on the user’s intent and needs. They are more inclined to register if it results in a more personalized and streamlined experience. One user noted, “Kung iba makikita ko pag nagka-account ako,” expressing the value of tailored content. A teacher also emphasized this by saying, “If halo-halo nakikita mo, nakakalito. Magbibigay ng certificates DepEd, makikita mo pati ‘yung sa iba, tapos hahanapin mo pa ‘yung sa’yo,” highlighting the importance of filtering relevant information. </p>
+                            </div>       
+                            <div className="userfeedback_imgs">
+                                <p> Additionally, respondents recommended adding: </p>
+                                <ul>
+                                    <li> Having multiple roles. For a more accurate personalization, demanding, “Ako teacher ako, pero at the same time student and researcher din” </li>
+                                </ul>
+                                <p>Hence, the researcher concludes that creating an account should remain optional to accommodate different user needs. However, whether or not a user has an account, the website’s content must remain cohesive, accessible, and user-friendly.
+                                    Additionally, the user may pick multiple user roles and makes the changing of the roles availble from time to time to a more updated and personalized user experience</p>
+                            </div>                                                                               
+                        <li> In web application system to lessen anchored links </li>
+                            <p> All users appreciated the presence of an application system on the website for various reasons: </p>
+                            <ul>
+                                <li> Reduces Errors. Users preferred a “form” type setup, with one stating: “Siguro doon ako mas sanay, tapos nalalaman mo pa kung saan ka may kulang or nagkamali, kasi ‘di ba kapag online form may indication.” </li>
+                                <li> More Direct. Respondents noted that the process felt more straightforward, reducing reliance on anchored links and minimizing clicks. One mentioned: “Dire-diretso na.” </li>
+                                <li> Sets Expectations. One user emphasized the progress bar included on the design when filling out forms, stating: “Ang tagal-tagal parang hindi natatapos,” suggesting that visual feedback helps manage their expectations. </li>
+                            </ul>
+                            <p> Additionally, respondents recommended adding: </p>
+                            <ul>
+                                <li> An anonymous option for sensitive complaint applications, </li>
+                                <li> A confirmation message to serve as proof of submission, and </li>
+                                <li> A tracker or status update feature to notify users of their application progress. </li>
+                                <li> A video demo to provide more guidance to the user </li>
+                            </ul>
+                        <li> Auto-fill feature on forms for multiple submission </li>
+                            <p> All users initially overlooked the “Auto-fill” button, with one respondent suggesting that its color may have made it less noticeable.
 
-                </div>
-                <div className="content_specific">
-                    <h3> Measurable Impact </h3>
+                                Half of the respondents (2/4) quickly recognized that the form on the website was based on the CSC Form 212 (Revised 2017) - Personal Data Sheet, and both appreciated this reference as it made the process easier. One respondent remarked, “Maganda ‘to, kasi ang mga tao tamad,” implying that the feature supports users by simplifying repetitive tasks. Another user added, “Paulit-ulit nagfi-fill-up every time mag-apply ka. Nakakapagod,” emphasizing how the feature reduces redundancy.
 
+                                However, one user raised concerns about privacy, expressing that while autofill is helpful, some users might hesitate if they feel the website has access to their personal information. She suggested including a prompt or message acknowledging the use of their data and clearly referencing the Data Privacy Act, to ensure transparency and user consent.
+                                </p>
+                        <li> AI Chatbot for a faster customer service </li>
+                            <p> All users appreciated the chatbot’s design and animation, which made it easily noticeable.
+                                Preferences for using an AI chatbot versus contacting customer service varied based on urgency and context: </p>
+                            <ul>
+                                <li> User 1 preferred the chatbot for faster responses and only consulted people if necessary. </li>
+                                <li> User 2 chose between customer service or AI depending on the nature of the concern. He also gave example that he called customer service regarding his delayed stipend. </li>
+                                <li> User 3 explored the website first, then used the chatbot, and only resorted to calling or emailing if needed. </li>
+                                <li> User 4 preferred talking to a person for concerns but used the chatbot for general website info. </li>
+                            </ul>
+                            <p> One user highlighted the chatbot's role in improving navigation efficiency, saying, “Mabilis mag-provide ng info. It could help sa efficiency sa pag-navigate,” noting that such features make a website stand out. However, one user suggested that the chatbot should save previous queries to avoid re-entering concerns every visit. </p>
+                    </ol>
+                    <div className="content_specific">
+                        <div className="userfeedback_imgs">
+                            <img src={Conclusion} className="UserFeedback" alt="UserFeedback" />
+                        </div>
+                    </div>
                 </div>
                 <div className="content_specific">
                     <h3> Future Development </h3>
-
+                    <p> The researcher suggests to implement the following for future development: </p>
+                    <ul>
+                        <li> Inclusive Design </li>
+                        <p> Since one of the participant is visually impaired, it is hard for them to read some of the texts. In consideration also to our PWD sector </p>
+                        <li> Scholarship Specific Page </li>
+                        <p> Since most of the traffic is present in this area. It is suggested that the website will have a specific page for the scholarships. </p>
+                    </ul>
                 </div> 
             </div>
 

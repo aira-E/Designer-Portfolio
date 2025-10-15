@@ -570,7 +570,9 @@ button:hover, .btn:hover{
     width: auto;
 }
 
-.persona_imgs img, .root-cause_imgs img, .features_imgs img, .ux-solution_imgs img{
+.persona_imgs img, .root-cause_imgs img, 
+.features_imgs img, .ux-solution_imgs img,
+.userfeedback_imgs img{
     display: flex;
     gap: 16px;
     margin: 16px 0 0 60px;
@@ -595,4 +597,8 @@ button:hover, .btn:hover{
     height: auto; 
     max-width: 50%; 
     box-sizing: border-box; /* Good practice for flex items with padding/borders */
+}
+
+.DOST_casestudy p{
+  margin-bottom: 8px;
 }
