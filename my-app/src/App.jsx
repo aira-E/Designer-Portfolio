@@ -91,118 +91,127 @@ function App() {
         </div>
       </div>
 
-      {/* Case Studies Section (This structure was correct) */}
-      <div className="section_case_studies">
-        <div className="section_cards_case_studies">
-        <h2> Case Studies </h2>
-          <div className="card_case_studies_container"> 
-            <div className="card_case_studies">
-                <div className="card_case_studies_banner">
-                   <p> <span style={{ color: "#FEB341" }}>Role: </span> UX Researcher, UI/UX Designer </p>
-                 </div>  
-              <div className="card_case_studies_header">
-                <img src={dostIcon} className="icon_logos" alt="icon_dost" />
-                <div className="card_case_studies_texts">
-                  <h3> DOST Website Revamp </h3>
-                  <p> Enhancing the Department of Science and Technology (DOST) Website as a Centralized Hub for Public Services </p>
-                </div>
-                <div className="trophy-tooltip-wrapper" style={{ position: "relative", display: "inline-block" }}>
-                  <FontAwesomeIcon
-                    icon={faTrophy}
-                    style={{ color: "#FFD700", fontSize: "25px", margin: "25px", cursor: "pointer" }}
-                    onMouseEnter={e => e.currentTarget.nextSibling.style.opacity = 1}
-                    onMouseLeave={e => e.currentTarget.nextSibling.style.opacity = 0}
-                  />
-                  <span
-                    className="trophy-tooltip"
-                    style={{
-                      position: "absolute",
-                      bottom: "110%",
-                      left: "50%",
-                      transform: "translateX(-50%)",
-                      background: "#222",
-                      color: "#FEB341",
-                      padding: "8px 16px",
-                      borderRadius: "6px",
-                      whiteSpace: "nowrap",
-                      fontSize: "0.95rem",
-                      opacity: 0,
-                      pointerEvents: "none",
-                      transition: "opacity 0.2s"
-                      
-                    }}
-                  >
-                    Top 5 finalist in UX University 2025: Shifting Tide
-                  </span>
-                </div>
-              </div>
-              <div className="card_case_studies_button">
-                <button onClick={() => navigate("/dost")}>
-                  Read case study <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
-                </button>
-              </div>
-              <img src={dostMock} className="mock-ups" alt="mock-ups_dost" />
-                <div className="card_case_studies_footer">
-                {/*  <p> Technologies used: </p> */}
-                <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
-              </div>
-            </div>
 
-            <div className="card_case_studies">
+        <div className="section_case_studies">
+        <div className="section_cards_case_studies">
+            <h2> Case Studies </h2>
+            <div className="card_case_studies_container">
+
+            {/* 🟡 First card — DOST */}
+            <div className="card_case_studies_content">
                 <div className="card_case_studies_banner">
-                   <p> <span style={{ color: "#FEB341" }}>Role: </span> Product Designer, UI/UX Designer </p>
-                 </div>              
+                <p><span style={{ color: "#FEB341" }}>Role: </span> UX Researcher, UI/UX Designer</p>
+                </div>
+                <div className="card_case_studies">
                 <div className="card_case_studies_header">
-                <img src={pricepulseIcon} className="icon_logos" alt="icon_pricepulse" />
-                <div className="card_case_studies_texts">
-                  <h3> Price Pulse PH </h3>
-                  <p> A mobile app designed to help everyday Filipinos track and manage the rising costs of essential goods—now and in the future. </p>
-                </div>
-                <div className="trophy-tooltip-wrapper" style={{ position: "relative", display: "inline-block" }}>
-                  <FontAwesomeIcon
-                    icon={faTrophy}
-                    style={{ color: "#FFD700", fontSize: "25px", margin: "25px", cursor: "pointer" }}
-                    onMouseEnter={e => e.currentTarget.nextSibling.style.opacity = 1}
-                    onMouseLeave={e => e.currentTarget.nextSibling.style.opacity = 0}
-                  />
-                  <span
-                    className="trophy-tooltip"
-                    style={{
-                      position: "absolute",
-                      bottom: "110%",
-                      left: "50%",
-                      transform: "translateX(-50%)",
-                      background: "#222",
-                      color: "#FEB341",
-                      padding: "8px 16px",
-                      borderRadius: "6px",
-                      whiteSpace: "nowrap",
-                      fontSize: "0.95rem",
-                      opacity: 0,
-                      pointerEvents: "none",
-                      transition: "opacity 0.2s"
-                    }}
-                  >
-                    Top 10 Finalist on Ideathon 2025 at Software Engineering Day 2025
-                  </span>
-                </div>
-              </div>
-              <div className="card_case_studies_button">
-                <button onClick={() => navigate("/pricepulse")}>
-                  Read case study <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
-                </button>
-              </div>
-              <img src={pricepulseMock} className="mock-ups" alt="mock-ups_pricepulse" />
-                <div className="card_case_studies_footer">
-                {/*  <p> Technologies used: </p> */}
-                <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                    <img src={dostIcon} className="icon_logos" alt="icon_dost" />
+                    <div className="card_case_studies_texts">
+                    <h3>DOST Website Revamp</h3>
+                    <p>Enhancing the Department of Science and Technology (DOST) Website as a Centralized Hub for Public Services</p>
+                    </div>
+                    <div className="trophy-tooltip-wrapper" style={{ position: "relative", display: "inline-block" }}>
+                    <FontAwesomeIcon
+                        icon={faTrophy}
+                        style={{ color: "#FFD700", fontSize: "25px", margin: "25px", cursor: "pointer" }}
+                        onMouseEnter={(e) => (e.currentTarget.nextSibling.style.opacity = 1)}
+                        onMouseLeave={(e) => (e.currentTarget.nextSibling.style.opacity = 0)}
+                    />
+                    <span
+                        className="trophy-tooltip"
+                        style={{
+                        position: "absolute",
+                        bottom: "110%",
+                        left: "50%",
+                        transform: "translateX(-50%)",
+                        background: "#222",
+                        color: "#FEB341",
+                        padding: "8px 16px",
+                        borderRadius: "6px",
+                        whiteSpace: "nowrap",
+                        fontSize: "0.95rem",
+                        opacity: 0,
+                        pointerEvents: "none",
+                        transition: "opacity 0.2s",
+                        }}
+                    >
+                        Top 5 finalist in UX University 2025: Shifting Tide
+                    </span>
+                    </div>
+                </div>
 
-      {/* Concept Works Section (CORRECTED STRUCTURE) */}
+                <div className="card_case_studies_button">
+                    <button onClick={() => navigate("/dost")}>
+                    Read case study <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
+                    </button>
+                </div>
+
+                <img src={dostMock} className="mock-ups" alt="mock-ups_dost" />
+                <div className="card_case_studies_footer">
+                    <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
+                </div>
+                </div>
+            </div>
+
+            {/* 🟢 Second card — Price Pulse PH */}
+            <div className="card_case_studies_content">
+                <div className="card_case_studies_banner">
+                <p><span style={{ color: "#FEB341" }}>Role: </span> Product Designer, UI/UX Designer</p>
+                </div>
+                <div className="card_case_studies">
+                <div className="card_case_studies_header">
+                    <img src={pricepulseIcon} className="icon_logos" alt="icon_pricepulse" />
+                    <div className="card_case_studies_texts">
+                    <h3>Price Pulse PH</h3>
+                    <p>A mobile app designed to help everyday Filipinos track and manage the rising costs of essential goods—now and in the future.</p>
+                    </div>
+                    <div className="trophy-tooltip-wrapper" style={{ position: "relative", display: "inline-block" }}>
+                    <FontAwesomeIcon
+                        icon={faTrophy}
+                        style={{ color: "#FFD700", fontSize: "25px", margin: "25px", cursor: "pointer" }}
+                        onMouseEnter={(e) => (e.currentTarget.nextSibling.style.opacity = 1)}
+                        onMouseLeave={(e) => (e.currentTarget.nextSibling.style.opacity = 0)}
+                    />
+                    <span
+                        className="trophy-tooltip"
+                        style={{
+                        position: "absolute",
+                        bottom: "110%",
+                        left: "50%",
+                        transform: "translateX(-50%)",
+                        background: "#222",
+                        color: "#FEB341",
+                        padding: "8px 16px",
+                        borderRadius: "6px",
+                        whiteSpace: "nowrap",
+                        fontSize: "0.95rem",
+                        opacity: 0,
+                        pointerEvents: "none",
+                        transition: "opacity 0.2s",
+                        }}
+                    >
+                        Top 10 Finalist on Ideathon 2025 at Software Engineering Day 2025
+                    </span>
+                    </div>
+                </div>
+
+                <div className="card_case_studies_button">
+                    <button onClick={() => navigate("/pricepulse")}>
+                    Read case study <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
+                    </button>
+                </div>
+
+                <img src={pricepulseMock} className="mock-ups" alt="mock-ups_pricepulse" />
+                <div className="card_case_studies_footer">
+                    <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
+                </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </div>
+
+
       <div className="section_concept_works">
         <h2> Concept Works </h2>
         <div className="section_cards_concept_works">
@@ -293,9 +302,9 @@ function App() {
           </div>
         </div>  
         </div>        
-      </div> {/* Closes section_concept_works */}
+      </div> 
 
-      {/* Branding Section (CORRECTED STRUCTURE)*/}      
+      
             ```jsx
                  
             <BrandingCarousel 

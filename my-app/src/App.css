@@ -164,7 +164,7 @@ gap: 32px;
   justify-content: center;
   align-items: center;
   gap: 32px;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
   background: #3C3E42;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
@@ -246,12 +246,13 @@ button:hover, .btn:hover{
   padding: 8px 0;
   justify-content: flex-start;
   align-items: center;
-  border-radius: 0 0 4px 4px;
+  border-radius: 8px 8px 0 0;
   border-bottom: 1px solid #757575;
   gap: 8px;
+  background-color: #2b2b2b;
 }
 
-.card_concept_works_banner p{
+.card_concept_works_banner p, .card_case_studies_banner p{
   padding: 8px 0;
   margin-left: 8px;  
 }
@@ -318,7 +319,7 @@ button:hover, .btn:hover{
   will-change: transform;
 }
 
-.concept_works_container{
+.concept_works_container, .card_case_studies_container{
   padding: 16 px
 }
 
