@@ -150,7 +150,7 @@ export default function DOST() {
                     <div className="smart">
                         <h1 className="content_smart"> S </h1>
                         <div>
-                            <h3> Specific </h3>
+                            <h4> Specific </h4>
                             <p> Improve website navigation for seamless access to information and services, establish a unified
                                 design, and enhance usability while maintaining functionality. Implement a user-centered experience to
                                 boost engagement.</p>
@@ -159,28 +159,28 @@ export default function DOST() {
                     <div className="smart">
                         <h1 className="content_smart"> M </h1>
                         <div>
-                            <h3> Measurable </h3>
+                            <h4> Measurable </h4>
                             <p> Track success through user task completion rate and positive user feedback.</p>
                         </div>
                     </div>
                     <div className="smart">
                         <h1 className="content_smart"> A</h1>
                         <div>
-                            <h3> Achievable </h3>
+                            <h4> Achievable </h4>
                             <p> Leverage existing structures and UX/UI best practices, using an iterative development approach informed by user feedback. </p>
                         </div>
                     </div>
                     <div className="smart">
                         <h1 className="content_smart"> R </h1>
                         <div>
-                            <h3> Relevant </h3>
+                            <h4> Relevant </h4>
                             <p> Directly addresses navigation issues, fragmented design, and low engagement to enhance accessibility and user satisfaction.</p>
                         </div>
                     </div>           
                     <div className="smart">
                         <h1 className="content_smart"> T </h1>
                         <div>
-                            <h3> Time-bound </h3>
+                            <h4> Time-bound </h4>
                             <p> Phased execution—research and prototyping within a week, hypothetically followed by six months of development and testing, with full implementation within a year.</p>
                         </div>
                     </div>
@@ -196,35 +196,35 @@ export default function DOST() {
                         <div className="target_audience">
                             <img src={Scholars} className="character" alt="Scholars" />
                             <div>
-                                <h3> Scholars </h3>
+                                <h4> Scholars </h4>
                                 <p> Access to research grants, scholarships, and academic resources.</p>
                             </div>
                         </div>           
                         <div className="target_audience">
                             <img src={Researchers} className="character" alt="Scholars" />
                             <div>
-                                <h3> Researchers </h3>
+                                <h4> Researchers </h4>
                                 <p> Streamlined access to scientific data, funding opportunities, and collaboration tools </p>
                             </div>
                         </div>         
                         <div className="target_audience">
                             <img src={PrivateCitizens} className="character" alt="Scholars" />
                             <div>
-                                <h3> Private Citizens </h3>
+                                <h4> Private Citizens </h4>
                                 <p> Information on government programs, funding assistance, and scientific initiatives. </p>
                             </div>
                         </div>         
                         <div className="target_audience">
                             <img src={Educators} className="character" alt="Scholars" />
                             <div>
-                                <h3> Educators </h3>
+                                <h4> Educators </h4>
                                 <p> Teaching materials, training programs, and science education resources. </p>
                             </div>
                         </div>         
                         <div className="target_audience">
                             <img src={Scientists} className="character" alt="Scholars" />
                             <div>
-                                <h3> Scientists </h3>
+                                <h4> Scientists </h4>
                                 <p> Research publications, funding programs, and networking opportunities </p>
                             </div>
                         </div>    
@@ -261,7 +261,7 @@ export default function DOST() {
                     <div> 
                         <ul>
                         <li>
-                            <h3>A/B Testing</h3>
+                            <h4>A/B Testing</h4>
                             <p>
                             The research will compare the original and revamped designs to determine which
                             provides a better user experience, revealing insights on navigation, engagement, and task efficiency to
@@ -269,7 +269,7 @@ export default function DOST() {
                             </p>
                         </li>
                         <li>
-                            <h3>Survey</h3>
+                            <h4>Survey</h4>
                             <p>
                             The research will gather direct user feedback on the overall design, uncovering
                             preferences, frustrations, and suggestions to drive continuous improvements while keeping the website
@@ -277,7 +277,7 @@ export default function DOST() {
                             </p>
                         </li>
                         <li>
-                            <h3>Usability Testing</h3>
+                            <h4>Usability Testing</h4>
                             <p>
                             The research will observe users interacting with the revamped design to identify
                             usability issues and areas for enhancement, ensuring the website is intuitive and meets user expectations.
@@ -326,7 +326,7 @@ export default function DOST() {
                     <div className="scamper">
                         <h1 className="content_scamper"> S </h1>
                         <div>
-                            <h3> Implement an AI-Powered Virtual Assistant </h3>
+                            <h4> Implement an AI-Powered Virtual Assistant </h4>
                             <p> Introduce an AI chatbot that provides instant responses to
                                 common inquiries instead of a static FAQs section and Contact Us
                                 page </p>
@@ -336,7 +336,7 @@ export default function DOST() {
                     <div className="scamper">
                         <h1 className="content_scamper"> C </h1>
                         <div>
-                            <h3> Execute a New Design Architecture </h3>
+                            <h4> Execute a New Design Architecture </h4>
                             <p> Implement a new design architecture that consolidates redundant
                                 sections of the website.</p>
                         </div>
@@ -349,7 +349,7 @@ export default function DOST() {
                     <div className="scamper">
                         <h1 className="content_scamper"> A </h1>
                         <div>
-                            <h3> Integrate a Comprehensive Search Engine </h3>
+                            <h4> Integrate a Comprehensive Search Engine </h4>
                             <p> Integrate a comprehensive search engine for the entire website and
                                 for sections with extensive content.</p>
                         </div>
@@ -358,7 +358,7 @@ export default function DOST() {
                     <div className="scamper">
                         <h1 className="content_scamper"> M </h1>
                         <div>
-                            <h3> Enhance Content Discovery Improve design that will help the user </h3>
+                            <h4> Enhance Content Discovery Improve design that will help the user </h4>
                             <p> Improve design that will help the user understand each section by
                                 using context-aware call-to-action (CTA) buttons and infographics
                                 instead of plain texts </p>
@@ -368,7 +368,7 @@ export default function DOST() {
                     <div className="scamper">
                         <h1 className="content_scamper"> P </h1>
                         <div>
-                            <h3> Introduce an Online Complaint Submission System </h3>
+                            <h4> Introduce an Online Complaint Submission System </h4>
                             <p> Instead of providing only text-based instructions for submitting
                                 complaints, introduce an online complaint submission system.</p>
                         </div>
@@ -377,7 +377,7 @@ export default function DOST() {
                     <div className="scamper">
                         <h1 className="content_scamper"> E </h1>
                         <div>
-                            <h3> Reduce the Homepage and Navigation Bar Clutter </h3>
+                            <h4> Reduce the Homepage and Navigation Bar Clutter </h4>
                             <p> Remove less essential services from the landing page and quick links
                                 to declutter the homepage and the other sections of the website.</p>
                         </div>
@@ -386,7 +386,7 @@ export default function DOST() {
                     <div className="scamper">
                         <h1 className="content_scamper"> R </h1>
                         <div>
-                            <h3> Enforce User Accounts </h3>
+                            <h4> Enforce User Accounts </h4>
                             <p> Develop a user account system that identifies the user’s role within
                                 a sector (e.g., scholar, researcher, educator, private citizen). That will
                                 enable smart personalized content suggestions </p>
