@@ -305,7 +305,6 @@ function App() {
       </div> 
 
       
-            ```jsx
                  
             <BrandingCarousel 
                 mdb={mdb} 
@@ -315,7 +314,7 @@ function App() {
                 psIcon={psIcon} 
                 canvaIcon={canvaIcon} 
             />
-            ```
+            
 
       {/* Contact Section (CORRECTED STRUCTURE) */}         
       <div className="section_contact"> {/* Added the section wrapper div */}

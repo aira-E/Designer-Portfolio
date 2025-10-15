@@ -1,7 +1,5 @@
 import React from 'react';
-// Assuming the following icons/images are passed as props or imported in App.jsx
-// For now, we'll assume mdb, rl, figmaIcon, aiIcon, psIcon, canvaIcon are passed as props or globally available
-import './Carousel.css'; // Import the new CSS file
+import './Carousel.css'; 
 
 function BrandingCarousel({ mdb, rl, figmaIcon, aiIcon, psIcon, canvaIcon }) {
     return (
@@ -9,12 +7,11 @@ function BrandingCarousel({ mdb, rl, figmaIcon, aiIcon, psIcon, canvaIcon }) {
             <h2> Branding </h2>
             
             <div className="carousel-wrapper">
-                {/* 1. Radio Button Controls (Hidden) */}
-                {/* defaultChecked makes Image 1 the initial slide */}
-                <input type="radio" name="slider" id="image1" defaultChecked />
+                {/* Radio Button Controls (Hidden) */}
+                <input type="radio" name="slider" id="image1" />
                 <input type="radio" name="slider" id="image2" />
                 
-                {/* 2. Slides Container */}
+                {/* Slides Container */}
                 <div className="slides-container">
                     
                     {/* Slide 1: MDB */}
@@ -43,17 +40,11 @@ function BrandingCarousel({ mdb, rl, figmaIcon, aiIcon, psIcon, canvaIcon }) {
 
                 </div> {/* Closes slides-container */}
 
-                {/* 3. Navigation Indicators (Radio Button Labels) */}
+                {/* Navigation Indicators (Radio Button Labels) */}
                 <div className="navigation-manual">
                     <label htmlFor="image1" className="manual-btn"></label>
                     <label htmlFor="image2" className="manual-btn"></label>
                 </div>
-
-                    {/* 4. Autoplay Trigger (Hidden element for CSS animation) */}
-                    <div className="autoplay-trigger">
-                        <div className="auto-btn1"></div>
-                        <div className="auto-btn2"></div>
-                    </div>
                 
             </div> {/* Closes carousel-wrapper */}
         </div>

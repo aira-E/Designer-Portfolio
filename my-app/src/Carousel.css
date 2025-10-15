@@ -1,23 +1,15 @@
 /* --- CAROUSEL BASE STYLES --- */
 .carousel-wrapper {
     width: 100%;
-    max-width: 1000px; /* Adjust this width based on your layout */
+    max-width: 1000px; 
     margin: 0 auto;
-    overflow: hidden; /* Crucial: hides the slides that are off-screen */
+    overflow: hidden; 
     position: relative;
 }
 
 /* Hide the actual radio buttons */
 .carousel-wrapper input[type="radio"] {
     display: none;
-}
-
-/* The container that holds all slides horizontally */
-.slides-container {
-    display: flex;
-    width: 200%; /* 2 slides * 100% width each */
-    height: 100%; 
-    transition: margin-left 0.6s ease-in-out; /* Smooth transition when sliding manually */
 }
 
 /* Each slide occupies 50% of the slides-container width */
@@ -37,10 +29,10 @@
     align-items: center;
     gap: 16px; 
     padding: 16px;
-    background: #3C3E42; /* Example card background from your code */
+    background: #3C3E42; 
     border-radius: 8px;
-    width: 100%; /* Take full width of the slide */
-    max-width: 750px; /* Match your image width */
+    width: 100%; 
+    max-width: 750px; 
 }
 
 /* The actual images within the cards */
@@ -48,13 +40,6 @@
     width: 100%;
     height: auto;
     display: block;
-}
-
-/* --- SLIDING LOGIC (Manual Navigation) --- */
-
-/* When image 2 is checked, shift the entire container left by 100% (the width of one slide) */
-#image2:checked ~ .slides-container {
-    margin-left: -100%;
 }
 
 /* --- INDICATORS (Radio Button Dots) --- */
@@ -77,91 +62,84 @@
     transition: background 0.5s;
 }
 
-/* Highlight the active dot */
+/* Highlight the active dot when manually checked */
 #image1:checked ~ .navigation-manual .manual-btn:nth-child(1),
 #image2:checked ~ .navigation-manual .manual-btn:nth-child(2) {
-    background: #FEB341; /* Your primary color */
+    background: #FEB341; 
 }
 
-/* --- AUTOPLAY LOOP LOGIC --- */
+/* ======================================= */
+/* --- AUTOPLAY & MANUAL SLIDING LOGIC --- */
+/* ======================================= */
 
-/* Hide the trigger element */
-.autoplay-trigger {
-    display: none; 
-}
-
-/* Define the looping animation that cycles the slides */
+/* 1. Define the looping animation (8s total cycle, 4s per image) */
+/* To make the slide look left-only, we increase the width of the container
+   in the animation and then move it back instantly (snapping). 
+   However, for a 2-slide system, the most efficient method is to loop the 
+   margin-left change and ensure the `slides-container` has a transition.
+*/
 @keyframes slide-loop {
-    /* 8s cycle time (4s per image) */
-    0%, 45% { margin-left: 0; }        /* Image 1 is shown (0% to 45%) */
-    50%, 95% { margin-left: -100%; }   /* Image 2 is shown (50% to 95%) */
-    100% { margin-left: 0; }           /* Loop back to Image 1 */
-}
-
-/* Apply the animation to a pseudo-element or the trigger div itself */
-.auto-btn1 {
-    animation: slide-loop 8s infinite;
-}
-
-/* Use the animation state to drive the slide position when NO manual control is active (no hover) */
-/* This ensures the automatic slide works only when the user isn't interacting */
-.autoplay-trigger:not(:hover) ~ .slides-container {
-    animation: slide-loop 8s infinite;
-}
-
-/* Important: Stop the autoplay animation when a manual radio button is checked (user takes control) */
-#image1:checked ~ .slides-container,
-#image2:checked ~ .slides-container {
-    animation: none;
-}
-
-/* --- AUTOPLAY LOOP LOGIC (FIXED) --- */
-
-/* 1. Define the looping animation that cycles the slides */
-/* 8s total cycle (4s per image) */
-@keyframes slide-loop {
-    /* Image 1: 0% to 45% (stays still) */
-    0%, 45% { 
-        margin-left: 0; 
-    }
+    /* Image 1 is shown (0s to 3.5s) */
+    0% { margin-left: 0; }
+    43.75% { margin-left: 0; } /* 3.5s of 8s */
     
-    /* 45% to 50%: Smooth transition to Image 2 (0.4s) */
+    /* Smooth transition to Image 2 (0.5s) */
+    50% { margin-left: -100%; } /* 4s of 8s */
     
-    /* Image 2: 50% to 95% (stays still) */
-    50%, 95% { 
-        margin-left: -100%; 
-    }
+    /* Image 2 is shown (4s to 7.5s) */
+    93.75% { margin-left: -100%; } /* 7.5s of 8s */
     
-    /* 95% to 100%: Quick snap back to 0% to restart the loop */
-    100% { 
-        margin-left: 0; 
-    }
+    /* SNAP back to the start (instantaneous movement to loop left-only) */
+    93.76% { margin-left: 0; } 
+    100% { margin-left: 0; } 
 }
 
-/* 2. Apply the animation to the slides container by default */
+/* The container that holds all slides horizontally */
 .slides-container {
     display: flex;
     width: 200%; 
     height: 100%; 
-    /* The transition is still needed for smooth manual clicks */
+    
+    /* This transition is key for both manual and animated smooth movement */
     transition: margin-left 0.6s ease-in-out; 
     
-    /* NEW: Apply the Autoplay Animation directly here */
+    /* Apply the Autoplay Animation by default (8s total cycle) */
     animation: slide-loop 8s linear infinite; 
 }
 
 
-/* 3. STOP the animation when a radio button is checked (user has clicked manually) */
+/* --- Autoplay Dot Indicators (Fixing the dot color during animation) --- */
+/* If no radio button is checked, the slides-container is running the animation. */
+/* We use the animation property to highlight the dots. */
 
-/* When image 1 is manually checked, stop animation and keep it positioned at 0 */
+/* Image 1 is active from 0% to 50% of the loop */
+.carousel-wrapper:not(:has(:checked)) .navigation-manual .manual-btn:nth-child(1) {
+    animation: dot-highlight 8s linear infinite;
+    animation-delay: 0s;
+}
+
+/* Image 2 is active from 50% to 100% of the loop */
+.carousel-wrapper:not(:has(:checked)) .navigation-manual .manual-btn:nth-child(2) {
+    animation: dot-highlight 8s linear infinite;
+    animation-delay: -4s; /* Starts the animation 4s into the 8s cycle */
+}
+
+@keyframes dot-highlight {
+    0%, 50% { background: #FEB341; } /* Highlighted for the first 50% (Image 1) */
+    50.01%, 100% { background: #ccc; } /* Default color for the second 50% (Image 2) */
+}
+
+
+/* --- Manual Navigation Override (Stops the animation and forces position) --- */
+
+/* When image 1 is manually checked: */
 #image1:checked ~ .slides-container {
-    animation: none; /* Crucial: stops the infinite loop */
+    animation: none; 
     margin-left: 0;
 }
 
-/* When image 2 is manually checked, stop animation and keep it positioned at -100% */
+/* When image 2 is manually checked: */
 #image2:checked ~ .slides-container {
-    animation: none; /* Crucial: stops the infinite loop */
+    animation: none; 
     margin-left: -100%;
 }
-/* NOTE: We removed all code related to .autoplay-trigger since it's no longer necessary. */
