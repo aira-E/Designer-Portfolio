@@ -91,8 +91,9 @@ export default function DOST() {
             </div>
 
             <div className="content">
-                <h2> Project Background </h2>
-                <p className="project_background"> The Department of Science and Technology (DOST) website serves as a central hub connecting 16
+                <h2> I. Project Overview & Background </h2>
+                <h3> Problem Statement</h3>
+                <p> The Department of Science and Technology (DOST) website serves as a central hub connecting 16
                     regional offices and 6 service institutes, each with its own separate website. While this decentralized
                     structure allows different offices to manage their own content, it also creates navigation and other user
                     experience challenges. </p>
@@ -100,6 +101,19 @@ export default function DOST() {
                     functionality limit its effectiveness. If its features were better optimized and tailored to user needs, the
                     website could reach its full potential as a centralized and efficient digital hub for
                     science and technology-related services </p>
+                <h3> Problem Dfinition </h3>
+                <p> The existing structure leads to a fragmented UI, inconsistent design, and disorganized content. Users struggle to locate services efficiently, leading to frustration, increased reliance on customer support, and high abandonment rates </p>
+                <h3> Current State Metrics </h3>
+                <h3> Research Objectives </h3>
+                <div className="SMART">
+                    <h1 className="content_scamper"> S </h1>
+                    <div>
+                        <h3> Specific </h3>
+                        <p> Improve website navigation for seamless access to information and services, establish a unified
+                            design, and enhance usability while maintaining functionality. Implement a user-centered experience to
+                            boost engagement.</p>
+                    </div>
+                </div>
             </div>
 
             <div className="content">
