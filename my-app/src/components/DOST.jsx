@@ -8,6 +8,12 @@ import IAUpdated from "../assets/mock-ups/IA-Updated.png";
 import Personas from "../assets/mock-ups/personas.png";
 import Rootcause from "../assets/mock-ups/root.png";
 
+import Scholars from "../assets/mock-ups/character-scholar.png";
+import Researchers from "../assets/mock-ups/character-researcher.png";
+import PrivateCitizens from "../assets/mock-ups/character-private citizen.png";
+import Educators from "../assets/mock-ups/character-educator.png";
+import Scientists from "../assets/mock-ups/character-scientist.png";
+
 // 2. Import both faArrowRight and faArrowLeft for the back button
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons"; 
 
@@ -159,7 +165,43 @@ export default function DOST() {
                 <h2> II. UX Research & Synthesis </h2>
                 <div className="content_specific">
                     <h3> Target Audience </h3>
-
+                    <p> The following groups will benefit the most from the DOST website: </p>
+                        <div className="target_audience">
+                            <img src={Scholars} className="character" alt="Scholars" />
+                            <div>
+                                <h3> Scholars </h3>
+                                <p> Access to research grants, scholarships, and academic resources.</p>
+                            </div>
+                        </div>           
+                        <div className="target_audience">
+                            <img src={Researchers} className="character" alt="Scholars" />
+                            <div>
+                                <h3> Researchers </h3>
+                                <p> Streamlined access to scientific data, funding opportunities, and collaboration tools </p>
+                            </div>
+                        </div>         
+                        <div className="target_audience">
+                            <img src={PrivateCitizens} className="character" alt="Scholars" />
+                            <div>
+                                <h3> Private Citizens </h3>
+                                <p> Information on government programs, funding assistance, and scientific initiatives. </p>
+                            </div>
+                        </div>         
+                        <div className="target_audience">
+                            <img src={Educators} className="character" alt="Scholars" />
+                            <div>
+                                <h3> Educators </h3>
+                                <p> Teaching materials, training programs, and science education resources. </p>
+                            </div>
+                        </div>         
+                        <div className="target_audience">
+                            <img src={Scientists} className="character" alt="Scholars" />
+                            <div>
+                                <h3> Scientists </h3>
+                                <p> Research publications, funding programs, and networking opportunities </p>
+                            </div>
+                        </div>    
+                    <p> Sample size: 10-15 participants with 2-3 representative per sector will have a strong and acceptable data feedback for the website </p>
                 </div>
                 <div className="content_specific">
                     <h3> Proto-Personas: Pain Points </h3>

@@ -520,7 +520,7 @@ button:hover, .btn:hover{
   text-align: justify;
 }
 
-.scamper, .smart{
+.scamper, .smart, .target_audience{
   display: flex;
   align-items: center;
   gap: 16px;
@@ -541,6 +541,11 @@ button:hover, .btn:hover{
        but kept it if you need that specific offset */
     gap: 16px;
     margin-left: 60px;
+}
+
+.character{
+    height: 80px;
+    width: auto;
 }
 
 .persona_imgs img, .root-cause_imgs img {
