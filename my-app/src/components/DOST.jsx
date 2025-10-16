@@ -114,7 +114,7 @@ export default function DOST() {
             
             {/* I. Project Overview and Background */}
             <div className="content">
-                <h2> I. Project Overview & Background </h2>
+                <h2> I. Project Overview </h2>
                 <div className="content_specific">
                     <h3> Problem Statement</h3>
                     <p> The Department of Science and Technology (DOST) website serves as a central hub connecting 16

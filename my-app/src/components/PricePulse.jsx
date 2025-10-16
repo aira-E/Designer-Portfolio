@@ -5,6 +5,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Import faArrowRight and faArrowLeft for the back button
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons"; 
 
+import RootcausePricePulse from "../assets/mock-ups/root-cause-pricepulse.png";
+
+import ScreenForecast from "../assets/mock-ups/price-pulse-screens/forecast.png";
+import ScreenHome from "../assets/mock-ups/price-pulse-screens/home.png";
+import ScreenMap from "../assets/mock-ups/price-pulse-screens/map.png";
+import ScreenPrediction from "../assets/mock-ups/price-pulse-screens/price-prediction.png";
+import ScreenCommodities from "../assets/mock-ups/price-pulse-screens/price-commodities.png";
+import ScreenPrice from "../assets/mock-ups/price-pulse-screens/price-range.png";
+
 export default function PricePulse() {
     // 1. Initialize the navigate function
     const navigate = useNavigate();
@@ -52,7 +61,10 @@ export default function PricePulse() {
                 </div>
                 <div className="banner"> 
                     <h1> Price Pulse PH </h1>
-                    <p> The Department of Science and Technology (DOST) website is not just your ordinary government website; it serves as a central hub connecting 16 regional offices and 6 service institutes, each with its own separate website. While this decentralized structure allows different offices to manage their own content, it also creates navigation and other user experiences challenges </p>
+                    <p> This mobile application is a community-focused tool that tracks and forecasts prices of
+                    essential goods or commodities like rice, LPG, fuel, and groceries at the city level.
+                    Using AI, it analyzes local price data, news, and trends to predict if prices will rise, fall,
+                    or stay stable over the next two-four weeks. </p>
        <a
     href="https://www.figma.com/proto/C1NQvbSVUT0wNbucFIoSVJ/Price-Pulse-PH?page-id=0%3A1&node-id..."
     target="_blank"
@@ -65,17 +77,85 @@ export default function PricePulse() {
                 </div>
             </div>
 
+            {/* I. Project Overview */}
             <div className="content">
-                <h2> Project Background </h2>
-                <p className="project_background"> This mobile application is a community-focused tool that tracks and forecasts prices of
-                    essential goods or commodities like rice, LPG, fuel, and groceries at the city level.
-                    Using AI, it analyzes local price data, news, and trends to predict if prices will rise, fall,
-                    or stay stable over the next two-four weeks. </p>
+                <h2> I. Project Overview </h2>
+                <div className="content_specific"> 
+                    <h3> The Problem: Inflation's Silent Toll on Filipino Wallets </h3> 
+                    <p> In the Philippines, price volatility for basic necessities isn't just a headline—it's a kitchen-table crisis. The fluctuating costs of rice, LPG, cooking oil, and fuel make financial stability a myth for the average Filipino household. Consumers are forced to make immediate, often high-cost decisions based on limited, national-level data that doesn't reflect the realities of their barangay (local district). </p>
+                    <p> The core of the problem lies in the information asymmetry and lack of predictive insight: </p>
+                    <ul>
+                        <li> Pain Point: Official government price tracking is often delayed, aggregated nationally, and difficult for non-economists to interpret. </li>
+                        <li> Consequence: A family might buy an LPG tank today, only to find the price dropped by 50$ in the next town—or worse, see it skyrocket the following week. This uncertainty breeds anxiety, encourages panic-buying, and erodes trust in local markets. </li>
+                    </ul>
+                    <h4> Root Cause Analysis </h4>
+                    <div className="root-cause_imgs">
+                        <img src={RootcausePricePulse} className="Root Cause" alt="Root Cause Analysis" />
+                    </div>
+                </div>
+                <div className="content_specific"> 
+                    <h3> The Proposed Solution: Price Pulse PH  </h3> 
+                    <p> Price Pulse PH is an AI-powered, community-driven mobile application designed to democratize price transparency at the hyper-local level. By blending user-submitted data with machine learning analysis of national trends, news, and history, we empower Filipinos to make smarter, proactive spending and inventory decisions.</p>
+                    
+                <div className="content_specific">  
+                    <div className="screen_imgs_container">    
+                        <div className="screen_imgs">
+                            <img src={ScreenForecast} className="Screen" alt="Price Forecast Page" />
+                            <p> Price Day Forecast </p>
+                        </div>  
+                        
+                        <div className="screen_imgs">
+                            <img src={ScreenCommodities} className="Screen" alt="Commodities Page" />
+                            <p> Commodities </p>
+                        </div>      
+
+                        <div className="screen_imgs">
+                            <img src={ScreenMap} className="Screen" alt="Market Map Page" />
+                            <p> Market Map </p>
+                        </div> 
+
+                        <div className="screen_imgs">
+                            <img src={ScreenPrediction} className="Screen" alt="Prediction Page" />
+                            <p> Price Prediction </p>
+                        </div> 
+
+                        <div className="screen_imgs">
+                            <img src={ScreenPrice} className="Screen" alt="Price Ranges Page" />
+                            <p> Price Ranges </p>
+                        </div> 
+
+                    </div>
+                </div>
+                </div>                
             </div>
+
+            {/* II. Discovery & Research */}
+            <div className="content">
+                <h2> II. Discovery & Research </h2>
+                <div className="content_specific"> 
+                    <h3> Existing Market Analysis & Competitive Landscape </h3> 
+                    <p>   </p>
+                </div>     
+
+                <div className="content_specific"> 
+                    <h3> User Research Findings </h3> 
+                    <p>   </p>
+                </div>    
+
+                <div className="content_specific"> 
+                    <h3> Data Significance & Projections </h3> 
+                    <p>   </p>
+                </div>        
+            </div>
+
+
+
+
+
 
             <div className="content">
                 <h2> Key Features </h2>
-                <p> <ul>  
+                <p> <ul> 
                     <li> Real-time local daily price updates </li>
                     <li> AI-powered two-four weeks forecasts with confidence levels </li>
                     <li> Simple explanations of what's driving price changes </li>
