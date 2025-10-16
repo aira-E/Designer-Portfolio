@@ -320,7 +320,14 @@ function App() {
       <div className="section_contact"> {/* Added the section wrapper div */}
         <h2 className="contact_header"> Let's Connect! </h2>
         <div className="section_contact_container">
-          <img src={qr} className="qr_code" alt="qr_code" />
+          <img
+            src={qr}
+            className="qr_code"
+            alt="qr_code"
+            onClick={() => window.open("https://linktr.ee/airaestur", "_blank")}
+            style={{ cursor: "pointer" }}
+            />
+
           <div className="socials">
             <p>
               <FontAwesomeIcon icon={faEnvelope} style={{ color: "#FEB341", marginRight: "12px" }} />
