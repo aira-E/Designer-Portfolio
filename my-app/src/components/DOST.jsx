@@ -169,8 +169,8 @@ export default function DOST() {
                 </div>
                 
                 <div className="content_specific"> 
-                    <h3> The Proposed Solution: Price Pulse PH  </h3> 
-                    <p> Price Pulse PH is an AI-powered, community-driven mobile application designed to democratize price transparency at the hyper-local level. By blending user-submitted data with machine learning analysis of national trends, news, and history, we empower Filipinos to make smarter, proactive spending and inventory decisions.</p>
+                    <h3> The Proposed Solution: A centralized service hub  </h3> 
+                    <p> By identifying and understanding users, the DOST website can implement personalized user experiences, such as user accounts, to enhance engagement and streamline interactions. This insight-driven approach will result into the optimization of the website’s layout, branding, and functionality, ensuring a seamless, intuitive, and efficient centralized digital hub that could effectively serves its diverse audience.</p>
                     
                 <div className="content_specific">  
                     <div className="screen_imgs_container">    
