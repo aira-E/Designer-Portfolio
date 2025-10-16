@@ -144,8 +144,7 @@ function App() {
                     onClick={() => {
                         navigate("/dost");
                         window.scrollTo(0, 0);
-                    }}
-                    >
+                    }}>
                     Read case study <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
                     </button>
                 </div>
@@ -200,7 +199,11 @@ function App() {
                 </div>
 
                 <div className="card_case_studies_button">
-                    <button onClick={() => navigate("/pricepulse")}>
+                                    <button
+                    onClick={() => {
+                        navigate("/pricepulse");
+                        window.scrollTo(0, 0);
+                    }}>
                     Read case study <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
                     </button>
                 </div>
