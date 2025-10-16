@@ -572,7 +572,7 @@ button:hover, .btn:hover{
 
 .persona_imgs img, .root-cause_imgs img, 
 .features_imgs img, .ux-solution_imgs img,
-.userfeedback_imgs img{
+.userfeedback_imgs img, .feasibility_imgs img{
     display: flex;
     gap: 16px;
     margin: 16px 0 0 60px;
@@ -610,7 +610,7 @@ button:hover, .btn:hover{
   justify-content: center;
 }
 
-.screen_imgs{
+.screen_imgs, .DOSTscreen_imgs{
   gap: 16px;
   display: flex;
   flex-direction: column;
@@ -620,6 +620,12 @@ button:hover, .btn:hover{
 
 .screen_imgs img{
   width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.DOSTscreen_imgs img{
+  width: 600px;
   height: auto;
   border-radius: 8px;
 }

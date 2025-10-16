@@ -31,6 +31,11 @@ import Accessibility from "../assets/mock-ups/metrics-accessibility.png";
 import BestPractice from "../assets/mock-ups/metrics-best-practice.png";
 import SEO from "../assets/mock-ups/metrics-seo.png";
 
+import AI from "../assets/mock-ups/DOST-screens/ai.png"
+import Autofill from "../assets/mock-ups/DOST-screens/auto-fill.png"
+import Recommendation from "../assets/mock-ups/DOST-screens/recco.png"
+import Services from "../assets/mock-ups/DOST-screens/services.png"
+
 // 2. Import both faArrowRight and faArrowLeft for the back button
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons"; 
 
@@ -115,7 +120,7 @@ export default function DOST() {
             {/* I. Project Overview and Background */}
             <div className="content">
                 <h2> I. Project Overview </h2>
-                <div className="content_specific">
+            {/*   <div className="content_specific">
                     <h3> Problem Statement</h3>
                     <p> The Department of Science and Technology (DOST) website serves as a central hub connecting 16
                         regional offices and 6 service institutes, each with its own separate website. While this decentralized
@@ -125,38 +130,76 @@ export default function DOST() {
                         functionality limit its effectiveness. If its features were better optimized and tailored to user needs, the
                         website could reach its full potential as a centralized and efficient digital hub for
                         science and technology-related services </p>
+                </div> */}
+                
+                <div className="content_specific"> 
+                    <h3> The Problem </h3>
+                    <p> The existing structure leads to a fragmented UI, inconsistent design, and disorganized content. Users struggle to locate services efficiently, leading to frustration, increased reliance on customer support, and high abandonment rates </p>
+                    <div className="content_specific">
+                        <h4> Root Cause Analysis </h4>
+                        <div className="root-cause_imgs">
+                            <img src={Rootcause} className="Personas" alt="Personas" />
+                        </div>
+                        <div className="content_specific">
+                        <h4> Current State Metrics </h4>
+                        <p> As of March 02, 2025 | Source: Lighthouse Audit </p>
+                        <div className="metrics-container">
+                            <div className="metrics"> 
+                                <img src={Performance} className="metrics-img" alt="Performance" />
+                                <h4> Performance </h4>
+                            </div>
+                            <div className="metrics"> 
+                                <img src={Accessibility} className="metrics-img" alt="Performance" />
+                                <h4> Accessibility </h4>
+                            </div>
+                            <div className="metrics"> 
+                                <img src={BestPractice} className="metrics-img" alt="Performance" />
+                                <h4> Best practice </h4>
+                            </div>
+                            <div className="metrics"> 
+                                <img src={SEO} className="metrics-img" alt="Performance" />
+                                <h4> SEO </h4>
+                            </div>
+                        </div>
+                        <p> The decentralized structure of the DOST website results in a fragmented UI, inconsistent branding, disorganized content, and complex navigation. </p>
+                        <p> Because of this, users face redundant pages, unclear categorization, and excessive clicks to access key services, leading to frustration, higher abandonment rates, and increased reliance on customer support. </p>
+                        <p> These issues negatively impact Performance (58), Accessibility (77), and SEO (75), reducing overall user engagement and efficiency. </p>
+                        </div>               
+                    </div>
                 </div>
                 
                 <div className="content_specific"> 
-                    <h3> Problem Definition </h3>
-                    <p> The existing structure leads to a fragmented UI, inconsistent design, and disorganized content. Users struggle to locate services efficiently, leading to frustration, increased reliance on customer support, and high abandonment rates </p>
-                </div>
-                
-                <div className="content_specific">
-                    <h3> Current State Metrics </h3>
-                    <p> As of March 02, 2025 | Source: Lighthouse Audit </p>
-                    <div className="metrics-container">
-                        <div className="metrics"> 
-                            <img src={Performance} className="metrics-img" alt="Performance" />
-                            <h4> Performance </h4>
-                        </div>
-                        <div className="metrics"> 
-                            <img src={Accessibility} className="metrics-img" alt="Performance" />
-                            <h4> Accessibility </h4>
-                        </div>
-                        <div className="metrics"> 
-                            <img src={BestPractice} className="metrics-img" alt="Performance" />
-                            <h4> Best practice </h4>
-                        </div>
-                        <div className="metrics"> 
-                            <img src={SEO} className="metrics-img" alt="Performance" />
-                            <h4> SEO </h4>
-                        </div>
+                    <h3> The Proposed Solution: Price Pulse PH  </h3> 
+                    <p> Price Pulse PH is an AI-powered, community-driven mobile application designed to democratize price transparency at the hyper-local level. By blending user-submitted data with machine learning analysis of national trends, news, and history, we empower Filipinos to make smarter, proactive spending and inventory decisions.</p>
+                    
+                <div className="content_specific">  
+                    <div className="screen_imgs_container">    
+                        <div className="DOSTscreen_imgs">
+                            <img src={AI} className="Screen" alt="AI Chatbot Modal" />
+                            <p> Tuklas AI Chatbot </p>
+                        </div> 
+                        <div className="DOSTscreen_imgs">
+                            <img src={Autofill} className="Screen" alt="Form Page" />
+                            <p> Auto-fill feature on forms </p>
+                        </div>                                                                        
                     </div>
-                    <p> The decentralized structure of the DOST website results in a fragmented UI, inconsistent branding, disorganized content, and complex navigation. </p>
-                    <p> Because of this, users face redundant pages, unclear categorization, and excessive clicks to access key services, leading to frustration, higher abandonment rates, and increased reliance on customer support. </p>
-                    <p> These issues negatively impact Performance (58), Accessibility (77), and SEO (75), reducing overall user engagement and efficiency. </p>
+                    <div className="screen_imgs_container">
+                        <div className="DOSTscreen_imgs">
+                            <img src={Recommendation} className="Screen" alt="Profile Page" />
+                            <p> User Account for Personalized Contents </p>
+                        </div> 
+                        <div className="DOSTscreen_imgs">
+                            <img src={Services} className="Screen" alt="Services Page" />
+                            <p> In web application system  </p>
+                        </div>  
+                    </div>
                 </div>
+                </div>                            
+            </div>
+
+            {/* II. UX Research & Synthesis */}
+            <div className="content">
+                <h2> II. UX Research </h2>
                 <div className="content_specific">
                     <h3> Research Objectives </h3>
                     <div className="smart">
@@ -196,12 +239,7 @@ export default function DOST() {
                             <p> Phased execution—research and prototyping within a week, hypothetically followed by six months of development and testing, with full implementation within a year.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            {/* II. UX Research & Synthesis */}
-            <div className="content">
-                <h2> II. UX Research & Synthesis </h2>
+                </div>                
                 <div className="content_specific">
                     <h3> Target Audience </h3>
                     <p> The following groups will benefit the most from the DOST website: </p>
@@ -259,12 +297,6 @@ export default function DOST() {
                     <div className="persona_imgs">
                         <img src={ProtoPersonas} className="Proto-Personas" alt="Proto-Personas" />
                     </div>                    
-                </div>
-                <div className="content_specific">
-                    <h3> Root Cause Analysis </h3>
-                    <div className="root-cause_imgs">
-                        <img src={Rootcause} className="Personas" alt="Personas" />
-                    </div>
                 </div>
             </div>
 
