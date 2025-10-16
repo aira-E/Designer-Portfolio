@@ -140,7 +140,12 @@ function App() {
                 </div>
 
                 <div className="card_case_studies_button">
-                    <button onClick={() => navigate("/dost")}>
+                    <button
+                    onClick={() => {
+                        navigate("/dost");
+                        window.scrollTo(0, 0);
+                    }}
+                    >
                     Read case study <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
                     </button>
                 </div>
