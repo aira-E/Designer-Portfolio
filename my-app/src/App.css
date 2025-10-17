@@ -535,12 +535,27 @@ button:hover, .btn:hover{
   margin: 32px;
 }
 
-.scamper-imgs, .userbehavior-imgs {
+.scamper-imgs, .userbehavior-imgs, .research-findings {
     display: flex;
     /* Removed margin-left: 60px; for cleaner centering,
        but kept it if you need that specific offset */
     gap: 16px;
     margin-left: 60px;
+}
+
+.IA, .JourneyMap, .Research-findings {
+    /* The key change: 
+       1. flex-grow: 1 (takes up proportional space)
+       2. flex-shrink: 1 (can shrink if needed)
+       3. flex-basis: 0% (starting point is zero, so the space is truly divided equally)
+    */
+    border-radius: 16px;
+    flex: 1; 
+    width: auto; 
+    height: auto; 
+    max-width: 50%; 
+    box-sizing: border-box; /* Good practice for flex items with padding/borders */
+    object-fit: cover;
 }
 
 .metrics-container{
@@ -585,19 +600,6 @@ button:hover, .btn:hover{
   width: 200px;
 }
 
-.IA, .JourneyMap {
-    /* The key change: 
-       1. flex-grow: 1 (takes up proportional space)
-       2. flex-shrink: 1 (can shrink if needed)
-       3. flex-basis: 0% (starting point is zero, so the space is truly divided equally)
-    */
-    border-radius: 16px;
-    flex: 1; 
-    width: auto; 
-    height: auto; 
-    max-width: 50%; 
-    box-sizing: border-box; /* Good practice for flex items with padding/borders */
-}
 
 .DOST_casestudy p{
   margin-bottom: 8px;

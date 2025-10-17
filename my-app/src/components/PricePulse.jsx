@@ -17,6 +17,9 @@ import Cosumer from "../assets/mock-ups/character-consumer.png";
 import Vendor from "../assets/mock-ups/character-vendor.png";
 import Lgu from "../assets/mock-ups/character-lgu.png";
 
+import RicePrice from "../assets/mock-ups/rice-price.png";
+import VarianceTable from "../assets/mock-ups/variance-table.png";
+
 export default function PricePulse() {
     // 1. Initialize the navigate function
     const navigate = useNavigate();
@@ -184,6 +187,32 @@ export default function PricePulse() {
                         </div>
                     </div>                    
                 </div>       
+                <div className="content_specific">
+                    <h3> User Research Findings </h3>
+                    <p> The analysis of Hasmin (Denorado) Rice prices across a handful of Caloocan City barangays reveals staggering disparities that national or regional average data completely masks. This variance (₱320 = 38.5%)  is the empirical proof that consumers and vendors are operating without the necessary local insight. </p>
+                    <div className="content_specific"> 
+                        <div className="research-findings">
+                            <img src={RicePrice} className="Research-findings" alt="Price Variance" />
+                            <img src={VarianceTable} className="Research-findings" alt="Price Variance Table" />
+                        </div>
+                    </div>
+                    <div className="content_specific">
+                        <p> The data conclusively points to a single, critical breakdown in the market information ecosystem:
+                            The current system provides price data that is too coarse (national/regional) to solve the user’s granular, localized financial problem.
+                            This gap creates an environment of Actionable Information Asymmetry, defined by the following outcomes derived solely from the price variance: </p>
+                        <p>
+                            <ol>
+                                <li> Guaranteed Overspending: Since consumers cannot verify a ₱320 variance without physically traveling, the market forces a significant portion of consumers to unnecessarily overpay for a staple good simply due to lack of localized price intelligence. </li>
+                                <li> Vendor Inefficiency: Small vendors who purchase in bulk are exposed to the ₱320 variance, meaning their profit margins are directly dependent on whether they happen to choose the most/least expensive supplier. Without localized data, inventory optimization is impossible. </li>
+                                <li> Policy Blind Spot: The extreme, localized variance suggests that official national or city-wide data is not granular enough to allow local government units (LGU's) to target specific communities for price monitoring or subsidy intervention. </li>
+                            </ol>
+                        </p>
+                    </div>
+
+                    <div className="content_specific">
+                        <p> To conclude, The 38.5% price disparity is the quantitative proof that a product providing hyper-local price transparency and predictive insight is not merely a convenience, but a financial necessity for Filipinos.</p>
+                    </div>
+                </div>
             </div>
 
             {/* III. UX Solution Ideation */}
