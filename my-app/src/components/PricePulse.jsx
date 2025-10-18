@@ -83,7 +83,7 @@ export default function PricePulse() {
                 </div>
             </div>
 
-            <div className="key_outcomes">
+            {/*<div className="key_outcomes">
                 <h2> Key Outcome</h2>
                 <div className="container_key_outcome">
                     <div className="key_outcome"> 
@@ -99,7 +99,7 @@ export default function PricePulse() {
                         <p> From "frustrating and confusing" to "more efficient"</p>
                     </div>
                 </div>
-            </div>
+            </div>*/}
 
             {/* I. Project Overview */}
             <div className="content">
@@ -160,7 +160,39 @@ export default function PricePulse() {
                 <h2> II. UX Research </h2>
                 <div className="content_specific">
                     <h3> Research Objectives </h3>
-                    <p> </p>
+                    <p> Using the GQM (Goals-Questions-Metrics) framework, this study translates
+                        broad project goals intro specific, actionable research question with measurable outcome. </p>
+                    <div className="content_specific">
+                    <div className="content">
+                        <div className="scamper">
+                            <h1 className="content_scamper"> G </h1>
+                            <div>
+                                <h4> Goal: Validate the Necessity of Hyper-Local Data </h4>
+                                <p> The primary goal of the research is to validate the severity of the localized price problem and to ensure the AI Forecast is trustworthy and understandable enough to drive user behavior change. </p>
+                            </div>
+                        </div>
+
+                        <div className="scamper">
+                            <h1 className="content_scamper"> Q </h1>
+                            <div>
+                                <h4> Question </h4>
+                                <p> What is the average and maximum price variance for essential goods (rice, fuel) between neighboring barangays? </p>
+                            </div>
+                        </div>
+    
+                        
+                        <div className="scamper">
+                            <h1 className="content_scamper"> M </h1>
+                            <div>
+                                <h4> Metric </h4>
+                                <p> The Percentage of Price Disparity (Max Price vs. Min Price) for the same commodity within a 5km radius. </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+                    </div>        
                 </div>
                 <div className="content_specific">
                     <h3> Target Audience </h3>
@@ -217,11 +249,11 @@ export default function PricePulse() {
 
             {/* III. UX Solution Ideation */}
             <div className="content">
-                <h2> III. UX Solution Ideation </h2>
-                <div className="content_specific"> 
+                <h2> III. UX Solution </h2>
+               {/*  <div className="content_specific"> 
                     <h3> Ideation Framework </h3> 
                     <p>   </p>
-                </div> 
+                </div> */}
 
                 <div className="content_specific"> 
                     <h4> Digital Solution </h4> 

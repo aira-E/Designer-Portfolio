@@ -61,9 +61,13 @@ function App() {
           <div className="section_hero_texts">
             <h1>Behind the Screens</h1>
             <h3 className="introduction">
-              I’m <span style={{ color: "#FEB341" }}>Aira</span>, a UI/UX designer based in the Philippines. I am passionate in creating a user-centric and intuitive design.
+              I’m <span style={{ color: "#FEB341" }}>Aira</span>, a UI/UX or Product Designer based in the Philippines. I’m passionate about crafting user-centric and intuitive designs that balance functionality with visual storytelling.
             </h3>
+           {/* <div className="content">
+                <h4> Outside of UX design, I’m also a freelance visual artist and founder of RepubLikha PH, where I’ve completed 50+ graphical and software design projects ranging from brand identities to digital interfaces. This experience has strengthened my skills in client collaboration, project management, and creative problem-solving—qualities I bring into every product I design. </h4>
+            </div> */}
           </div>
+
         </div>
 
        <div className="container_data">
