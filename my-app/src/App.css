@@ -634,3 +634,81 @@ button:hover, .btn:hover{
   height: auto;
   border-radius: 8px;
 }
+
+/* app.css */
+
+/* Define the structure for the animated text container */
+.introduction {
+  /* This ensures the introduction header takes up a reasonable width */
+  max-width: 800px;
+  margin: 0 auto; /* Center the element */
+  font-size: 1.5rem; /* Example size, adjust as needed */
+  line-height: 1.6;
+  color: #A9A9A9;
+}
+
+/* Style for the container holding the scrolling text */
+.scrolling-text-container {
+  /* Set a fixed height and overflow: hidden to hide the other text items */
+  display: inline-block;
+  height: 1.5rem; /* Should match the font-size of the text inside */
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: left;
+  /* Add some margin to separate it visually */
+  margin: 0 0.4em;
+}
+
+/* Style for the inner wrapper that will be animated */
+.scrolling-text-wrapper {
+  /* This wrapper holds all the job titles */
+  /* The total height must be the number of items * item height (2 * 1.5rem = 3rem) */
+  height: 3rem; 
+  /* Apply the animation */
+  animation: scroll-titles 2s infinite; 
+  /* The animation properties: 
+     - scroll-titles: the name of the keyframe animation
+     - 6s: the duration of one complete cycle
+     - infinite: the animation loops forever
+  */
+  text-align: center;
+}
+
+/* Style for the individual job title items */
+.scrolling-text-item {
+  /* Each item must have the exact height of the container */
+  height: 1.5rem; 
+  /* Adjust line-height to vertically align text if needed */
+  line-height: 1.5rem; 
+  font-weight: bold; /* Make the job titles stand out */
+  color: #FFFF;
+; /* Example color for the job titles, adjust as needed */
+}
+
+/* --- KEYFRAME ANIMATION --- */
+@keyframes scroll-titles {
+  /* Start position: showing "UI/UX" */
+  0% {
+    transform: translateY(0);
+  }
+  /* Hold position for "UI/UX" */
+  10% {
+    transform: translateY(0);
+  }
+  /* Transition to show "Product Designer" */
+  30% {
+    transform: translateY(-1.5rem); /* Move up by one item's height */
+  }
+  /* Hold position for "Product Designer" */
+  60% {
+    transform: translateY(-1.5rem); 
+  }
+  /* Transition back to show "UI/UX" */
+  80% {
+    transform: translateY(0);
+  }
+  /* End position: loops back to 0% */
+  100% {
+    transform: translateY(0);
+  }
+}
