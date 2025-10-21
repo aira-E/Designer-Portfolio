@@ -399,7 +399,7 @@ function App() {
         <div className="experience-item">
             <h3> UI/UX Designer • Intern </h3>
             <h4> Webcast Technologies Inc. </h4> 
-            <p>  Aug 2025 - Sep 2025 </p>
+            <p>  Sep 2025 - Nov 2025 </p>
         </div>
         
         <div className="experience-item">
