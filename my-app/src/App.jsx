@@ -269,7 +269,7 @@ function App() {
               <p> A board game that blends the classic gameplay mechanics of Monopoly with the dynamic world of Amway products. </p>
             </div>
             <div className="card_concept_works_lower"> 
-              <a  className= ".btn" href="https://www.figma.com/proto/FkYnVlbRZNIPClKQFAI0gV/Hackfest-2024?page-id=0%3A1&node-id=171-97&viewport=-951%2C-1065%2C0.17&t=RejlmN4qBYYdto1S-1&scaling=min-zoom&starting-point-node-id=171%3A97&show-proto-sidebar=1" target="_blank" className="btn btn-primary card_concept_works_button">
+              <a  href="https://www.figma.com/proto/FkYnVlbRZNIPClKQFAI0gV/Hackfest-2024?page-id=0%3A1&node-id=171-97&viewport=-951%2C-1065%2C0.17&t=RejlmN4qBYYdto1S-1&scaling=min-zoom&starting-point-node-id=171%3A97&show-proto-sidebar=1" target="_blank" className="btn btn-primary card_concept_works_button">
                 Live View <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
               </a>
               <div className="card_cw_footer ">
