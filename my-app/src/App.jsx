@@ -153,7 +153,7 @@ function App() {
         <div 
             className="card_data clickable" 
             onClick={() => setIsDrawerOpen(true)} >
-            <h2> 5 </h2>   
+            <h2> 4 </h2>   
             <p> Professional Experience </p>
         </div>
 
