@@ -167,7 +167,7 @@ function App() {
         <div 
             className="card_data clickable" 
             onClick={() => setIsCertDrawerOpen(true)} >
-            <h2> 5 </h2>   
+            <h2> 6 </h2>   
             <p> Certifications </p>
         </div>
 
@@ -432,7 +432,13 @@ function App() {
         isOpen={isCertDrawerOpen}             // <-- Uses the new state
         onClose={() => setIsCertDrawerOpen(false)} // <-- Uses the new setter
     >
-        <h2>Professional Certifications</h2>
+        <h2> Certifications</h2>
+        <div className="experience-item">
+            <h3> Figma, Sketch & Miro for UX Design Professional Certificate </h3>
+            <h4> Coursera </h4> 
+            <p>  November 2025 </p>
+        </div>
+
         <div className="experience-item">
             <h3> UX+ Conference 2025 </h3>
             <h4> UX+ </h4> 
