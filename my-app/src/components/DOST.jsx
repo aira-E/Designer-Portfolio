@@ -462,7 +462,6 @@ export default function DOST() {
                 </div>
             </div>
 
-
             {/* V. Validation, Results, & Conclusion */}
             <div className="content">
                 <h2>V. Validation, Results, & Conclusion</h2>

@@ -1,7 +1,8 @@
 #root {
   background-color: #242424;
-  padding: 5rem;
+  padding: clamp(1rem, 3vw, 5rem);
   font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
 }
 
 
@@ -15,7 +16,7 @@ html, body {
 /* Unified typography for headings and paragraphs */
 h1 {
   font-style: normal;
-  font-size: 60px;
+  font-size: clamp(32px, 6vw, 60px);
   font-family: 'Arial', sans-serif;
   font-weight: 800;
   line-height: 120%;
@@ -25,7 +26,7 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: clamp(20px, 2.2vw, 32px);
   font-style: normal;
     font-family: 'Arial', sans-serif;
   font-weight: 800;
@@ -36,7 +37,7 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: clamp(16px, 1.6vw, 20px);
   font-style: normal;
     font-family: 'Arial', sans-serif;
   font-weight: 700;
@@ -47,7 +48,7 @@ h3 {
 }
 
 p {
-  font-size: 16px;
+  font-size: clamp(14px, 1.4vw, 16px);
   font-style: normal;
     font-family: 'Arial', sans-serif;
   font-weight: 200;
@@ -59,7 +60,7 @@ p {
 
 
 a {
-  font-size: 16px;
+  font-size: clamp(14px, 1.4vw, 16px);
   font-style: normal;
   font-family: 'Arial', sans-serif;
   font-weight: 200;
@@ -84,7 +85,7 @@ a {
 .container_hero{
   display: inline-flex;
   align-items: center;
-  gap: 32px;
+  gap: 20px;
 }
 
 .section_hero_texts{
@@ -95,9 +96,8 @@ a {
 }
 
 .icon_airaestur {
-  width: 255px;
-  height: 255px;
-  aspect-ratio: 1/1;
+  width: clamp(120px, 18vw, 255px);
+  height: auto;
   animation: floatIcon 2.5s ease-in-out infinite;
 }
 
@@ -110,14 +110,14 @@ a {
 .container_data{
   display: inline-flex;
   align-items: center;
-  gap: 32px;
+  gap: 16px;
   width: 100%;
   flex-wrap: wrap;
 }
 
 .card_data{
   display: flex;
-   flex: 1 1 calc(33.333% - 32px);
+   flex: 1 1 220px;
   height: 160px;
   flex-direction: column;
   justify-content: center;
@@ -159,14 +159,14 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  gap: 32px;              /* spacing between the two cards */
+  gap: 24px;              /* spacing between the two cards */
   width: 100%;            /* fill the 80% section width */
   box-sizing: border-box;
 }
 
 /* -------------------- CARD WRAPPER -------------------- */
 .card_case_studies_content {
-  flex: 1 1 calc(50% - 16px);  /* equal width for 2 cards */
+  flex: 1 1 480px;  /* equal width for 2 cards */
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -176,7 +176,7 @@ a {
 .card_case_studies {
   flex: 1;
   width: 100%;
-  padding: 32px; /* remove extra spacing that caused the banner gap */
+  padding: clamp(20px, 3vw, 32px); /* remove extra spacing that caused the banner gap */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -193,8 +193,8 @@ a {
 
 .card_case_studies_header{
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
   gap: 16px;
   align-self: stretch;
 }
@@ -244,9 +244,11 @@ button:hover, .btn:hover{
 
 .mock-ups{
   display: flex;
-  width: 412px;
-  height: 345px;
-  padding: 10px;
+  width: 100%;
+  max-width: 412px;
+  height: auto;
+  object-fit: cover;
+  padding: 0.5rem;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -285,7 +287,7 @@ button:hover, .btn:hover{
 .card_cw_footer {
   display: flex;
   width: 100%;           /* Make footer span full card width */
-  padding: 8px 0;
+  padding: 8px 12px;
   justify-content: flex-end;
   align-items: center;
   border-radius: 0 0 4px 4px;
@@ -294,9 +296,9 @@ button:hover, .btn:hover{
 }
 
 .icon_logos_technologies{
-  width: 40px;
-  height: 40px;
-  aspect-ratio: 1/1;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
 }
 
 .section_concept_works{
@@ -397,7 +399,10 @@ button:hover, .btn:hover{
   flex-direction: column;
   align-items: center;
   margin-bottom: 64px;
-  width: 80%;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .section_contact{
@@ -600,7 +605,12 @@ button:hover, .btn:hover{
 }
 
 .figma_dost_btn{
-  width: 200px;
+  width: fit-content;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
 }
 
 
@@ -710,5 +720,576 @@ button:hover, .btn:hover{
   /* End position: loops back to 0% */
   100% {
     transform: translateY(0);
+  }
+}
+
+/* ========== Responsive improvements ========== */
+/* Fluid root padding */
+#root {
+  padding: clamp(1rem, 3vw, 5rem);
+  box-sizing: border-box;
+}
+
+/* Fluid typography */
+h1 {
+  font-size: clamp(32px, 6vw, 60px);
+}
+h2 {
+  font-size: clamp(20px, 2.2vw, 32px);
+}
+h3 {
+  font-size: clamp(16px, 1.6vw, 20px);
+}
+p, a {
+  font-size: clamp(14px, 1.4vw, 16px);
+}
+
+/* Make main sections centered and fluid */
+.section_hero,
+.section_case_studies,
+.section_concept_works,
+.section_branding {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* HERO layout responsive */
+.container_hero {
+  gap: 20px;
+}
+.icon_airaestur {
+  width: clamp(120px, 18vw, 255px);
+  height: auto;
+}
+
+/* DATA CARDS wrap and stack on small screens */
+.container_data {
+  gap: 16px;
+}
+.card_data {
+  flex: 1 1 220px;
+  min-width: 180px;
+  max-width: 360px;
+}
+
+/* CASE STUDIES: two-column -> single-column on small screens */
+.card_case_studies_container {
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.card_case_studies_content {
+  flex: 1 1 480px;
+  min-width: 280px;
+}
+
+/* Ensure card content fills nicely on small screens */
+.card_case_studies {
+  padding: clamp(20px, 3vw, 32px);
+}
+
+/* Card header: stack on small widths */
+.card_case_studies_header {
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .card_case_studies_header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+  .card_case_studies_texts {
+    align-items: center;
+  }
+}
+
+/* MOCKUPS responsive */
+.mock-ups {
+  width: 100%;
+  max-width: 412px;
+  height: auto;
+  object-fit: cover;
+  padding: 0.5rem;
+}
+@media (max-width: 900px) {
+  .mock-ups {
+    max-width: 100%;
+  }
+}
+
+/* CONCEPT WORKS: 4-up -> 2-up -> 1-up */
+.section_cards_concept_works > .card_concept_works {
+  flex: 1 1 calc(25% - 24px);
+}
+@media (max-width: 1200px) {
+  .section_cards_concept_works > .card_concept_works {
+    flex: 1 1 calc(33.333% - 24px);
+  }
+}
+@media (max-width: 900px) {
+  .section_cards_concept_works > .card_concept_works {
+    flex: 1 1 calc(50% - 16px);
+  }
+}
+@media (max-width: 600px) {
+  .section_cards_concept_works {
+    gap: 16px;
+  }
+  .section_cards_concept_works > .card_concept_works {
+    flex: 1 1 100%;
+  }
+}
+
+/* Buttons: hug content, consistent font and spacing */
+button, .btn {
+  width: fit-content;
+  font-family: 'Arial', sans-serif;
+  white-space: nowrap;
+}
+
+/* Specific figma_dost_btn should hug content */
+.figma_dost_btn {
+  width: fit-content;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+/* FOOTER logos alignment and spacing */
+.card_case_studies_footer,
+.card_concept_works_footer {
+  justify-content: flex-end;
+  padding: 8px 12px;
+  gap: 8px;
+}
+
+/* Ensure technology icons do not stretch */
+.icon_logos_technologies {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+}
+
+/* Content spacing tweaks for narrow viewports */
+@media (max-width: 700px) {
+  .section_hero {
+    gap: 48px;
+    padding-bottom: 48px;
+  }
+  .section_case_studies, .section_concept_works {
+    margin-bottom: 32px;
+  }
+  .card_concept_works_content {
+    padding: 0 12px;
+  }
+  .card_concept_works_lower {
+    padding: 0 12px;
+    align-items: center;
+  }
+}
+
+/* Utility: prevent overflowing long URLs/text */
+* {
+  word-break: break-word;
+}
+
+/* ========== DOST CASE STUDY RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  .DOST_casestudy {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  /* Back Button Responsive */
+  .DOST_casestudy button {
+    width: fit-content;
+    margin: clamp(12px, 3vw, 20px);
+    padding: clamp(8px, 1.5vw, 12px) clamp(12px, 2vw, 16px);
+    font-size: clamp(12px, 1.2vw, 14px);
+  }
+
+  /* Case Study Header */
+  .casestudy_header {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 3vw, 32px);
+    margin-bottom: clamp(32px, 4vw, 48px);
+    align-items: center;
+  }
+
+  /* YouTube iFrame Responsive */
+  .casestudy_header iframe {
+    width: 100%;
+    max-width: 652px;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+
+  /* Banner Section */
+  .casestudy_header .banner {
+    width: 100%;
+    text-align: center;
+  }
+
+  .casestudy_header .banner h1 {
+    font-size: clamp(28px, 5vw, 48px);
+    margin-bottom: 16px;
+  }
+
+  .casestudy_header .banner p {
+    font-size: clamp(14px, 1.4vw, 16px);
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  /* Figma Button */
+  .figma_dost_btn {
+    width: fit-content;
+    padding: 10px 16px;
+    font-size: clamp(12px, 1.2vw, 14px);
+  }
+
+  /* Key Outcomes */
+  .key_outcomes {
+    margin-bottom: clamp(40px, 5vw, 64px);
+  }
+
+  .key_outcomes h2 {
+    font-size: clamp(20px, 2.5vw, 28px);
+    margin-bottom: clamp(20px, 3vw, 32px);
+  }
+
+  .container_key_outcome {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(16px, 2vw, 24px);
+  }
+
+  .key_outcome {
+    padding: clamp(16px, 2vw, 24px);
+    background: rgba(254, 179, 65, 0.05);
+    border-radius: 8px;
+  }
+
+  .key_outcome h3 {
+    font-size: clamp(16px, 1.8vw, 20px);
+    margin-bottom: 8px;
+  }
+
+  .key_outcome p {
+    font-size: clamp(13px, 1.3vw, 15px);
+    line-height: 1.5;
+  }
+
+  /* Content Section */
+  .content {
+    margin-bottom: clamp(40px, 5vw, 64px);
+  }
+
+  .content h2 {
+    font-size: clamp(20px, 2.5vw, 28px);
+    margin-bottom: clamp(20px, 3vw, 32px);
+  }
+
+  .content_specific {
+    margin-bottom: clamp(24px, 3vw, 32px);
+  }
+
+  .content_specific h3 {
+    font-size: clamp(16px, 1.8vw, 22px);
+    margin-bottom: 12px;
+  }
+
+  .content_specific h4 {
+    font-size: clamp(14px, 1.6vw, 18px);
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .content_specific p {
+    font-size: clamp(13px, 1.3vw, 16px);
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  /* Lists */
+  .content_specific ul,
+  .content_specific ol {
+    margin-left: clamp(16px, 2vw, 24px);
+    margin-bottom: 16px;
+  }
+
+  .content_specific li {
+    margin-bottom: 10px;
+    font-size: clamp(13px, 1.3vw, 16px);
+  }
+
+  /* Root Cause Images */
+  .root-cause_imgs {
+    margin: clamp(20px, 3vw, 32px) 0;
+  }
+
+  .root-cause_imgs img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* Metrics Container */
+  .metrics-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: clamp(12px, 2vw, 20px);
+    margin: clamp(20px, 3vw, 32px) 0;
+  }
+
+  .metrics {
+    text-align: center;
+    padding: clamp(12px, 1.5vw, 16px);
+    border-radius: 8px;
+    background: rgba(254, 179, 65, 0.05);
+  }
+
+  .metrics-img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 8px;
+  }
+
+  .metrics h4 {
+    font-size: clamp(12px, 1.2vw, 14px);
+  }
+
+  /* Screen Images Container */
+  .screen_imgs_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: clamp(16px, 2vw, 24px);
+    margin: clamp(20px, 3vw, 32px) 0;
+  }
+
+  .DOSTscreen_imgs {
+    text-align: center;
+  }
+
+  .DOSTscreen_imgs img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .DOSTscreen_imgs p {
+    font-size: clamp(12px, 1.2vw, 14px);
+    color: #666;
+  }
+
+  /* SMART Framework */
+  .smart {
+    display: flex;
+    gap: clamp(16px, 2vw, 24px);
+    margin-bottom: clamp(16px, 2vw, 24px);
+    align-items: flex-start;
+  }
+
+  .content_smart {
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 800;
+    color: #FEB341;
+    flex-shrink: 0;
+    min-width: 50px;
+  }
+
+  .smart div h4 {
+    font-size: clamp(14px, 1.6vw, 18px);
+    margin-bottom: 8px;
+  }
+
+  .smart div p {
+    font-size: clamp(12px, 1.2vw, 14px);
+  }
+
+  /* Target Audience */
+  .target_audience {
+    display: flex;
+    gap: clamp(16px, 2vw, 24px);
+    margin-bottom: clamp(16px, 2vw, 24px);
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .character {
+    width: clamp(80px, 12vw, 120px);
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 8px;
+  }
+
+  .target_audience div h4 {
+    font-size: clamp(14px, 1.6vw, 18px);
+    margin-bottom: 6px;
+  }
+
+  .target_audience div p {
+    font-size: clamp(12px, 1.2vw, 14px);
+    line-height: 1.5;
+  }
+
+  /* Persona Images */
+  .persona_imgs {
+    margin: clamp(20px, 3vw, 32px) 0;
+  }
+
+  .persona_imgs img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: clamp(16px, 2vw, 24px);
+  }
+
+  /* SCAMPER Sections */
+  .scamper {
+    display: flex;
+    gap: clamp(16px, 2vw, 24px);
+    margin-bottom: clamp(20px, 3vw, 32px);
+    align-items: flex-start;
+  }
+
+  .content_scamper {
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 800;
+    color: #FEB341;
+    flex-shrink: 0;
+    min-width: 50px;
+  }
+
+  .scamper div h4 {
+    font-size: clamp(14px, 1.6vw, 18px);
+    margin-bottom: 8px;
+  }
+
+  .scamper div p {
+    font-size: clamp(12px, 1.2vw, 14px);
+    line-height: 1.6;
+  }
+
+  /* SCAMPER Images */
+  .scamper-imgs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(16px, 2vw, 24px);
+    margin: clamp(20px, 3vw, 32px) 0;
+  }
+
+  .IA {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* Features Images */
+  .features_imgs {
+    margin: clamp(20px, 3vw, 32px) 0;
+  }
+
+  .Features {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* User Behavior Images */
+  .userbehavior-imgs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(16px, 2vw, 24px);
+    margin: clamp(20px, 3vw, 32px) 0;
+  }
+
+  .JourneyMap {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* UX Solution Images */
+  .ux-solution_imgs {
+    margin: clamp(16px, 2vw, 24px) 0;
+  }
+
+  .UX-Solution {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* User Feedback Images */
+  .userfeedback_imgs {
+    margin: clamp(16px, 2vw, 24px) 0;
+  }
+
+  .userfeedback_imgs img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* Mobile Overrides (from your original code) */
+  .DOST_casestudy {
+    padding: 0 0.75rem; /* This rule overwrites the padding: 0 1rem from above for screens <= 768px */
+  }
+
+  .casestudy_header {
+    flex-direction: column;
+  }
+
+  .smart,
+  .target_audience,
+  .scamper {
+    flex-direction: column;
+  }
+
+  .content_smart,
+  .content_scamper {
+    min-width: auto;
+  }
+
+  .container_key_outcome,
+  .metrics-container,
+  .screen_imgs_container,
+  .scamper-imgs,
+  .userbehavior-imgs {
+    grid-template-columns: 1fr;
+  }
+}
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+  .container_key_outcome {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .metrics-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .screen_imgs_container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
