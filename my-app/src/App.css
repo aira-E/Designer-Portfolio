@@ -1296,3 +1296,32 @@ button, .btn {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Container Hero Responsive */
+@media (max-width: 768px) {
+  .container_hero{
+    margin-top: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section_hero_texts {
+    align-items: center;
+  }
+
+  .icon_airaestur {
+    margin-bottom: 16px;
+  }
+  .container_data {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+
+  .card_data{
+    width: 100%;
+  }
+}
