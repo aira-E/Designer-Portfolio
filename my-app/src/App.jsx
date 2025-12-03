@@ -153,7 +153,7 @@ function App() {
         <div 
             className="card_data clickable" 
             onClick={() => setIsDrawerOpen(true)} >
-            <h2> 4 </h2>   
+            <h2> 5 </h2>   
             <p> Professional Experience </p>
         </div>
 
@@ -396,11 +396,11 @@ function App() {
       
         <h2>Professional Experience Timeline</h2>
 
-        {/*<div className="experience-item">
+        <div className="experience-item">
             <h3> UI/UX Designer • Intern </h3>
             <h4> Webcast Technologies Inc. </h4> 
             <p>  Sep 2025 - Nov 2025 </p>
-        </div>*/}
+        </div>
         
         <div className="experience-item">
             <h3> UI/UX Designer • Trainee </h3>
