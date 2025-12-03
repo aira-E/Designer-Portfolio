@@ -973,9 +973,10 @@ button, .btn {
   }
 
   .container_key_outcome {
-    display: grid;
+    width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: clamp(16px, 2vw, 24px);
+    flex-direction: column;
   }
 
   .key_outcome {
@@ -1324,4 +1325,12 @@ button, .btn {
   .card_data{
     width: 100%;
   }
+
+  .qr_code{
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1/1;
+  }
+
+
 }
