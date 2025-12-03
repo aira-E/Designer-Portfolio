@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 // Import useNavigate for routing
 import { useNavigate } from "react-router-dom"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -29,8 +29,54 @@ export default function PricePulse() {
         navigate("/");
     };
 
+    // ---------- ADDED: Back-to-top state & handlers ----------
+    const [showTop, setShowTop] = useState(false);
+    useEffect(() => {
+      const onScroll = () => setShowTop(window.scrollY > 300);
+      window.addEventListener("scroll", onScroll, { passive: true });
+      return () => window.removeEventListener("scroll", onScroll);
+    }, []);
+
+    const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    // --------------------------------------------------------
+
     return (
-        <div className="PricePulse_casestudy"> 
+        <div className="PricePulse_casestudy">
+            {/* ---------- ADDED: component-scoped CSS for back-to-top ---------- */}
+            <style>{`
+              .back-to-top {
+                position: fixed;
+                right: 20px;
+                bottom: 20px;
+                width: 44px;
+                height: 44px;
+                border-radius: 8px;
+                background: #FEB341;
+                color: #000;
+                border: none;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                opacity: 0;
+                transform: translateY(12px);
+                transition: opacity 180ms ease, transform 180ms ease;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+                z-index: 1200;
+                font-weight: 700;
+                font-size: 18px;
+              }
+              .back-to-top.active {
+                opacity: 1;
+                transform: translateY(0);
+              }
+              .back-to-top:focus { outline: 2px solid #fff; outline-offset: 2px; }
+              @media (max-width: 480px) {
+                .back-to-top { right: 12px; bottom: 12px; width: 40px; height: 40px; font-size: 16px; }
+              }
+            `}</style>
+            {/* ---------------------------------------------------------------- */}
+
             {/* BACK BUTTON */}
             <button 
                 onClick={goToHome} 
@@ -295,6 +341,18 @@ export default function PricePulse() {
                 <p> To help Filipinos make smarter spending decisions, increase price transparency,
                     and support local policymaking during times of inflation or market shifts.</p>
             </div>*/}
+
+            {/* ---------- ADDED: Back to top button ---------- */}
+            <button
+              type="button"
+              aria-label="Back to top"
+              title="Back to top"
+              className={`back-to-top ${showTop ? "active" : ""}`}
+              onClick={scrollToTop}
+            >
+              ↑
+            </button>
+            {/* ------------------------------------------------ */}
 
         </div>
     );
