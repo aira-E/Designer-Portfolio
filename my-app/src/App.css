@@ -1052,7 +1052,6 @@ button, .btn {
 
   /* Metrics Container */
   .metrics-container {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: clamp(12px, 2vw, 20px);
     margin: clamp(20px, 3vw, 32px) 0;
@@ -1129,10 +1128,8 @@ button, .btn {
   /* Target Audience */
   .target_audience {
     display: flex;
-    gap: clamp(16px, 2vw, 24px);
-    margin-bottom: clamp(16px, 2vw, 24px);
+    flex-direction: row;
     align-items: flex-start;
-    flex-wrap: wrap;
   }
 
   .character {
@@ -1193,9 +1190,9 @@ button, .btn {
 
   /* SCAMPER Images */
   .scamper-imgs {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: clamp(16px, 2vw, 24px);
+
+    flex-direction: column;
+    
     margin: clamp(20px, 3vw, 32px) 0;
   }
 
@@ -1264,11 +1261,7 @@ button, .btn {
     flex-direction: column;
   }
 
-  .smart,
-  .target_audience,
-  .scamper {
-    flex-direction: column;
-  }
+
 
   .content_smart,
   .content_scamper {
@@ -1281,6 +1274,7 @@ button, .btn {
   .scamper-imgs,
   .userbehavior-imgs {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 }
 /* Tablet Breakpoint */
@@ -1294,7 +1288,7 @@ button, .btn {
   }
 
   .screen_imgs_container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
