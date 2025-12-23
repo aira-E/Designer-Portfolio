@@ -167,7 +167,7 @@ function App() {
         <div 
             className="card_data clickable" 
             onClick={() => setIsCertDrawerOpen(true)} >
-            <h2> 6 </h2>   
+            <h2> 5 </h2>   
             <p> Certifications </p>
         </div>
 
@@ -433,6 +433,12 @@ function App() {
         onClose={() => setIsCertDrawerOpen(false)} // <-- Uses the new setter
     >
         <h2> Certifications</h2>
+         <div className="experience-item">
+            <h3> National Certificate III - Visual Graphic Design </h3>
+            <h4> TESDA: Technical Education and Skills Development Authority </h4> 
+            <p>  December 2025 </p>
+        </div>
+
         <div className="experience-item">
             <h3> Figma, Sketch & Miro for UX Design Professional Certificate </h3>
             <h4> Coursera </h4> 
@@ -449,18 +455,6 @@ function App() {
             <h3> Design Psychology: Master the Art and Science of UX Design </h3>
             <h4> LinkedIn </h4> 
             <p>  Aug 2025 </p>
-        </div>
-
-        <div className="experience-item">
-            <h3> Developing Designs for User Experience </h3>
-            <h4> TESDA: Technical Education and Skills Development Authority </h4> 
-            <p>  Feb 2025 </p>
-        </div>
-
-        <div className="experience-item">
-            <h3> Developing Designs for User Interface </h3>
-            <h4> TESDA: Technical Education and Skills Development Authority </h4> 
-            <p>  Jan 2025 </p>
         </div>
 
         <div className="experience-item">
