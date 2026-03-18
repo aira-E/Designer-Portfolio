@@ -139,7 +139,7 @@ export default function GreenleafGrocers() {
                     <h1> Greenleaf Grocers </h1>
                     <p> The Greenleaf Grocers mobile application offers a modern, full-featured digital experience designed to make sustainable grocery shopping accessible and simple for tech-savvy customers. By integrating a digital loyalty program, online ordering, and transparent insights into the environmental impact of products, the app empowers users to make environmentally-conscious choices with ease </p>
        <a
-    href="https://www.figma.com/proto/C1NQvbSVUT0wNbucFIoSVJ/Price-Pulse-PH?page-id=0%3A1&node-id..."
+    href="https://www.figma.com/proto/X9ruehgiRnHCim09EzprBa/Greenleaf-Grocers-Website?node-id=58435-5060&t=xOrG8tpglXul1NgE-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=58435%3A5060&show-proto-sidebar=1"
     target="_blank"
     // Assuming the file uses a link-specific class like the DOST one (e.g., figma_pricepulse_btn)
     // and that's the missing duplicate. Combine it here:

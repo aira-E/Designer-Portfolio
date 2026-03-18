@@ -1390,3 +1390,31 @@ button, .btn {
   object-fit: contain; /* Ensures the aspect ratio is maintained */
   border-radius: 8px;
 }
+
+/* Mobile responsive support for Greenleaf Grocers case study */
+@media (max-width: 900px) {
+  .Banner {
+    width: 100%;
+    height: auto;
+  }
+
+  .container_user-personas,
+  .container_quotes,
+  .container_lowfi,
+  .container_hifi,
+  .container_oneimg {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .User-Personas,
+  .Quotes,
+  .IA,
+  .Ideation,
+  .Lowfi,
+  .Hifi {
+    width: 100%;
+    max-width: 100%;
+  }
+}
