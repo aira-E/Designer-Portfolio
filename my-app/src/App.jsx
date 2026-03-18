@@ -78,7 +78,6 @@ function TrophyTooltip({ text }) {
           style={{
             color: "#FFD700",
             fontSize: "25px",
-            margin: "25px",
             cursor: "pointer",
             position: "relative",
             zIndex: 1, // keep the icon clickable/visible
@@ -269,7 +268,7 @@ function App() {
                 <div className="card_case_studies_button">
                                     <button
                     onClick={() => {
-                        navigate("/pricepulse");
+                        navigate("/greenleafgrocers");
                         window.scrollTo(0, 0);
                     }}>
                     Read case study <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />

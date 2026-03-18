@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import PricePulse from "./components/PricePulse"; 
 import DOST from "./components/DOST";
+import GreenleafGrocers from "./components/GreenleafGrocers";
 import "./App.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -18,6 +19,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       {/* 3. FIX: PricePulse Route: Maps "/pricepulse" to the PricePulse component. 
              This matches the navigate("/pricepulse") call in App.jsx. */}
       <Route path="/pricepulse" element={<PricePulse />} />
+      
+      {/* 4. GreenleafGrocers Route: Maps "/greenleafgrocers" to the GreenleafGrocers component. */}
+      <Route path="/greenleafgrocers" element={<GreenleafGrocers />} />
       
       {/* REMOVED: 
           <Route path="/" element={<App />} />  <- Duplicate route

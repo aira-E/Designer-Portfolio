@@ -462,7 +462,7 @@ button:hover, .btn:hover{
 
 
 /***** CASE STUDIES *****/
-.DOST_casestudy, .PricePulse_casestudy {
+.DOST_casestudy, .PricePulse_casestudy, .GreenleafGrocers_casestudy {
   width: 80%;
   gap: 32px;
   margin: 0 auto;
@@ -544,7 +544,7 @@ button:hover, .btn:hover{
   margin: 32px;
 }
 
-.scamper-imgs, .userbehavior-imgs, .research-findings {
+.scamper-imgs, .userbehavior-imgs, .research-findings{
     display: flex;
     /* Removed margin-left: 60px; for cleaner centering,
        but kept it if you need that specific offset */
@@ -553,11 +553,6 @@ button:hover, .btn:hover{
 }
 
 .IA, .JourneyMap, .Research-findings {
-    /* The key change: 
-       1. flex-grow: 1 (takes up proportional space)
-       2. flex-shrink: 1 (can shrink if needed)
-       3. flex-basis: 0% (starting point is zero, so the space is truly divided equally)
-    */
     border-radius: 16px;
     flex: 1; 
     width: auto; 
@@ -1358,4 +1353,40 @@ button, .btn {
   }
 
 
+}
+
+/* Greenleaf Grocers Case Study */
+
+.Banner{
+  border-radius: 8px;
+  width: 652px;
+  height: 367px;
+}
+
+/* Container Styles */
+.container_user-personas, 
+.container_quotes, 
+.container_lowfi,
+.container_hifi,
+.container_oneimg {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px; /* Optional: adds space between images */
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Image Styles */
+.User-Personas, 
+.Quotes, 
+.IA, 
+.Ideation, 
+.Lowfi,
+.Hifi {
+  flex: 1; /* This forces equal distribution regardless of image count */
+  min-width: 0; /* Prevents images from overflowing their flex share */
+  height: auto;
+  object-fit: contain; /* Ensures the aspect ratio is maintained */
+  border-radius: 8px;
 }
