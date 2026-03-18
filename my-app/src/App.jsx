@@ -11,6 +11,7 @@ import RightDrawer from './RightDrawer';
 import airaIcon from "./assets/icons/airaestur.png";
 import dostIcon from "./assets/icons/dost.png";
 import pricepulseIcon from "./assets/icons/pricepulse.png";
+import greenleafIcon from "./assets/icons/greenleafgrocers.png";
 import figmaIcon from "./assets/icons/figma.png";
 import aiIcon from "./assets/icons/aillustrator.png";
 import psIcon from "./assets/icons/ps.png";
@@ -31,6 +32,7 @@ import rl from "./assets/mock-ups/rl.png";
 // Import mock-ups
 import dostMock from "./assets/mock-ups/DOST.png";
 import pricepulseMock from "./assets/mock-ups/pricepulse.png";
+import greenleafgrocersMock from "./assets/mock-ups/greenleafgrocers.png";
 import amwayMock from "./assets/mock-ups/amway.jpg";  
 import toyrushMock from "./assets/mock-ups/toyrushgame.jpg";  
 import gtaraMock from "./assets/mock-ups/gtara.png";  
@@ -190,14 +192,12 @@ function App() {
                     <img src={dostIcon} className="icon_logos" alt="icon_dost" />
                     <div className="card_case_studies_texts">
                     <h3>DOST Website Revamp</h3>
-                    <p>Enhancing the Department of Science and Technology (DOST) Website as a Centralized Hub for Public Services</p>
                     </div>
-
                     {/* REPLACED: trophy tooltip now uses fixed positioning to avoid clipping */}
                     <TrophyTooltip text="Top 5 finalist in UX University 2025: Shifting Tide" />
-
                 </div>
 
+                <p>Enhancing the Department of Science and Technology (DOST) Website as a Centralized Hub for Public Services</p>
                 <div className="card_case_studies_button">
                     <button
                     onClick={() => {
@@ -225,13 +225,15 @@ function App() {
                     <img src={pricepulseIcon} className="icon_logos" alt="icon_pricepulse" />
                     <div className="card_case_studies_texts">
                     <h3>Price Pulse PH</h3>
-                    <p>A mobile app designed to help everyday Filipinos track and manage the rising costs of essential goods—now and in the future.</p>
+                    {/*<p>A mobile app designed to help everyday Filipinos track and manage the rising costs of essential goods—now and in the future.</p>*/}
                     </div>
 
                     {/* REPLACED: trophy tooltip now uses fixed positioning to avoid clipping */}
                     <TrophyTooltip text="Top 10 Finalist on Ideathon 2025 at Software Engineering Day 2025" />
 
                 </div>
+                <p>A mobile app designed to help everyday Filipinos track and manage the rising costs of essential goods—now and in the future.</p>
+
 
                 <div className="card_case_studies_button">
                                     <button
@@ -250,6 +252,36 @@ function App() {
                 </div>
             </div>
 
+            {/* 🟢 Third card — Greenleaf Grocers */}
+            <div className="card_case_studies_content">
+                <div className="card_case_studies_banner">
+                <p><span style={{ color: "#FEB341" }}>Role: </span> Product Designer, UI/UX Designer</p>
+                </div>
+                <div className="card_case_studies">
+                <div className="card_case_studies_header">
+                    <img src={greenleafIcon} className="icon_logos" alt="icon_greenleaf" />
+                    <div className="card_case_studies_texts">
+                    <h3> Greenleaf Grocers </h3>
+                    </div>
+                </div>
+                
+                <p> A modern mobile web app designed to make sustainable grocery shopping accessible and simple.</p>
+                <div className="card_case_studies_button">
+                                    <button
+                    onClick={() => {
+                        navigate("/pricepulse");
+                        window.scrollTo(0, 0);
+                    }}>
+                    Read case study <FontAwesomeIcon className="icon_fontawesome" icon={faArrowRight} />
+                    </button>
+                </div>
+
+                <img src={greenleafgrocersMock} className="mock-ups" alt="mock-ups_greenleafgrocers" />
+                <div className="card_case_studies_footer">
+                    <img src={figmaIcon} className="icon_logos_technologies" alt="icon_figma" />
+                </div>
+                </div>
+            </div>
             </div>
         </div>
         </div>
