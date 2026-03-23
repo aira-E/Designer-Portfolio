@@ -1405,8 +1405,41 @@ button, .btn {
 
 .card_social_media_branding{
   border-radius: 8px;
+  opacity: 0;
+  transform: translateY(40px);
 }
 
+.card_social_media_branding.animate-in {
+  animation: breatheIn 0.8s cubic-bezier(0.35, 0.17, 0.3, 0.83) forwards;
+}
+
+/* Staggered animation delays for left-to-right animation */
+.card_social_media_branding:nth-child(1).animate-in {
+  animation-delay: 0s;
+}
+
+.card_social_media_branding:nth-child(2).animate-in {
+  animation-delay: 0.2s;
+}
+
+.card_social_media_branding:nth-child(3).animate-in {
+  animation-delay: 0.4s;
+}
+
+.card_social_media_branding:nth-child(4).animate-in {
+  animation-delay: 0.6s;
+}
+
+@keyframes breatheIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .section_cards_social_media_branding > * {
   flex: 1 1 calc(25% - 24px);

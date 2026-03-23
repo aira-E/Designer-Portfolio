@@ -1,5 +1,5 @@
 // src/App.jsx
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
 import clsx from "clsx";
@@ -129,6 +129,36 @@ function App() {
   const [isCertDrawerOpen, setIsCertDrawerOpen] = useState(false); 
   const [isProjectDrawerOpen, setIsProjDrawerOpen] = useState(false); 
   const navigate = useNavigate();
+  const brandingSectionRef = useRef(null);
+
+  // Intersection Observer for the branding section animation
+  useEffect(() => {
+    const section = brandingSectionRef.current;
+    if (!section) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Add animate-in class to all cards when section becomes visible
+            const cards = section.querySelectorAll('.card_social_media_branding');
+            cards.forEach((card) => {
+              card.classList.add('animate-in');
+            });
+            // Stop observing after animation is triggered
+            observer.unobserve(section);
+          }
+        });
+      },
+      { threshold: 0.1 } // Trigger when 10% of section is visible
+    );
+
+    observer.observe(section);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <>
@@ -381,7 +411,7 @@ function App() {
         </div>        
       </div> 
 
-      <div className="section_social_media_branding">
+      <div className="section_social_media_branding" ref={brandingSectionRef}>
         <h2> Branding </h2>
         <h3> Graphic designing + Social media posting, captioning, and managing </h3>
         <div className="section_cards_social_media_branding">
