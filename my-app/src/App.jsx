@@ -130,30 +130,47 @@ function App() {
   const [isProjectDrawerOpen, setIsProjDrawerOpen] = useState(false); 
   const navigate = useNavigate();
   const brandingSectionRef = useRef(null);
+  const caseStudiesSectionRef = useRef(null);
+  const conceptWorksSectionRef = useRef(null);
 
-  // Intersection Observer for the branding section animation
   useEffect(() => {
-    const section = brandingSectionRef.current;
-    if (!section) return;
+    const sections = [
+      {
+        ref: brandingSectionRef,
+        selector: '.card_social_media_branding',
+      },
+      {
+        ref: caseStudiesSectionRef,
+        selector: '.card_case_studies_content',
+      },
+      {
+        ref: conceptWorksSectionRef,
+        selector: '.card_concept_works',
+      },
+    ];
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Add animate-in class to all cards when section becomes visible
-            const cards = section.querySelectorAll('.card_social_media_branding');
-            cards.forEach((card) => {
-              card.classList.add('animate-in');
-            });
-            // Stop observing after animation is triggered
+            const section = entry.target;
+            const { selector } = sections.find((s) => s.ref.current === section) || {};
+            if (selector) {
+              const cards = section.querySelectorAll(selector);
+              cards.forEach((card) => {
+                card.classList.add('animate-in');
+              });
+            }
             observer.unobserve(section);
           }
         });
       },
-      { threshold: 0.1 } // Trigger when 10% of section is visible
+      { threshold: 0.1 }
     );
 
-    observer.observe(section);
+    sections.forEach((item) => {
+      if (item.ref.current) observer.observe(item.ref.current);
+    });
 
     return () => {
       observer.disconnect();
@@ -210,7 +227,7 @@ function App() {
         </div>
       </div>
 
-      <div className="section_case_studies">
+      <div className="section_case_studies" ref={caseStudiesSectionRef}>
         <div className="section_cards_case_studies">
             <h2> Case Studies </h2>
             <div className="card_case_studies_container">
@@ -319,7 +336,7 @@ function App() {
         </div>
       </div>
 
-      <div className="section_concept_works">
+      <div className="section_concept_works" ref={conceptWorksSectionRef}>
         <h2> Concept Works </h2>
         <div className="section_cards_concept_works">
           <div className="card_concept_works">
