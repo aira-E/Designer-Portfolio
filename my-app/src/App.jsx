@@ -132,6 +132,7 @@ function App() {
   const brandingSectionRef = useRef(null);
   const caseStudiesSectionRef = useRef(null);
   const conceptWorksSectionRef = useRef(null);
+  const cardDataRef = useRef(null);
 
   useEffect(() => {
     const sections = [
@@ -177,6 +178,55 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const node = cardDataRef.current;
+    if (!node) return;
+
+    const counters = Array.from(node.querySelectorAll('.card_data h2'));
+    if (!counters.length) return;
+
+    const animateCounter = (el, endValue, plus) => {
+      const duration = 1200;
+      const startTimestamp = performance.now();
+
+      const run = (timestamp) => {
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        const currentValue = Math.round(progress * endValue);
+        el.textContent = `${currentValue}${plus ? '+' : ''}`;
+        if (progress < 1) {
+          requestAnimationFrame(run);
+        } else {
+          el.textContent = `${endValue}${plus ? '+' : ''}`;
+        }
+      };
+
+      requestAnimationFrame(run);
+    };
+
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            counters.forEach((h2) => {
+              const text = h2.textContent.trim();
+              const hasPlus = text.includes('+');
+              const match = text.match(/(\d+)/);
+              if (!match) return;
+
+              const target = Number(match[1]);
+              animateCounter(h2, target, hasPlus);
+            });
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.16 }
+    );
+    observer.observe(node);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       {/* Hero Section */}
@@ -202,7 +252,7 @@ function App() {
 
         </div>
 
-       <div className="container_data">
+       <div className="container_data" ref={cardDataRef}>
         <div 
             className="card_data clickable" 
             onClick={() => setIsDrawerOpen(true)} >
