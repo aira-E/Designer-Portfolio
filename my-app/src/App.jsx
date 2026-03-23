@@ -480,7 +480,7 @@ function App() {
 
       <div className="section_social_media_branding" ref={brandingSectionRef}>
         <h2> Branding </h2>
-        <h3> Graphic designing + Social media posting, captioning, and managing </h3>
+        <h3> Graphic designing + Social media posting, copywriting, and managing </h3>
         <div className="section_cards_social_media_branding">
           <img src={cattleyaFiesta} className="card_social_media_branding" alt="mock-ups_cattleya" />
           <img src={culturalOrg} className="card_social_media_branding" alt="mock-ups_culturalorg" />
