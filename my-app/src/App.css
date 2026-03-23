@@ -302,7 +302,7 @@ button:hover, .btn:hover{
   flex: 0 0 auto;
 }
 
-.section_concept_works{
+.section_concept_works {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -744,7 +744,7 @@ p, a {
 .section_hero,
 .section_case_studies,
 .section_concept_works,
-.section_branding {
+.section_branding{
   width: 100%;
   max-width: 1200px;
   padding: 0 1rem;
@@ -1377,6 +1377,43 @@ button, .btn {
   justify-content: center;
 }
 
+.section_social_media_branding{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.section_cards_social_media_branding{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+
+}
+
+.card_social_media_branding{
+  border-radius: 8px;
+}
+
+
+.section_cards_social_media_branding > * {
+  flex: 1 1 calc(25% - 24px);
+  min-width: 280px;
+  box-sizing: border-box;
+}
+
 /* Image Styles */
 .User-Personas, 
 .Quotes, 
@@ -1390,6 +1427,8 @@ button, .btn {
   object-fit: contain; /* Ensures the aspect ratio is maintained */
   border-radius: 8px;
 }
+
+
 
 /* Mobile responsive support for Greenleaf Grocers case study */
 @media (max-width: 900px) {

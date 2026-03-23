@@ -38,6 +38,11 @@ import toyrushMock from "./assets/mock-ups/toyrushgame.jpg";
 import gtaraMock from "./assets/mock-ups/gtara.png";  
 import fruitvendingMock from "./assets/mock-ups/guivendingmachine.png";  
 
+// Import IG mock-ups
+import cattleyaFiesta from "./assets/mock-ups/Instagram-branding/cattleya.png";
+import culturalOrg from "./assets/mock-ups/Instagram-branding/cultural.png";
+import republikhaPH from "./assets/mock-ups/Instagram-branding/republikha.png";
+
 // Import icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons/faArrowRight";
@@ -175,8 +180,7 @@ function App() {
         </div>
       </div>
 
-
-        <div className="section_case_studies">
+      <div className="section_case_studies">
         <div className="section_cards_case_studies">
             <h2> Case Studies </h2>
             <div className="card_case_studies_container">
@@ -196,7 +200,7 @@ function App() {
                     <TrophyTooltip text="Top 5 finalist in UX University 2025: Shifting Tide" />
                 </div>
 
-                <p>Enhancing the Department of Science and Technology (DOST) Website as a Centralized Hub for Public Services</p>
+                <p>Enhancing the Department of Science and Technology (DOST) Website integrating AI features for a more Centralized Hub for Public Services</p>
                 <div className="card_case_studies_button">
                     <button
                     onClick={() => {
@@ -283,8 +287,7 @@ function App() {
             </div>
             </div>
         </div>
-        </div>
-
+      </div>
 
       <div className="section_concept_works">
         <h2> Concept Works </h2>
@@ -378,8 +381,16 @@ function App() {
         </div>        
       </div> 
 
-            
-            <BrandingCarousel 
+      <div className="section_social_media_branding">
+        <h2> Branding </h2>
+        <h3> Graphic designing + Social media posting, captioning, and managing </h3>
+        <div className="section_cards_social_media_branding">
+          <img src={cattleyaFiesta} className="card_social_media_branding" alt="mock-ups_cattleya" />
+          <img src={culturalOrg} className="card_social_media_branding" alt="mock-ups_culturalorg" />
+          <img src={republikhaPH} className="card_social_media_branding" alt="mock-ups_republikha" />
+        </div>
+      </div>
+      {/*   <BrandingCarousel 
                 mdb={mdb} 
                 rl={rl} 
                 figmaIcon={figmaIcon} 
@@ -388,8 +399,8 @@ function App() {
                 canvaIcon={canvaIcon} 
             />
             
-
-      {/* Contact Section (CORRECTED STRUCTURE) */}         
+        */}
+            
       <div className="section_contact"> {/* Added the section wrapper div */}
         <h2 className="contact_header"> Let's Connect! </h2>
         <div className="section_contact_container">
@@ -416,8 +427,7 @@ function App() {
             </p>
         </div>
         </div>
-      </div> {/* Closes section_contact */}
-  {/* ... (rest of your App content) ... */}
+      </div>
 
 
     <RightDrawer 
